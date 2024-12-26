@@ -81,7 +81,7 @@
 - [ ] `It offers better security.`
 - [x] `It reduce load on servers.`
 
-#### Q12. Your API resource does no allow deletion, and a client application attempted to delete the resource. What HTTP response code should you return?
+#### Q12. Your API resource does not allow deletion, and a client application attempted to delete the resource. What HTTP response code should you return?
 
 - [ ] `409 Conflict`
 - [ ] `400 Bad Request`
@@ -531,3 +531,35 @@
 [Expires](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Expires)
 [Etag](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/ETag)
 [Rate limiting your RESTful API](https://medium.com/@guillaume.viguierjust/rate-limiting-your-restful-api-3148f8e77248)
+
+#### Q69. A client application uses a filter or a search in your API correctly but there are zero results. What is the best response code?
+
+- [ ] 204 No Content
+- [ ] 400 Bad Request
+- [x] 200 OK
+- [ ] 404 Not Found
+
+[Response Status Codes](https://www.rfc-editor.org/rfc/rfc7231#section-6)
+
+#### Q70. Which HTTP verb is normally used to retrieve or create a resource in an API?
+
+- [ ] `RETRIEVE`
+- [ ] `FORM`
+- [x] `GET`
+- [ ] `READ`
+
+#### Q71. To create a new resource, what HTTP response code should you receive?
+
+- [ ] `200`
+- [ ] `405`
+- [x] `201`
+- [ ] `204`
+
+[HTTP request methods](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)
+
+#### Q72. You are developing a RESTful API for a new project on GitHub. Security is a top priority, and you want to ensure that only authorized users can access specific endpoints. Which of the following mechanisms should you use to achieve this goal?
+
+- [ ] API rate limiting
+- [x] OAuth 2.0
+- [ ] Basic Authentication
+- [ ] HTTP Basic Auth

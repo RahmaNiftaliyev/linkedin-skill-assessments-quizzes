@@ -16,12 +16,16 @@
 - [ ] A REST service has a pool of resources composed of allocations of memory that allow a request to be processed.
 - [ ] A resource for a REST service is an explicit allocation of a thread or CPU cycles to allow a request to be processed.
 
+[Rest Service in Spring](https://spring.io/guides/tutorials/rest/)
+
 #### Q3. Which of these is a valid Advice annotation?
 
 - [ ] @AfterError
 - [x] @AfterReturning
 - [ ] @AfterException
 - [ ] @AfterExecution
+
+[Spring Advice Type Annotation](https://www.baeldung.com/spring-aop-advice-tutorial)
 
 #### Q4. What does a ViewResolver do?
 
@@ -30,6 +34,8 @@
 - [ ] It creates a unique view determined by the uers's browser type,supporting cross-browser compatibility.
 - [ ] It maps custom parameters to SQL views in the database, allowing for dynamic content to be created in the response.
 
+[View Resolution in Spring MVC](https://docs.spring.io/spring-framework/reference/web/webmvc/mvc-servlet/viewresolver.html)
+
 #### Q5. How are Spring Data repositories implemented by Spring at runtime?
 
 - [ ] Spring automatically generated code for you based on your YAML config that defined a MethodInterceptor chain that intercept calls to the instance and computed SQL on the fly.
@@ -37,12 +43,16 @@
 - [ ] The Spring JDK proxy creates a separate runtime process that acts as an intermediary between the database and the Web server, and intercepts calls to the instance and handles requests.
 - [ ] Spring automatically generated code for you based on your XML config files that define a SpringMethodAutoGeneration factory that intercepts calls to the instance and creates dynamic method that computer SQL on the fly.
 
+[Explained QnA](https://stackoverflow.com/questions/38509882/how-are-spring-data-repositories-actually-implemented)
+
 #### Q6. What is SpEL and how is it used in Spring?
 
 - [ ] SpEL(Spring Expression Language) runs in the JVM and can act as a drop-in replacement for Groovy or other languages.
 - [x] SpEL(Spring Expression Language) supports boolean and relational operators and regular expressions, and is used for querying a graph of objects at runtime.
 - [ ] SpEL(Spring Expression Language) allows you to build, configure,and execute tasks such as building artifacts and downloading object dependencies.
 - [ ] SpEL(Spring Expression Language) natively transpiles one JVM language to another, allowing for greater flexibility.
+
+[Spring Expression Documentation](https://docs.spring.io/spring-framework/docs/3.0.x/reference/expressions.html)
 
 #### Q7. The process of linking aspects with other objects to create an advised object is called
 
@@ -98,11 +108,13 @@ public class Print implements InitializingBean {
 }
 ```
 
-- [x] Nothing will print
+- [ ] Nothing will print
 - [ ] startup
       init
 - [ ] init
-- [ ] startup
+- [x] startup
+
+Explanation: SpringApplication.run method returns the created Context, so main method will continue running and print "startup". Class Print is not a Spring Bean, because it is not annotated with @Component, so it will not be initialized.
 
 #### Q13. Which println statement would you remove to stop this code throwing a null pointer exception?
 
@@ -273,7 +285,7 @@ public class SampleController {
 - [x] It helps monitor and manage a Spring Boot application by providing endpoints such as health checks, auditing, metrics gathering, and HTTP tracing.
 - [ ] It provides out-of-the-box functionality that integrates with third-party metrics platforms to automatically scale up and down the number of threads in threadpools.
 - [ ] It's a CLI that allows you to modify the configuration of a running Spring Boot application without the need for restarting or downtime.
-- [ ] It provides out-of-the-box functionality that integrates wiltr?third-party metrics platforms to automatically scale up and down the number of instances of the Spring Boot application.
+- [ ] It provides out-of-the-box functionality that integrates with third-party metrics platforms to automatically scale up and down the number of instances of the Spring Boot application.
 
 [Spring Boot Actuator](https://www.baeldung.com/spring-boot-actuators)
 
@@ -337,10 +349,10 @@ public class SampleController {
 
 #### Q40. How do you inject a dependency into a Spring bean?
 
-- [x] any of these answers
+- [ ] Use field injection.
 - [ ] Annotate a Setter method with the @Autowired annotation.
 - [ ] Specify parameters in the constructor with an optional @Autowired annotation.
-- [ ] Use field injection.
+- [x] Any of the above.
 
 #### Q41. Consider the properties file application.properties. How would you load the property my.property?
 
@@ -392,7 +404,7 @@ private String val;
 
 #### Q44. In the Spring Bean lifecycle pictured, what should the third step of the process be?
 
-![Alt text](https://usaupload.com/cache/plugins/filepreviewer/69009/c5e6eedce33819dd3b16bff7590d244b0fedf52561323c444b4b63e19e61e2e8/1100x800_cropped.jpg 'Spring bean lifecycle')
+![diagram](images/spring-framework_q44.png)
 
 - [ ] Persist bean definitions into a database
 - [x] Instance bean objects
@@ -424,10 +436,10 @@ private String val;
 
 #### Q48. How does the transaction propagation setting impact the behavior of transactions?
 
-- [ ] It ensures that transactions that are commited to the database are propagated to all the shards of a clustered database system.
-- [ ] None of these answers is correct.
-- [ ] It guarantees that transactions that are submitted to the database cluster are propagated to all the nodes of a clustered database cloud.
+- [ ] It ensures that transactions that are committed to the database are propagated to all the shards of a clustered database system.
 - [x] It enforces that a logical transaction scope is created for each method that determines rollback-only status, with an outer transaction scope being logically independent from the inner transaction scope.
+- [ ] It guarantees that transactions that are submitted to the database cluster are propagated to all the nodes of a clustered database cloud.
+- [ ] None of the above
 
 #### Q49. What is printed when this code is run as a @SpringBootApplication?
 
@@ -472,25 +484,25 @@ Explanation: missing `@Autowired` on `private TestService service` or on the set
 2. A point during the execution of a program, such as the execution of a method or the handling of an exception.
 3. An action taken by an aspect at a particular join point.
 
-- [ ]
+- [ ] &shy;
   ```
   1. Pointcut
   2. Advice
   3. Join point
   ```
-- [ ]
+- [ ] &shy;
   ```
   1. Join point
   2. Pointcut
   3. Advice
   ```
-- [ ]
+- [ ] &shy;
   ```
   1. Advice
   2. Pointcut
   3. Join point
   ```
-- [x]
+- [x] &shy;
   ```
   1. Pointcut
   2. Join point
@@ -575,10 +587,10 @@ Explanation: `@Bean`-method in `@Configuration` must be overridable. Remove the 
 
 #### Q58. Assuming no additional configuration is provided, what is the first selection criteria Spring uses to choose a bean when autowiring a property?
 
-- [ ] none of these answers
+- [x] bean name
 - [ ] bean type
 - [ ] bean size
-- [x] bean name
+- [ ] None of the above
 
 #### Q59. What is the result of calling the map controller method using the following HTTP request?
 
@@ -679,9 +691,9 @@ class Service {}
 `within(com.linkedin.service..*)`
 
 - [ ] any join point only within the service package
-- [ ] This is not valid Pointcut expression
-- [ ] any method in a class that autowires a service bean
 - [x] any join point within the service package or one of its subpackages
+- [ ] any method in a class that autowires a service bean
+- [ ] This is not valid Pointcut expression
 
 #### Q66. What is the output from invoking this Actuator endpoint in an unmodified Spring Boot application generated using Spring Intializr?
 
@@ -734,7 +746,7 @@ public Pojo getPojo(@PathVariable("id") String id) {
 #### Q71. Which statement is true regarding loading and instantiation of Spring factories?
 
 - [ ] During startup, the SpringFactoryInitializr collects all files in the CONFIG-INF directory from each dependency and downloads binaries to run each file.
-- [ ] During startup, the SpringFactoriesLoader gets a list of config and collects all the files in META-INF directory from dependencies. Then it builds a composite list for application context configurations.
+- [x] During startup, the SpringFactoriesLoader gets a list of config and collects all the files in META-INF directory from dependencies. Then it builds a composite list for application context configurations.
 - [ ] During shutdown, the SpringFactoryDestructor collects all the files in META-INF directory from each dependency and begins shutting down each thread and process.
 - [ ] During startup and shutdown, the SpringFactoryInitializr downloads project configs for all configured dependencies.
 
@@ -744,8 +756,8 @@ public Pojo getPojo(@PathVariable("id") String id) {
      execution(* com.linkedin.TestService.*(..))
 ```
 
-- [ ] all methods of classes in the com.linkedin.TestService package
-- [ ] all methods of classes in the com.linkedin.TestService package annotated whith @Service
+- [x] all methods of classes in the com.linkedin.TestService package
+- [ ] all methods of classes in the com.linkedin.TestService package annotated with @Service
 - [ ] This Pointcut is not valid.
 - [ ] all methods defined by the TestService interface
 
@@ -754,7 +766,7 @@ public Pojo getPojo(@PathVariable("id") String id) {
 - [ ] profile specific application-{profile}.properties files
 - [ ] Java System Properties
 - [ ] application properties located in an application.properties file inside the application.jar
-- [ ] profile specific application-{profile}.properties files located outside the application.jar
+- [x] profile specific application-{profile}.properties files located outside the application.jar
 
 #### Q74. What interface is used to represent a permission in Spring Security?
 
@@ -815,12 +827,12 @@ Explanation: Here only one line can throw NPE. Calling getClass() from context.g
 - [ ] A rollback is triggered during any error that occurs during the transaction.
 - [ ] When an instance or subclass of Exception is thrown, this triggers a rollback, while any runtime exceptions do not.
 - [ ] Anytime an instance or subclass of Throwable is thrown, this triggers a rollback.
-- [ ] When an instance or subclass of RuntimeException is thrown, this triggers a rollback, while any checked Exception does not.
+- [x] When an instance or subclass of RuntimeException is thrown, this triggers a rollback, while any checked Exception does not.
 
 #### Q78. What is the difference between a CrudRepository and a JpaRepository?
 
 - [ ] The CrudRepository extends the PagingAndSortingRepository, while the JpaRepository does not.
-- [ ] The CrudRepository exposes a superset of interface methods containing every datastore-specific method supported by Spring data. The JpaRepository contains only those specific to Spring Data JPA.
+- [x] The CrudRepository exposes a superset of interface methods containing every datastore-specific method supported by Spring data. The JpaRepository contains only those specific to Spring Data JPA.
 - [ ] The CrudRepository is a base interface within Spring Data core that exposes a dedicated set of functions. The JpaRepository is a store-specific interface that exposes functionality specific to JPA.
 - [ ] The CrudRepository is part of the Java EE API, while JpaRepository is specific to Spring Data.
 
@@ -828,7 +840,7 @@ Explanation: Here only one line can throw NPE. Calling getClass() from context.g
 
 - [ ] It's a security filter chain that provides authentication with manual intervention such that multiple administrators of the system are able to approve users with auditability and traceability.
 - [ ] It's a series of user-completed activities—such as password authorization, token verification, and many others—that require multiple factors of authentication to increase the level of security in the system.
-- [ ] It's a servlet filter chain where each filter has a specific responsibility such as security context, user and password authorization, exception translation, or filter security interception, processed in order.
+- [x] It's a servlet filter chain where each filter has a specific responsibility such as security context, user and password authorization, exception translation, or filter security interception, processed in order.
 - [ ] It's a security filter chain that consumes multiple factors of authentication—such as password, token verification, biometrics, and IP whitelisting—to successfully log a user into the system.
 
 #### Q80. Which is not a valid stereotype annotation?
@@ -840,23 +852,16 @@ Explanation: Here only one line can throw NPE. Calling getClass() from context.g
 
 #### Q81. Which statement is true regarding loading and instantiation of Spring factories?
 
-- [ ] During startup, the SpringFactoriesLoader gets a list of configs and collects all the files in META-INF directory from dependencies. Then it builds a composite list for application context configurations.
+- [x] During startup, the SpringFactoriesLoader gets a list of configs and collects all the files in META-INF directory from dependencies. Then it builds a composite list for application context configurations.
 - [ ] During shutdown, the SpringFactoryDestructor collects all the files in META-INF directory from each dependency and begins shutting down each thread and process.
 - [ ] During startup, the SpringFactoryInitializr collects all files in the CONFIG-INF directory from each dependency and downloads binaries to run each file.
 - [ ] During startup and shutdown, the SpringFactoryInitializr downloads project configs for all configured dependencies.
-
-#### Q82. What methods does this Pointcut expression reference?
-
-- [ ] all methods defined in the service package
-- [ ] The Pointcut is not valid.
-- [ ] all methods defined in a service interface
-- [ ] all methods defined in the service package or one of its subpackages
 
 #### Q83. What is a transaction isolation level?
 
 - [ ] executing each transaction in its own dedicated threadpool to facilitate thread isolation
 - [ ] facilitating each transaction to occur on its own dedicated vCPU to guarantee throughput
-- [ ] the level of visibility and access a transaction has to the units of work of other transactions such as uncommitted writes
+- [x] the level of visibility and access a transaction has to the units of work of other transactions such as uncommitted writes
 - [ ] executing each transaction on its own process to provide resource isolation
 
 #### Q84. What does the statement "Spring offers fully-typed advice" mean?
@@ -878,4 +883,69 @@ Explanation: Here only one line can throw NPE. Calling getClass() from context.g
 - [ ] A, D, F
 - [ ] D, E, F
 - [ ] A, B, F
-- [ ] B, D, E
+- [x] B, D, E
+
+#### Q85. Which of the Service implementations will be created first?
+
+```java
+@SpringBootApplication
+public class App {
+
+     @Autowired
+     Service service;
+
+     public static void main(String[] args) {
+          SpringApplication.run(App.class, args);
+     }
+}
+@Primary
+@Component
+class Service2Impl implements Service {
+
+    Service2Impl() {
+        System.out.println("Service2");
+    }
+}
+
+@Component("Service")
+class Service1Impl implements Service {
+
+    Service1Impl() {
+        System.out.println("Service1");
+    }
+}
+
+interface Service{}
+```
+
+- [ ] Service1
+- [x] Service2
+- [ ] A NullPointerException is thrown at runtime.
+- [ ] There is no way to know until runtime.
+
+Explaination: [Primary indicates that a bean should be given preference when multiple candidates are qualified to autowire a single-valued dependency](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/context/annotation/Primary.html)
+
+#### Q86. What methods does this Pointcut expression reference?
+
+```java
+     execution(* com.linkedin.service..*.*(..))
+```
+
+- [x] all methods defined in the service package or one of its subpackages
+- [ ] all methods defined in the service package
+- [ ] all methods defined in a service interface
+- [ ] The pointcut is invalid.
+
+#### Q87. Which is not a core facet of Spring's ecosystem?
+
+- [ ] Spring Data
+- [ ] Spring MVC
+- [x] Spring Bootstrap
+- [ ] Spring Cloud
+
+#### Q88. A\_ is a key-value map of data used to render the page, and the \_ is a template of the page that is filled with data.
+
+- [ ] model; view
+- [ ] hashmap; servlet
+- [x] view; model
+- [ ] request; view

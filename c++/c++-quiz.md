@@ -1,6 +1,6 @@
 ## C++
 
-#### Q1. What is printed from this code?
+#### Q1. What is the output of this code?
 
 ```cpp
 vector<int> v(22);
@@ -22,7 +22,7 @@ using namespace std;
 - [ ] The compiled code is always bigger because of all of the imported symbols.
 - [x] If the code uses a function defined in two different libraries with the same prototype but possibly with different implementations, there will be a compilation error due to ambiguity.
 - [ ] It automatically includes all header files in the standard library (cstdint, cstdlib, cstdio, iostream, etc).
-- [ ] It causes the compiler to enforce the exclusive inclusion of header files belonging to the standard library, generating compilation error when a different header file is included.
+- [ ] It causes the compiler to enforce the exclusive inclusion of header files belonging to the standard library, generating a compilation error when a different header file is included.
 
 [Reference](https://www.geeksforgeeks.org/using-namespace-std-considered-bad-practice/)
 
@@ -36,14 +36,14 @@ typedef struct{
 }child_t;
 ```
 
-- [x] 7 bits.
+- [ ] 7 bits.
 - [ ] 25 bytes.
 - [ ] 1 bit.
-- [ ] 1 byte.
+- [x] 1 byte.
 
 [Reference](https://en.cppreference.com/w/cpp/language/bit_field)
 
-#### Q4. Which of the following shows the contents of vector v1 and v2 after running this code?
+#### Q4. What are the vectors v1 and v2 after executing the code?
 
 ```cpp
 std::vector<int> v1{1,2,3},v2;
@@ -59,10 +59,10 @@ v2.push_back(5);
 
 #### Q5. Which of the following is a true statement about the difference between pointers and iterators?
 
-- [ ] While pointers are variable that hold memory address, iterators are generic functions used to traverse containers. These function allows the programmer to implement read and write code as the container is traversed.
-- [x] Incrementing an iterator always means access the next element in the container(if any), no matter the container. Incrementing the pointer means pointing to the next element in memory, not always the next element.
-- [ ] Pointers are variables that hold memory address where as iterator are unsigned integers that refers to offsets in arrays.
-- [ ] All iterator are implemented with pointers so all iterators are pointers but not all pointers are iterators.
+- [ ] While pointers are variables that hold memory addresses, iterators are generic functions used to traverse containers. This function allows the programmer to implement read and write code as the container is traversed.
+- [x] Incrementing an iterator always means accessing the next element in the container(if any), no matter the container. Incrementing the pointer means pointing to the next element in memory, not always the next element.
+- [ ] Pointers are variables that hold memory address whereas iterator is unsigned integers that refer to offsets in arrays.
+- [ ] All iterators are implemented with pointers so all iterators are pointers but not all pointers are iterators.
 
 [Reference](https://stackoverflow.com/a/31128162)
 
@@ -83,7 +83,7 @@ union {
 
 [Reference](https://en.cppreference.com/w/cpp/language/union)
 
-#### Q7. Which of the following operators is overloadable?
+#### Q7. Which of the following operator can be overloaded?
 
 - [ ] `?:`
 - [x] `new`
@@ -92,7 +92,7 @@ union {
 
 [Reference](https://www.tutorialspoint.com/operators-that-cannot-be-overloaded-in-cplusplus)
 
-#### Q8. Which of the following shows the contents of vector pointed by v1 and v2 after running this code?
+#### Q8. Which of the following shows the contents of the vector pointed by v1 and v2 after running this code?
 
 ```cpp
 std:: vector<int> *v1 = new std::vector<int>({1,2,3});
@@ -111,9 +111,9 @@ v1 and v2 point to the same vector.
 
 #### Q9. Which of the following is not a difference between a class and a struct?
 
-- [ ] Because structs are part of the C programming language, there are some complexity between C and C++ structs. This is not the case with classes.
+- [ ] Because structs are part of the C programming language, there is some complexity between C and C++ structs. This is not the case with classes.
 - [ ] Classes may have member functions; structs are private.
-- [ ] The default access specifier for members of struct is public, whereas for member of class, it is private.
+- [ ] The default access specifier for members of a struct is public, whereas, for members of the class, it is private.
 - [x] Template type parameters can be declared with classes, but not with the struct keyword.
 
 Templates can be used with both classes and structs
@@ -170,9 +170,9 @@ typedef struct {
 #### Q11. What is an lvalue?
 
 - [ ] It's a constant expression, meaning an expression composed of constants and operations.
-- [x] It's an expression that represents an object with an address.
+- [ ] It's an expression that represents an object with an address.
 - [ ] It's an expression suitable for the left-hand side operand in a binary operation.
-- [ ] It's a location value, meaning a memory address suitable for assigning to a pointer or reference.
+- [x] It's a location value, meaning a memory address suitable for assigning to a pointer or reference.
 
 #### Q12. What does auto type specifier do in this line of code (since C++11)?
 
@@ -181,7 +181,7 @@ auto x = 4000.22;
 ```
 
 - [x] It specifies that the type of x will be deduced from the initializer - in this case, double.
-- [ ] It specifies that the type of x is automatic meaning that if can be assigned different types of data throughout the program.
+- [ ] It specifies that the type of x is automatic meaning that it can be assigned different types of data throughout the program.
 - [ ] It specifies that x is a variable with automatic storage duration.
 - [ ] It specifies that more memory will be allocated for x in case it needs more space, avoiding loss of data due to overflow.
 
@@ -189,7 +189,7 @@ auto x = 4000.22;
 
 - [x] class written with the generic programming paradigm, specifying behavior in terms of type parameter rather than specific type.
 - [ ] blank superclass intended for inheritance and polymorphism.
-- [ ] lass that only consists of member variable, with no constructor, destructor nor member functions.
+- [ ] class that only consists of a member variable, with no constructor, destructor, or member functions.
 - [ ] skeleton source code for a class where the programmer has to fill in specific parts to define the data types and algorithms used.
 
 [Reference](https://www.mygreatlearning.com/blog/templates-in-cpp/)
@@ -210,7 +210,7 @@ else
 
 [Reference](https://www.w3schools.com/cpp/cpp_conditions_shorthand.asp)
 
-#### Q15. What is the output of this code?
+#### Q15. What is the output of the code given below?
 
 ```cpp
 #include <iostream>
@@ -236,10 +236,10 @@ int main(){
 
 - [x] The first is a variable declaration that will hold an element in a sequence. The second is the sequence to traverse.
 - [ ] The first is an iterator, and the second is the increment value to be added to the iterator.
-- [ ] The first is the iterating variable. The second is an `std::pair` that specifies the range (start and end) in which the variable will iterate.
-- [ ] The first is a container object. The second is an `std::pair` that specifies the range (start and end) in which the elements will be accessed within the loop.
+- [ ] The first is the iterating variable. The second is a `std::pair` that specifies the range (start and end) in which the variable will iterate.
+- [ ] The first is a container object. The second is a `std::pair` that specifies the range (start and end) in which the elements will be accessed within the loop.
 
-#### Q17. What is the output of this piece of code?
+#### Q17. What is the output of the code given below?
 
 ```cpp
 int8_t a=200;
@@ -257,7 +257,7 @@ else
 
 Note: a variant of the question below.
 
-#### Q18. What is the output of this piece of code?
+#### Q18. What is the output of this block of code?
 
 ```cpp
 int8_t a=200;
@@ -273,7 +273,7 @@ std::cout<<", b="<<(int)b;
 
 Note: Implicit conversion from 'int' to 'int8_t' (aka 'signed char') changes value from 200 to -56
 
-#### Q19. What results from executing this code snippet?
+#### Q19. What is the output after executing this code snippet?
 
 ```cpp
 int x=5, y=2;
@@ -289,6 +289,8 @@ else {
 - [x] Part B executes because (x & y) results in 0, or false.
 - [ ] Part A executes because (x & y) results in a nonzero value, or true.
 - [ ] Part B executes because the statement (x & y) is invalid, thus false.
+
+[Reference](https://stackoverflow.com/questions/63867765/dont-understand-why-if-5-2-is-false)
 
 #### Q20. What is a valid definition for the `get_length` function, which returns the length of a null-terminated string?
 
@@ -366,6 +368,8 @@ printf("%d", --i);
 - [ ] 0,0,1,0
 - [ ] 1,0,1,0
 
+[Reference](https://www.geeksforgeeks.org/pre-increment-and-post-increment-in-c/)
+
 #### Q24. What is true about the variable named `ptr`?
 
 ```cpp
@@ -379,7 +383,7 @@ void *ptr;
 
 [Reference](https://en.cppreference.com/w/cpp/language/pointer)
 
-#### Q25. What is the output of this code?
+#### Q25. What is the output of the code given below?
 
 ```cpp
 int c=3; char d='A';
@@ -409,16 +413,18 @@ printf("1/2 = %f",(float)(1/2));
 - [ ] Public members will be compiled as shared variables in a multithreaded environment. Private members will be compiled as Thread-local variables.
 - [x] Public members can be accessed by any function. Private members can be accessed only by the same class's member functions and the friends of the class.
 
-#### Q28. What is the value of `x` after running this code?
+[Reference](https://www.geeksforgeeks.org/difference-between-public-and-private-in-c-with-example/)
+
+#### Q28. What is the value of `x` after executing this code?
 
 ```cpp
 int x=10, a=-3;
-x=+a;
+x+=a;
 ```
 
 - [ ] 3
-- [ ] 7
-- [x] -3
+- [x] 7
+- [ ] -3
 - [ ] 13
 
 #### Q29. Which statement is true?
@@ -443,8 +449,8 @@ void *ptr=&g;
 #### Q31. What is the `.*` operator and what does it do?
 
 - [ ] It is the same as the class member access operator, or arrow operator `(->)`, which allows you to access a member of an object through a pointer to the object.
-- [x] It is the pointer to member operator, and it allows you to access a member of an object through a pointer to that specific class member.
-- [ ] It is the member access with address of operator, which returns the address of a class or struct member.
+- [x] It is the pointer to the member operator, and it allows you to access a member of an object through a pointer to that specific class member.
+- [ ] It is the member access with an address of the operator, which returns the address of a class or struct member.
 - [ ] It is a combination of the member access operator `(.)` and the dereference operator `(*)`, so it allows you to access the object that a member pointer points to.
 
 [Reference](https://en.cppreference.com/w/cpp/language/operator_member_access)
@@ -533,7 +539,7 @@ public class Dog extends Animal {
 };
 ```
 
-#### Q34. What is the output of this code?
+#### Q34. What is the output of this code given below?
 
 ```cpp
 #include <cstdio>
@@ -554,10 +560,14 @@ int main(){
 - [ ] c = -1, which is greater than 10
 - [ ] c = 255, which is less than 10
 
+Technically, whether a `char` is `signed` or `unsigned` is implementation-defined;
+in the latter case, the second answer would be correct.
+[Reference](https://en.cppreference.com/w/cpp/language/types)
+
 #### Q35. How can C++ code call a C function?
 
 - [ ] by simply calling the C code
-- [ ] there is no way for C++ to call a C function
+- [ ] There is no way for C++ to call a C function
 - [x] by using extern "C"
 - [ ] by importing the source C code
 
@@ -657,9 +667,9 @@ loop:
 ```
 
 - [ ] It causes the toolchain to compile all the contents of library.h so that its executable code is available when needed by the final application.
-- [ ] It cherry picks library.h for the declarations and definitions of all data and functions used in the remainder of the source file main.cpp, finally replacing the `#include` directive by those declarations and definitions.
+- [ ] It cherry-picks library.h for the declarations and definitions of all data and functions used in the remainder of the source file main.cpp, finally replacing the `#include` directive with those declarations and definitions.
 - [ ] It informs the linker that some functions or data used in the source file main.cpp are contained in library.h, so that they can be called in run time. This is also known as dynamic linking.
-- [x] It causes the replacement of the `#include` directive by the entire contents of the source file library.h. This is similar to a Copy-Paste operation of library.h into main.cpp.
+- [x] It causes the replacement of the `#include` directive by the entire contents of the source file library.h. This is similar to the Copy-Paste operation of library.h into main.cpp.
 
 #### Q39. Consider this function declaration of `is_even`, which takes in an integer and returns true if the argument is an even number and false otherwise. Which declarations are correct for overloaded versions of that function to support floating point numbers and string representations of numbers?
 
@@ -747,12 +757,14 @@ char *is_even(char *str);
 std::vector<std::vector<int>> thematrix;
 ```
 
-- [ ] There's nothing wrong with it.
+- [x] There's nothing wrong with it.
 - [ ] An `std::vector` cannot contain more `std::vector` containers as its elements.
 - [ ] The correct syntax should be: `std::vector[std::vector[int]] thematrix;`
-- [x] `>>` is parsed as the shift-right operator, and thus results in a compile error.
+- [ ] `>>` is parsed as the shift-right operator, and thus results in a compile error.
 
 #### Q42. What is the statement below equivalent to?
+
+#### Q42.b. What is the statement equivalent to?
 
 ```cpp
 sprite->x
@@ -807,7 +819,7 @@ complexNumber(float real, float im) {
 }
 ```
 
-#### Q44. What is the result from executing this code snippet?
+#### Q44. What is the result of executing this code snippet?
 
 ```cpp
 bool x=true, y=false;
@@ -819,9 +831,9 @@ if (~x || y) {
 }
 ```
 
-- [x] Part A executes because the expression `(~x || y)` always results in true if `y==false`.
+- [ ] Part A executes because the expression `(~x || y)` always results in true if `y==false`.
 - [ ] Part B executes because the statement `(~x || y)` is invalid, thus false.
-- [ ] Part A executes because `~x` is not zero, meaning true.
+- [x] Part A executes because `~x` is not zero, meaning true.
 - [ ] Part B executes because `~x` is false and `y` is false, thus the `OR` operation evaluates as false.
 
 #### Q45. What would be the output of this code?
@@ -849,7 +861,7 @@ for(auto f:values)
 - [ ] `0 2 3 5 10`
 - [x] `1 3 3 5 10`
 
-#### Q47. Which of the following STL classes is the best fit for implementing a phonebook? Suppose each entry contains a name and a phone number, with no duplicates, and you want to have lookup by name.
+#### Q47. Which of the following STL classes is the best fit for implementing a phonebook? Suppose each entry contains a name and a phone number, with no duplicates, and you want to have a lookup by name.
 
 - [ ] `std::priority_queue`
 - [ ] `std::list`
@@ -1127,7 +1139,7 @@ int calculateMedian(const my_array& a)
 - [ ] Actually, objects cannot be passed as regular variables, because they require a constructor call. Therefore, a `const` reference is the only way to pass class instances to functions.
 - [ ] There are no benefits because a reference and an object are treated as the same thing.
 - [x] The `const` qualifier forbids the code to modify the argument, so the programmer can rest assured that the source object will remain unchanged. / Alt.: The argument is passed as a reference, so if the passed my_array object is large, the program will require less time and memory.
-- [ ] The argument is passed as a reference, so the Function receives a copy that can be modified without affecting the original variable.
+- [ ] The argument is passed as a reference, so the function receives a copy that can be modified without affecting the original variable.
 
 [Reference](https://stackoverflow.com/a/2627179/10773894)
 
@@ -1165,7 +1177,7 @@ int calculateMedian(const my_array& a)
 
 - [ ] to restrict the use of its contents to only one source file
 - [ ] to tell the compiler that only one variable can be instantiated from the classes or types contained in this header file
-- [ ] to help the compiler finish faster by assuring that only one compiler pass is neccessary for the code included in this header file
+- [ ] to help the compiler finish faster by assuring that only one compiler pass is necessary for the code included in this header file
 - [x] to make the compiler parse that header file only once, even if it is included multiple times in the source
 
 [reference here](https://en.cppreference.com/w/cpp/preprocessor/impl)
@@ -1179,7 +1191,7 @@ int calculateMedian(const my_array& a)
 
 [Reference](https://www.educba.com/c-plus-plus-double/)
 
-#### Q68. Other than shifting bits to the left, what is the << operator used for ?
+#### Q68. Other than shifting bits to the left, what is the << operator used for?
 
 - [ ] shifting characters to the left in a string.
 - [x] inserting characters into an output stream like std::cout.
@@ -1188,9 +1200,9 @@ int calculateMedian(const my_array& a)
 
 #### Q69. Which choice is a reason to specify the type of a pointer instead of using `void *`, which works as a pointer to any type?
 
-- [ ] The compiler needs the data type to make sure that the pointer is not going to be used on illegal non-pointable types such as functions, labels, pointers, and reference.
+- [ ] The compiler needs the data type to make sure that the pointer is not going to be used on illegal non-pointable types such as functions, labels, pointers, and references.
 - [ ] `void *` does not work for any type. The language does not allow assigning anything other than `void` to a pointer to `void *`.
-- [x] The compiler needs the data type to know how much memory to allocate for the pointer, because different data types require different pointer lengths.
+- [x] The compiler needs the data type to know how much memory to allocate for the pointer because different data types require different pointer lengths.
 - [ ] Yes, it causes a compiler error because one field is defined as having a size of 0.
 
 [Reference](https://stackoverflow.com/questions/9802585/why-is-the-data-type-needed-in-pointer-declarations)
@@ -1300,7 +1312,7 @@ int main() {
 - [x] 3
 - [ ] 6
 
-#### Q80. What does "c" stands for in cout and cin?
+#### Q80. What does "c" stand for in cout and cin?
 
 - [ ] compiler
 - [ ] console
@@ -1321,14 +1333,14 @@ int main() {
 - [ ] function for a pointer
 - [ ] function for a class
 
-#### Q83. What is a correct syntax to output "Hello World" in C++?
+#### Q83. What is the correct syntax to output "Hello World" in C++?
 
-- [x] cout << "Hello World";
-- [ ] System.out.println("Hello World");
-- [ ] print("Hello World");
-- [ ] Console.WriteLine("Hello World");
+- [x] `cout << "Hello World";`
+- [ ] `System.out.println("Hello World");`
+- [ ] `print("Hello World");`
+- [ ] Console.WriteLine("Hello World");```
 
-#### Q84. How many categories of iterators are there in C++ ?
+#### Q84. How many categories of iterators are there in C++?
 
 - [ ] 4
 - [ ] 3
@@ -1337,19 +1349,19 @@ int main() {
 
 #### Q85. What is the meaning of base class in C++ ?
 
-- [ ] It inherit other class
+- [ ] It inherits other class
 - [ ] It has a pointer variable
 - [ ] It is the first class declared
-- [x] Another class got inherit from this class
+- [x] Another class got inherited from this class
 
-#### Q86. Size of C++ objects are expressed in terms of multiples of the size of a ** and the size of a char is **.
+#### Q86. The size of C++ objects is expressed in terms of multiples of the size of a ** and the size of a char is **.
 
 - [ ] char, 4
 - [ ] float, 8
 - [ ] int, 1
 - [x] char, 1
 
-#### Q87. Implementation dependent aspects about an implementation can be found in
+#### Q87. Implementation-dependent aspects about an implementation can be found in
 
 - [ ] `<numeric>`
 - [ ] `<limit>`
@@ -1359,7 +1371,7 @@ int main() {
 #### Q88. What is a default constructor?
 
 - [x] a constructor that can be used with no arguments
-- [ ] a contructor that does not have a return value
+- [ ] a constructor that does not have a return value
 - [ ] a constructor that is used by multiple classes
 - [ ] a constructor that initializes all members of a class
 
@@ -1372,21 +1384,21 @@ int main() {
 - [ ] Include guards refer to the header file in the file system, not to the code, so they are not helpful if the header file exists
       more than once in a project. This is not a problem with '#pragma once'
 
-#### Q90. Which of the following statement is valid?
+#### Q90. Which of the following statements is valid?
 
-- [ ] We can create new c++ operator.
-- [ ] We can change the precedence of the c++ operator.
+- [ ] We can create a new C++ operator.
+- [ ] We can change the precedence of the C++ operator.
 - [x] We can not change the operator templates.
-- [ ] We can change the associativity of the c++ operators.
+- [ ] We can change the associativity of the C++ operators.
 
-#### Q91. Which of the followings is/are automatically added to every class, if we do not write our own?
+#### Q91. Which of the following is/are automatically added to every class, if we do not write our own?
 
 - [ ] Copy Constructor
 - [ ] Assignment Operator
 - [ ] A constructor without any parameter
 - [x] All of the above
 
-#### Q92. The if-else statement can be replaced by which operator ?
+#### Q92. The if-else statement can be replaced by which operator?
 
 - [ ] certain structure
 - [ ] choosing structure
@@ -1395,7 +1407,7 @@ int main() {
 
 #### Q93. Which choice would be a recursive solution to the factorial n! problem?
 
-- [ ]
+- [ ] &shy;
 
 ```cpp
 void fact(int n) {
@@ -1406,7 +1418,7 @@ void fact(int n) {
 }
 ```
 
-- [ ]
+- [ ] &shy;
 
 ```cpp
 int fact(int n) {
@@ -1417,7 +1429,7 @@ int fact(int n) {
 }
 ```
 
-- [ ]
+- [ ] &shy;
 
 ```cpp
 int fact(int n) {
@@ -1428,7 +1440,7 @@ int fact(int n) {
 }
 ```
 
-- [x]
+- [x] &shy;
 
 ```cpp
 int fact(int n) {
@@ -1446,7 +1458,7 @@ int fact(int n) {
 - [x] The garbage collector detects that an object is no longer going to be used.
 - [ ] An automatic storage duration object goes out of scope.
 
-#### Q95. You are designing a foreign exchange payments system in C++, You need to model a transaction of a currency that has an integer as its quantity and a float as its price. You then want to declare an actual object of this type. How will vou achieve this?
+#### Q95. You are designing a foreign exchange payments system in C++, You need to model a transaction of a currency that has an integer as its quantity and a float as its price. You then want to declare an actual object of this type. How will you achieve this?
 
 - [x] A
 
@@ -1497,13 +1509,13 @@ int checkConcatThreshold(string a, string b) {
 ```
 
 - [ ] A compilation warning will occur and the second argument will be given a default value of b.
-- [ ] A compilation warning will occur and the second argument will be given a default value of empty string.
+- [ ] A compilation warning will occur and the second argument will be given a default value of the empty string.
 - [x] A compilation error will occur.
 - [ ] No compilation errors will occur and no compilation warnings will occur.
 
-#### Q97. You need to define a C++ lambda function. You want the function to have access to only the variables that are local to it. The function should receive a single parameter, a name, and construct a simple greeting. How will you achieve this?
+#### Q97. You need to define a C++ lambda function. You want the function to have access to only the variables that are local to it. The function should receive a single parameter, and a name, and construct a simple greeting. How will you achieve this?
 
-- [] A
+- [ ] A
 
 ```cpp
 auto myVeryFirstLambda = [=] (string name) {
@@ -1511,7 +1523,7 @@ auto myVeryFirstLambda = [=] (string name) {
     };
 ```
 
-- [] B
+- [ ] B
 
 ```cpp
 myVeryFirstLambda = [&] (string name) {
@@ -1527,7 +1539,7 @@ auto myVeryFirstLambda = [] (string name) {
     };
 ```
 
-- [] D
+- [ ] D
 
 ```cpp
 myVeryFirstLambda = [] (string name) {
@@ -1536,3 +1548,991 @@ myVeryFirstLambda = [] (string name) {
 ```
 
 [Reference](https://docs.microsoft.com/en-us/cpp/cpp/lambda-expressions-in-cpp?view=msvc-160)
+
+#### Q98. What is the value of X after running this code?
+
+```cpp
+int x=10, a=-3;
+X+=a;
+```
+
+- [ ] -3
+- [x] 7
+- [ ] 13
+- [ ] 3
+
+**Explanation :** `+=` means increasing value. So `x += a` is equivalent to `x = x + a`
+
+#### Q99. Once you are done writing to a file, what method will you call on the `ofstream` to notify the operating system?
+
+- [ ] printout()
+- [x] close()
+- [ ] destroy()
+- [ ] flush()
+
+#### Q100. Which choice is not a C++ keyword?
+
+- [ ] static_assert
+- [ ] reinterpret_cast
+- [x] comPl
+- [ ] alignas
+
+#### Q101. The size_in_bits function seems to take any type of parameter. This can be done by overloading the function, or by letting the compiler take care of it by writing a template. Which choice is an implementation of that template?
+
+```cpp
+int main()
+{
+cout « size_in_bits(21) « endl;
+cout « size_in_bits('f') « endl;
+cout « size_in_bits(32.1f) « endl;
+cout « size_in_bits(32.1) « endl;
+return 0;
+}
+```
+
+- [x] A
+
+```cpp
+template <typename T>
+size_t size_in_bits(const T& a){
+return sizeof(a)*8;
+}
+```
+
+- [ ] B
+
+```cpp
+template size_t size_in_bits(const {int,float,double,char,long}& a){
+return sizeof(a)*8;
+}
+```
+
+- [x] C
+
+```cpp
+template <typename T {int,float,double,char,long>
+size_t size_in_bits(const T& a){
+return sizeof(a)*8;
+}
+```
+
+- [ ] D
+
+```cpp
+size_t size_in_bits(void * a){
+return sizeof(a)*8;
+}
+```
+
+#### Q102. To use the keyboard as input the iostream library is included. To read input from files as input what library is needed?
+
+- [x] fstream
+- [ ] cstdlib
+- [ ] filestream
+- [ ] iostream
+
+#### Q103. What will this object-oriented program print?
+
+```cpp
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Vehicle {
+public:
+	string fuel = "none";
+};
+
+class MotorizedVehicle : public Vehicle {
+public:
+	string fuel = "fossil";
+};
+
+class NextgenMotorizedVehicle : public MotorizedVehicle {
+public:
+	string fuel = "hydrogen";
+};
+
+int main() {
+	MotorizedVehicle aCar;
+	cout << aCar.fuel;
+	return 0;
+}
+```
+
+- [x] fossil
+- [ ] fossil none
+- [ ] hydrogen
+- [ ] none
+
+#### Q104. The program below is handling a stack container. What is the output of running the program?
+
+```cpp
+#include <iostream>
+#include <stack>
+
+int main()
+{
+	std::stack<int> stack;
+	stack.push(1);
+	stack.push(2);
+	stack.push(3);
+
+	stack.pop();
+
+	stack.push(4);
+
+	stack.top();
+	stack.pop();
+
+	std::cout << stack.top();
+}
+```
+
+- [ ] 1
+- [x] 2
+- [ ] 3
+- [ ] 4
+
+#Detailed explanation:
+
+Now here we are supposed to implement a stack data structure that follows the **FILO** or (First IN Last Out) principle,
+_stack.push()_ -> pushes an element into the from the end array.
+_stack.pop()_ -> removes an element from the end of the array.
+_stack.top()_ -> Just gives us the topmost element of the array.
+Now following the sequences of push and pop: **[1,2,3]** then pop function is used,
+The newly formed array is: **[1,2,4]** then the top is used to retrieve the topmost element '4' then again the pop function is used which removes 4.
+thus, the resulting array is: 1,2.
+Then it prints the topmost element (ie: 2).
+
+#### Q105. Which choice is a valid way to overload the ternary conditional operator?
+
+- [ ] `void& operator ?:(const bool cond, const void& iftrue, const void& iffalse);`
+- [x] `The ternary operator is not overloadable.`
+- [ ] `void& operator conditional(const bool cond, const void& iftrue, const void& iffalse);`
+- [ ] `void* operator ?:(const bool cond, const void* iftrue, const void* iffalse);`
+
+[Reference](https://en.cppreference.com/w/cpp/language/operators)
+
+#### Q106. Which class hierarchy represents an example of multilevel inheritance?
+
+- [ ] In the same program, at different points, a given class derives individually from more than one different class.
+- [ ] A first-class derives directly, at the same time, from a second and third class.
+- [x] In the same program, at different points, a given class derives individually from more than two different classes.
+- [ ] A first classderives from a second class, and that second class is already derived from a third class
+
+#### Q107. Which of the following is the correct syntax to print the message in C++ language?
+
+- [ ] Out <<"Hello world!
+- [ ] Cout << Hello world! ;
+- [x] cout <<"Hello world!";
+- [ ] None of the above
+
+[Reference](https://en.cppreference.com/w/cpp/io/cout)
+
+#### Q108. Consider the following program. What will be the output/error?
+
+```cpp
+#include<iostream>
+#include<algorithm>
+#include<string.h>
+using namespace std;
+bool compare(char c1, char c2){
+return tolower(c1) > tolower(c2);    //LINE-1
+}
+int main(){
+char arr1[20] = "C++ Program", arr2[20] = "C Program";
+cout << lexicographical_compare(arr1, arr1+strlen(arr1), arr2, arr2+strlen(arr2),
+compare);
+return 0;
+}
+```
+
+- [x] 1
+- [ ] 0
+- [ ] -1
+- [ ] Compilation Error: function is not defined
+
+[Reference](https://www.geeksforgeeks.org/tolower-function-in-cpp/)
+
+#### Q109. Consider the following code segment. Fill in the blank at LINE-1 so that the program will print "not found"?
+
+```cpp
+#include <iostream>
+#include <algorithm>
+using namespace std;
+int main() {
+int data[] = {1,2,3,4,5};
+int key = 5;
+if(binary_search(__________))    //LINE-1
+cout << "found";
+else
+cout << "not found";
+return 0;
+}
+```
+
+- [ ] &data[0], &data[5], key
+- [ ] data, data+5, key
+- [x] &data[0], &data[4], key
+- [x] data+1, data+4, key
+
+[Reference](https://www.geeksforgeeks.org/binary-search-algorithms-the-c-standard-template-library-stl/)
+
+#### Q110. Consider the following code segment. What will be the output?
+
+```cpp
+#include <iostream>
+#include <algorithm>
+using namespace std;
+int main () {
+int data[] = {50, 30, 40, 10, 20};
+sort (&data[1], &data[4]);
+for (int i = 0; i < 5; i++)
+cout << data[i] << " ";
+return 0;
+}
+```
+
+- [ ] 10 20 30 40 50
+- [ ] 10 30 40 50 20
+- [x] 50 10 30 40 20
+- [ ] 50 10 20 30 40
+
+[Reference](https://cplusplus.com/reference/algorithm/sort/)
+
+#### Q111. Consider the following code segment. What will be the output?
+
+```cpp
+#include <iostream>
+#include <algorithm>
+using namespace std;
+int main() {
+int element[5];
+for(int i = 1; i <= 5; i++)
+*(element + i - 1) = i * 5;
+rotate(element, element + 4, element + 5);
+rotate(element, element + 1, element + 4);
+for (int i = 0; i < 5; ++i)
+cout << element[i] << " ";
+return 0;
+}
+```
+
+- [ ] 5 10 15 20 25
+- [x] 5 10 15 25 20
+- [ ] 20 10 15 25 5
+- [ ] 25 5 10 15 20
+
+[Reference](https://en.cppreference.com/w/cpp/algorithm/rotate)
+
+#### Q112. Consider the following code segment. What will be the output?
+
+```cpp
+#include <iostream>
+#include <vector>
+using namespace std;
+int main() {
+const int size = 3, c = 65;
+vector<char> vc(size, ’A’);
+for (int i = 1; i <= 2; i++)
+vc.push_back(65 + i);
+vc.resize(10, 90);
+vc.resize(8);
+for (int i = 0; i < vc.size(); i++)
+cout << vc[i] << " ";
+return 0;
+}
+```
+
+- [x] A A A B C Z Z Z
+- [ ] A A B B C Z Z Z
+- [ ] A A A B C Z Z
+- [ ] A A A B C Z Z Z Z
+
+[Reference](https://en.cppreference.com/w/cpp/container/vector)
+
+#### Q113. Consider the following code segment. Choose the appropriate option to fill in the blank at LINE-1, such that the output of the code would be: a C++ Program.
+
+```cpp
+#include <iostream>
+#include <string>
+using namespace std;
+int main(void) {
+string s1 = "C++ ";
+string s2 = "Program";
+__________________;    //LINE-1
+cout << s1;
+return 0;
+}
+```
+
+- [x] s1 += s2
+- [ ] strcat(s1, s2)
+- [x] s1.append(s2)
+- [ ] s1.insert(s2)
+
+[Reference](https://www.geeksforgeeks.org/stdstringappend-in-c/)
+
+#### Q114. Consider the following code segment. Fill in the blank at LINE-1 such that the output is 5 2 3 4 5
+
+```cpp
+#include <iostream>
+#include <algorithm>
+using namespace std;
+int main() {
+int data[] = { 1, 2, 3, 4, 5 };
+for (int i = 0; i < 1; i++) {
+int j = data[i];
+replace(data, data + 5, j, *(_________________));    //LINE-1
+}
+for (int i = 0; i < 5; ++i)
+cout << data[i] << " ";
+return 0;
+}
+```
+
+- [x] data + 4 - i
+- [ ] data + 5 - i
+- [ ] data + i - 4
+- [ ] data + i - 5
+
+[Reference](https://www.geeksforgeeks.org/stdstringreplace-stdstringreplace_if-c/)
+
+#### Q115. Consider the following code segment. What will be the output?
+
+```cpp
+#include <iostream>
+#include <cstring>
+#include <stack>
+using namespace std;
+int main(){
+char str[10] = "123456789";
+stack<char> s1, s2;
+int i;
+for(i = 0; i < strlen(str)/2; i++)
+s1.push(str[i]);
+for(i=i-1; i < strlen(str); i++)
+s2.push(str[i]);
+while (!s1.empty()) {
+s2.push(s1.top()); s1.pop();
+}
+while (!s2.empty()) {
+cout << s2.top(); s2.pop();
+}
+return 0;
+}
+```
+
+- [x] 1234987654
+- [ ] 123498765
+- [ ] 1234897654
+- [ ] 123459876
+
+[Reference](https://en.cppreference.com/w/cpp/container/stack)
+
+#### Q116. Consider the following code segment. Which statement/statements is/are correct?
+
+```cpp
+int i = 5;
+const int *p = &i;
+int * const q = &i;
+int const *r = &i;
+int const * const s = &i;
+*p = 10; //STMT-1
+*q = 10; //STMT-2
+*r = 10; //STMT-3
+*s = 10; //STMT-4
+```
+
+- [ ] STMT-1
+- [x] STMT-2
+- [ ] STMT-3
+- [ ] STMT-4
+
+[Reference](https://www.geeksforgeeks.org/const-keyword-in-cpp/)
+
+#### Q117. Consider the following program. What will be the output/error(s)?
+
+```cpp
+#include <iostream>
+using namespace std;
+char add(char c1 = ’a’) { return c1; }
+char add(char c1 = ’a’, char c2 = ’b’) { return c1 + c2 - ’a’;}
+char add(char c1 = ’a’, int d1 = 100){ return c1 + d1 - ’a’; }
+char add(char c1 = ’a’, char c2 = ’b’, char c3) { return c1 + c2 + c3 - ’a’; }
+int main() {
+char c = add(’o’, ’k’);
+cout << c << endl;
+return 0;
+}
+```
+
+- [ ] y
+- [ ] z
+- [x] Compilation Error: default argument missing for "char add(char, char, char)"
+- [x] Compilation Error: call of overload "add(char, char)" is ambiguous
+
+[Reference](https://learn.microsoft.com/en-us/cpp/cpp/function-overloading?view=msvc-170)
+
+#### Q118. Consider the following code segment. What will be the output?
+
+```cpp
+#include <iostream>
+using namespace std;
+#define SQR(x) (x)*(x)
+int main() {
+int a=3;
+cout << SQR(a++) << endl;
+return 0;
+}
+```
+
+- [x] 12
+- [ ] 25
+- [ ] 9
+- [ ] 16
+
+[Reference](https://www.geeksforgeeks.org/output-of-the-program-use-macros-carefully/)
+
+#### Q119. Consider the following code segment. Which line/s will give you an error?
+
+```cpp
+#include<iostream>
+#define X 1
+using namespace std;
+int main(){
+int i;
+const int i1 = 2;
+const int i2 = i1; //LINE-1
+i2 = X;
+i = i1;
+i1 = i;
+return 0;
+//LINE-2
+//LINE-3
+//LINE-4
+}
+```
+
+- [ ] LINE-1
+- [x] LINE-2
+- [ ] LINE-3
+- [x] LINE-4
+
+#### Q120. Consider the following code segment. What will be the output/error?
+
+```cpp
+#include<iostream>
+using namespace std;
+int main(){
+int a = 5;
+int &b = a+1;
+a = a*b;
+cout << a << " " << b;
+return 0;
+}
+```
+
+- [ ] 36
+- [ ] 30
+- [ ] 25
+- [x] Compilation Error: invalid initialization of non-const reference
+
+#Detailed explanation:
+The error is occurring because it is trying to create a reference to a temporary value. In the line int &b = a+1; we are attempting to create a reference b to the result of the expression a + 1, which is a temporary value. References must be bound to an actual object, not a temporary value or an expression that does not have a memory location.
+
+#### Q121. Consider the following code segment. What will be the output?
+
+```cpp
+#include <iostream>
+using namespace std;
+int& func(int& i) {     //LINE-1
+return i = i+5;
+}
+int main() {
+int x = 1, y = 2;
+int& z = func(x);
+cout << x << " " << z << " ";
+func(x) = y;
+cout << x << " " << z;
+return 0;
+}
+```
+
+- [x] 6 6 2 2
+- [ ] 6 6 7 7
+- [ ] 1 1 2 2
+- [ ] 1 1 7 7
+
+[Reference](https://www.ibm.com/docs/en/zos/2.4.0?topic=calls-pass-by-reference-c-only)
+
+#### Q122. Consider the following code segment. Choose the appropriate option to fill in the blanks at LINE-1, such that the output of the code would be: 300 20000.
+
+```cpp
+#include <iostream>
+using namespace std;
+void compute(int n1, int n2, ________, ________){ //LINE-1
+n3 = n1 + n2;
+*n4 = n1 * n2;
+}
+int main(){
+int a = 100, b = 200, c = 0, d = 0;
+compute(a, b, c, &d); //LINE-2
+cout << c << ", ";
+cout << d;
+return 0;
+}
+```
+
+- [ ] int n3, int\* n4
+- [x] int& n3, int \*n4
+- [ ] int* n3, int* n4
+- [ ] int& n3, int& n4
+
+#### Q123. Consider the following code segment. What will be the output/error?
+
+```cpp
+#include <iostream>
+using namespace std;
+int main() {
+int a = 2, *b;
+*b = 5;
+int * const ptr;    // LINE-1
+// LINE-2
+ptr = b;
+cout << *ptr;
+return 0;
+}
+```
+
+- [ ] `<garbage value>`
+- [ ] 5
+- [x] Compilation Error at LINE-1: uninitialized const ’ptr’
+- [x] Compilation Error at LINE-2: assignment of read-only variable ’ptr’
+
+#### Q124. Consider the following code segment. What will be the output/error?
+
+```cpp
+#include <iostream>
+using namespace std;
+void fun(int a = 5) { cout << a << endl; }
+//LINE-1
+int fun(int x = 10) { cout << x << endl; return 0; }    //LINE-2
+int main() {
+fun();
+return 0;
+}
+```
+
+- [ ] 5
+- [ ] 10
+- [ ] 5
+- [x] Compilation error at LINE-2: ambiguating new declaration of ’int fun(int)’
+
+#### Q125. Consider the following code segment. Fill in the blank at LINE-1 such that the program will print 5 + i3
+
+```cpp
+#include<iostream>
+using namespace std;
+struct complex{
+int re, im;
+void show(){ cout << re << " + i" << im; }
+};
+______________________________________{ //Line-1
+c2.re = c1.re+c2.re;
+c2.im = c1.im+c2.im;
+return c2;
+}
+int main(){
+struct complex c1={2,5},c2{3,-2};
+struct complex t = c1 + c2;
+t.show();
+return 0;
+}
+```
+
+- [x] complex operator+(complex &c1, complex &c2)
+- [ ] complex operator+(const complex &c1, const complex &c2)
+- [ ] operator+(complex &c1, complex &c2)
+- [ ] complex +(complex &c1, complex &c2)
+
+[Reference](https://www.w3schools.com/cpp/cpp_structs.asp)
+
+#### Q126. Consider the following program. Which line/s will generate an error?
+
+```cpp
+#include<iostream>
+using namespace std;
+class myClass{
+int pra = 5;
+public:
+int pub = 10;
+void set_pr(int x){ pra = x; }
+void set_pu(int x){ pub = x; }
+};
+int main(){
+myClass m;
+int a, b;
+a = m.pra; //LINE-1
+b = m.pub; //LINE-2
+m.set_pr(100); //LINE-3
+m.set_pu(200); //LINE-4
+return 0;
+}
+```
+
+- [x] LINE-1
+- [ ] LINE-2
+- [ ] LINE-3
+- [ ] LINE-4
+
+[Reference](https://stackoverflow.com/questions/4855422/c-classes-public-private-and-protected)
+
+#### Q127. Consider the following class. Fill in the blanks with proper access specifiers so that member y can be accessed from outside of the class but member x cannot be accessed.
+
+```cpp
+class Test{
+________:
+int x;
+________:
+int y;
+/* Some more code */
+};
+```
+
+- [ ] public, public
+- [ ] public, private
+- [ ] private, public
+- [x] private, private
+
+#### Q128. Which C++ Standard did add in-class default member initializers?
+
+- [ ] C++98
+- [x] C++11
+- [ ] C++14
+- [ ] C++17.
+
+#### Q129. Can you use auto type deduction for non-static data members?
+
+- [ ] Yes, since C++11
+- [x] No
+- [ ] Yes, since C++20
+
+#### Q130. Do you need to define a static inline data member in a cpp file?
+
+- [x] No, the definition happens at the same place where a static inline member is declared.
+- [ ] Yes, the compiler needs the definition in a cpp file.
+- [ ] Yes, the compiler needs a definition in all translation units that use this variable.
+
+[Reference](https://en.cppreference.com/w/cpp/language/bit_field)
+
+#### Q131. What's the output of the following code:
+
+```cpp
+struct S {
+    int a { 10 };
+    int b { 42 };
+};
+S s { 1 };
+std::cout << s.a << ", " << s.b;
+```
+
+- [ ] Output is: 1, 0
+- [ ] Output is: 10, 42
+- [x] Output is: 1, 42
+
+#### Q132. Can a static inline variable be non-constant?
+
+- [x] Yes, it's just a regular variable.
+- [ ] No, inline variables must be constant.
+
+#### Q133. Consider the following code:
+
+```cpp
+struct C {
+    C(int x) : a(x) { }
+    int a { 10 };
+    int b { 42 };
+};
+C c(0);
+
+```
+
+- [ ] C::a is initialized twice. The first time, it's initialized with 10, and then the second time with 0 in the constructor.
+- [x] C::a is initialized only once with 0 in the constructor.
+- [ ] The code doesn't compile because the compiler cannot decide how to initialize the C::a member.
+- [ ] 2 bytes
+
+#### Q134. What happens when you throw an exception from a constructor?
+
+- [ ] The object is considered "created" so it will follow the regular lifetime of an object.
+- [x] The object is considered "partially created," and thus, the compiler won't call its destructor.
+- [ ] he compiler calls std::terminate as you cannot throw exceptions from constructors.
+
+#### Q135. What happens when you compile this code?
+
+```cpp
+struct Point { int x; int y; };
+Point pt {.y = 10, .x = 11 };
+std::cout << pt.x << ", " << pt.y;
+```
+
+- [x] The code doesn't compile. Designators have to be in the same order as the data members in the Point class.
+- [ ] The code compiles and prints 11, 10.
+- [ ] The code compiles and prints 10, 11.
+
+#### Q136. Will this code work in C++11?
+
+```cpp
+struct User { std::string name = "unknown"; unsigned age { 0 }; };
+User u { "John", 101 };
+```
+
+- [ ] Yes, the code compiles in C++11 mode.
+- [x] The code compiles starting with C++14 mode.
+- [ ] The code doesn't compile even in C++20.
+
+#### Q137. Assume you have a std::map<string, int> m;. Select the single true statement about the following loop:
+
+```cpp
+for (const pair<string, int>& elem : m)
+```
+
+- [x] A The loop properly iterates over the map, creating no extra copies.
+
+- [ ] B The loop will create a copy of each element in the map as the type of elem mismatches.
+
+- [ ] C The code won't compile as a const pair cannot bind to a map.
+
+#### Q138. Identify the correct extension of the user-defined header file in C++.
+
+- [ ] .cpp
+- [ ] .hg
+- [x] .h
+- [ ] .hf
+
+#### Q139.Identify the incorrect constructor type.
+
+```cpp
+auto x = 4000.22;
+```
+
+- [x] Friend Constructor
+- [ ] Default Constructor
+- [ ] Parameterised Constructor
+- [ ] CopyConstructor
+
+#### Q140.Which of the following data types is supported in C++ but not in C?
+
+- [x] bool
+- [ ] int
+- [ ] double
+- [ ] float
+
+[Reference]: https://stackoverflow.com/questions/1608318/is-bool-a-native-c-type
+
+#### Q141. Identify the correct syntax for declaring arrays in C++.
+
+- [x] int arr[10]
+- [ ] array arr[10]
+- [ ] array{10}
+- [ ] int arr
+
+[Reference]: (https://en.cppreference.com/w/cpp/language/array)
+
+#### Q142.Size of wchat_t is.
+
+- [ ] 2
+- [ ] 4
+- [ ] 2 or 4
+- [x] Depends on the number of bits in the system
+
+#### Q143.Which of the following loops is best when we know the number of iterations?
+
+- [ ] while
+- [x] for
+- [ ] do
+- [ ] All of the above
+
+#### Q144.Which keyword is used to define the macros in C++?
+
+- [ ] #macro
+- [x] #define
+- [ ] macro
+- [ ] keyword
+
+#### Q145.Which of the following operators should be preferred to overload as a global function rather than a member method?
+
+- [ ] Postfix ++
+- [x] Comparison Operator
+- [ ] Insertion Operator <<
+- [ ] Prefix++
+
+#### Q146.How can we restrict the dynamic allocation of objects of a class using new?
+
+- [ ] By overloading new operator
+- [ ] By making an empty private new operator.
+- [x] By making an empty private new and new[] operators
+- [ ] By overloading new operators and new[] operators
+
+#### Q147.What is the time complexity of the below code?
+
+```cpp
+for(int i=0;i<n;i++){
+   for(int j=0;j<n;j++){
+       cout<<"hello";
+    }
+}
+```
+
+- [ ] O(n^3)
+- [x] O(n^2)
+- [ ] O(n)
+- [ ] O(1)
+
+[Reference]: https://medium.com/enjoy-algorithm/analysis-of-loop-in-programming-cc9a644ef8cd#:~:text=At%20each%20step%20of%20the%20iteration%2C%20the%20nested%20loop%20is,%20%3D%20O(n%C2%B2).
+
+#### Q148.What is the output of the code given below?
+
+```cpp
+int a=10;
+int k=++a;
+int m=a++;
+cout<<k+m;
+```
+
+- [ ] 20
+- [ ] 21
+- [x] 22
+- [ ] 23
+
+Both **++a** and **a++** increase the value of a by 1 (ie: 11) and hence k+m becomes 22.
+
+#### Q149. Which C++ construct is used for exception handling?
+
+- [x] try-catch
+- [ ] if-else
+- [ ] for loop
+- [ ] switch-case
+
+#### Q150. What is the purpose of the `break` statement in a loop in C++?
+
+- [ ] Exit the program
+- [ ] Skip the current iteration and continue with the next one
+- [x] Terminate the loop
+- [ ] Return a value
+
+[Reference]: (https://www.tutorialspoint.com/cprogramming/c_break_statement.htm)
+
+#### Q151. In C++, what is the purpose of the `const` keyword when used with a variable?
+
+- [x] It makes the variable immutable
+- [ ] It changes the data type
+- [ ] It defines a constant function
+- [ ] It makes the variable a pointer
+
+#### Q152. Which is more effective while calling the C++ functions??
+
+- [x] Call by reference
+- [ ] Call by value
+- [ ] Call by pointer
+- [ ] Call by object
+
+[Reference]: (https://www.algbly.com/More/MCQs/Cpp-mcq/Cpp-functions.html)
+
+#### Q153. What will be the output of the following C++ program?
+
+```cpp
+#include <iostream>
+using namespace std;
+class A{
+public:
+	A(){
+		cout<<"Constructor called\n";
+	   }
+	~A(){
+		cout<<"Destructor called\n";
+	    }
+};
+int main(int argc, char const *argv[])
+{
+	A *a = new A[5];
+	delete[] a;
+	return 0;
+}
+```
+
+- [ ] Segmentation fault
+- [x] “Constructor called” five times and then “Destructor called” five times
+- [ ] “Constructor called” five times and then “Destructor called” once
+- [ ] Error
+
+#### Q.154 What is the output of this code?
+
+```c++
+printf("1/2 = %f",(float)(1/2));
+```
+
+- [ ] 1/2 = 0.499999
+- [ ] 1/2 = 0
+- [x] 1/2 = 0.000000
+- [ ] 1/2 = 0.5
+
+#### Q.155 Which choice is _not_ related to declaring the member variable count as static in my_class?
+
+```cpp
+class my_class{
+    public: static int count;
+}
+```
+
+- [ ] All objects that try to access their count member variable actually refer to the only class-bound static count variable.
+- [ ] The variable exists even when no objects of the class have been defined, so it can be modified at any point in the source code.
+- [x] The variable cannot be modified by any part of the code in the same application or thread. However, other threads may modify it.
+- [ ] The variable is allocated only once, regardless of how many objects are instantiated, because it is bound to the class itself, not its instances.
+
+#### Q156. What is the purpose of the `constexpr` keyword in C++?
+
+- [ ] It is used to define constants in C++.
+- [ ] `constexpr` is used to specify that a variable is a constant pointer.
+- [x] `constexpr` is used to indicate that an expression can be evaluated at compile-time, making it suitable for use in constant expressions.
+- [ ] It is a keyword used to create asynchronous functions.
+
+[Ref](https://learn.microsoft.com/en-us/cpp/cpp/constexpr-cpp?view=msvc-170#:~:text=constexpr%20indicates%20that%20the%20value,template%20arguments%20and%20array%20declarations.)
+
+#### Q157. What is a template metaprogram in C++?
+
+- Ref(https://www.geeksforgeeks.org/template-metaprogramming-in-c/)
+
+- [ ] A template metaprogram is a high-level programming language.
+- [ ] It refers to metaprogramming that uses templates in C++.
+- [ ] It's a type of user interface design pattern.
+- [x] A template metaprogram is a compile-time computation, where templates and template specialization are used to perform computations at compile time.
+
+#### Q158.Identify the correct example for a pre-increment operator.
+
+- [x] ++i
+- [ ] i++
+- [ ] --i
+- [ ] +i
+
+#### Q159. What will be the output of following code?
+
+```cpp
+{% raw %}
+int matrix[3][3] = {{1, 2, 3},{4, 5, 6},{7, 8, 9}};
+for(int i=0;i<3;i++){
+    for(int j=0;j<3;j++){
+        int a = mat[i][j];
+        mat[i][j] = mat[j][i];
+        mat[j][i] = a;
+    }
+}
+{% endraw %}
+```
+
+- [ ] Traspose of matrix
+- [x] Same matrix
+- [ ] Mirror image of Matrix
+- [ ] Inverted matrix

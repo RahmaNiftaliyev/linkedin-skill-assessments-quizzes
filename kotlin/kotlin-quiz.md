@@ -32,7 +32,8 @@ class Airplane(private val name: String) : Aircraft() {
 - [ ] Abstract function always returns null
 - [x] A superclass is initialized before its subclass. Therefore, name has not been set before it is rendered
 
-[reference](https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/issues/4183#issuecomment-1214288158)
+[reference](https://kotlinlang.org/docs/inheritance.html#derived-class-initialization-order)
+[discussion](https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/issues/4183#issuecomment-1214288158)
 
 #### Q3. Kotlin interfaces and abstract classes are very similar. What is one thing abstract class can do that interfaces cannot?
 
@@ -74,7 +75,7 @@ fun add(a: Int, b: Int): Int {
 - [ ] `fun Main(){}`
 - [ ] `public static void main(){}`
 
-#### Q7. You are writing a console app in Kotlin that processes test entered by the user. If the user enters an empty string, the program exits. Which kind of loop would work best for this app? Keep in mind that the loop is entered at least once
+#### Q7. You are writing a console app in Kotlin that processes tests entered by the user. If the user enters an empty string, the program exits. Which kind of loop would work best for this app? Keep in mind that the loop is entered at least once
 
 - [x] a do..while loop
 - [ ] a for loop
@@ -87,7 +88,7 @@ fun add(a: Int, b: Int): Int {
 
 ```kotlin
 fun showHashCode(obj: Any){
-  println("${obj.hasCode()}")
+  println("${obj.hashCode()}")
 }
 fun main() {
   showHashCode(1)
@@ -98,6 +99,8 @@ fun main() {
 - [ ] The integer is always a class
 - [ ] The compiler runs an implicit `.toClass()` method on the integer
 - [x] The integer is autoboxed to a Kotlin Int class
+
+[reference](https://kotlinlang.org/docs/numbers.html#numbers-representation-on-the-jvm)
 
 #### Q9. You have started a long-running coroutine whose job you have assigned to a variable named **task**. If the need arose, how could you abort the coroutine?
 
@@ -114,14 +117,14 @@ val task = launch {
 
 [reference](https://kotlinlang.org/docs/cancellation-and-timeouts.html)
 
-#### Q10. You are attempting to assign an integer variable to a long variable, but Kotlin compiler flags it as an error. Why?
+#### Q10. You are attempting to assign an integer variable to a long variable, but the Kotlin compiler flags it as an error. Why?
 
-- [ ] You must wrap all implicit conversion in a try/catch block
+- [ ] You must wrap all implicit conversions in a try/catch block
 - [ ] You can only assign `Long` to an `Int`, not the other way around
 - [x] There is no implicit conversion from `Int` to `Long`
 - [ ] All integers in Kotlin are of type `Long`
 
-[reference](https://kotlinlang.org/docs/basic-types.html#explicit-conversions)
+[reference](https://kotlinlang.org/docs/numbers.html#explicit-number-conversions)
 
 #### Q11. You have written a snippet of code to display the results of the roll of a six-sided die. When the die displays from 3 to 6 inclusive, you want to display a special message. Using a Kotlin range, what code should you add?
 
@@ -129,8 +132,8 @@ val task = launch {
 when (die) {
   1 -> println("die is 1")
   2 -> println("die is 2")
-  ___ -> printlin("die is between 3 and 6")
-  else -> printlin("die is unknown")
+  ___ -> println("die is between 3 and 6")
+  else -> println("die is unknown")
 }
 ```
 
@@ -305,7 +308,7 @@ class Supervisor : Employee() {
 
 [reference](https://kotlinlang.org/docs/inheritance.html#calling-the-superclass-implementation)
 
-#### Q25. The code below compiled and executed without issue before the addition of the line declaring errorStatus. Why does this line break the code?
+#### Q25. The code below was compiled and executed without issue before the addition of the line declaring errorStatus. Why does this line break the code?
 
 ```kotlin
 sealed class Status(){
@@ -434,10 +437,12 @@ class UserService{
 
 #### Q35. Which snippet correctly shows setting the variable max to whichever variable holds the greatest value, a or b, using idiomatic Kotlin?
 
-- [x] `val max3 = a.max(b)` (Extension Function is One of the idiomatic Solutions in Kotlin)
+- [ ] `val max3 = a.max(b)`
 - [ ] `val max = a > b ? a : b`
-- [ ] `val max = if (a > b) a else b`
+- [x] `val max = if (a > b) a else b`
 - [ ] `if (a > b) max = a else max = b`
+
+[reference](https://kotlinlang.org/docs/idioms.html#if-expression)
 
 #### Q36. You have an enum class Signal that represents the state of a network connection. You want to print the position number of the SENDING enum. Which line of code does that?
 
@@ -542,7 +547,7 @@ val len: Int = if (x != null) x.length else -1
 - [ ] `val len:Int = (x != null)? x.length : -1`
 - [x] `val len = x?.length ?: -1`
 
-#### Q43. You are creating a Kotlin unit test library. What else should you add to make the following code compile without error?
+#### Q43. You are creating a Kotlin unit test library. What else you should add to make the following code compile without error?
 
 ```kotlin
 fun String.shouldEqual(value: String) = this == value
@@ -588,10 +593,10 @@ fun main() {
 }
 ```
 
-- [ ] Because name is a class parameter, not a property-it is unresolved `main()`.
+- [x] Because name is a class parameter, not a property-it is unresolved `main()`.
 - [ ] In order to create an instance of a class, you need the keyword `new`
 - [ ] The reference to name needs to be scoped to the class, so it should be `this.name`
-- [x] Classes cannot be immutable. You need to change `var` to `val`
+- [ ] Classes cannot be immutable. You need to change `var` to `val`
 
 Note: By default, constructor parameters can only be used in the initializer blocks or property initializers declared in the class body. Therefore, to let the `greet` function have access to the `name` parameter, it should be declared as a property: `class Cat (val name: String) { ... }`
 
@@ -639,7 +644,7 @@ fun main(){
 
 [reference](https://kotlinlang.org/docs/destructuring-declarations.html)
 
-#### Q49. This function generates Fibonacci sequence. Which function is missing?
+#### Q49. This function generates the Fibonacci sequence. Which function is missing?
 
 ```kotlin
 fun fibonacci() = sequence {
@@ -688,7 +693,7 @@ fun main() {
 - [ ] You cannot; the hash symbol is not a valid operator.
 - [ ] You should replace the word hash with octothorpe, the actual name for the symbol.
 - [x] You should use `minus` instead of hash, then type alias the minus symbol.
-- [ ] You need to replace operator with the word `infix`.
+- [ ] You need to replace the operator with the word `infix`.
 
 #### Q52. This code snippet compiles without error, but never prints the results when executed. What could be wrong?
 
@@ -736,7 +741,7 @@ val z = listOf(10, 20, 30, 40)
 - [ ] You add more elements to `z` since it is a list.
 - [ ] You can modify the contents of the elements in `z` but not `y`.
 
-#### Q55. The code snippet compile and runs without issue, but does not wait for the coroutine to show the "there" message. Which line of code will cause the code to wait for the coroutine to finish before exiting?
+#### Q55. The code snippet compiles and runs without issue, but does not wait for the coroutine to show the "there" message. Which line of code will cause the code to wait for the coroutine to finish before exiting?
 
 ```kotlin
 fun main() = runBlocking {
@@ -766,6 +771,8 @@ data class Student(val firstName: String, val lastName: String)
 - [ ] `println(students.groupingBy{ it.lastName.first() }.count())`
 - [ ] `println(students.groupingBy{ it.lastName.first() }.size())`
 
+[reference](https://kotlinlang.org/docs/collection-grouping.html)
+
 #### Q57. Class BB inherits from class AA. BB uses a different method to calculate the price. As shown, the code does not compile. What changes are needed to resolve the compilation error?
 
 ```kotlin
@@ -784,6 +791,8 @@ class BB() : AA() {
 - [x] You need to add an `open` modifier to `AA.price` and an `override` modifier to `BB.price`.
 - [ ] You need to add a `public` modifier to `AA.price` and a `protected` modifier to `BB.price`.
 
+[reference](https://kotlinlang.org/docs/inheritance.html#overriding-properties)
+
 #### Q58. What is the output of this code?
 
 ```kotlin
@@ -795,6 +804,8 @@ println("The length of the quote is $quote.length")
 - [ ] A compilation error is displayed.
 - [ ] The length of the quote is `21`
 - [x] The length of the quote is `The eagle has landed..length`
+
+[reference](https://kotlinlang.org/docs/strings.html#string-templates)
 
 #### Q59. You have an unordered list of high scores. Which is the simple method to sort the highScores in descending order?
 
@@ -808,6 +819,8 @@ fun main() {
 - [x] `.sortedDescending()`
 - [ ] `.sort("DESC")`
 
+[reference](https://kotlinlang.org/docs/collection-ordering.html#natural-order)
+
 #### Q60. Your class has a property name that gets assigned later. You do not want it to be a nullable type. Using a delegate, how should you declare it?
 
 - [ ] `lateinit var name: String` // lateinit is modifier not delegate
@@ -815,12 +828,16 @@ fun main() {
 - [x] `var name: String by Delegates.notNull()`
 - [ ] `var name: String? = null`
 
+[reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.properties/-delegates/)
+
 #### Q61. You want to know each time a class property is updated. If the new value is not within range, you want to stop the update. Which code snippet shows a built-in delegated property that can accomplish this?
 
 - [x] `Delegates.vetoable()`
 - [ ] `Delegates.cancellable()`
 - [ ] `Delegates.observer()`
 - [ ] `Delegates.watcher()`
+
+[reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.properties/-delegates/vetoable.html)
 
 #### Q62. Which line of code shows how to call a Fibonacci function, bypass the first three elements, grab the next six, and sort the elements in descending order?
 
@@ -844,7 +861,7 @@ val b = arrayOf(100, 200, 3000)
 - [x] `val c = listOf(*a, *b)`
 - [reference](https://www.baeldung.com/kotlin/combine-arrays#arrayof-and-the-spread-operator)
 
-#### Q64. This code is occasionally throwing a null pointer exception (NPE). How can you change the code so it never throws as NPE?
+#### Q64. This code occasionally throws a null pointer exception (NPE). How can you change the code so it never throws as NPE?
 
 ```kotlin
 println("length of First Name = ${firstName!!.length}")
@@ -915,6 +932,8 @@ fun main() {
 - [ ] `_.moveTo("LA")`
 - [ ] `it.moveTo("LA")`
 
+[reference](https://kotlinlang.org/docs/scope-functions.html#run)
+
 #### Q69. For the Product class you are designing, you would like the price to be readable by anyone, but changeable only from within the class. Which property declaration implements your design?
 
 - [ ] Option 1
@@ -966,12 +985,16 @@ fun main() {
 - [x] The message "Invoked from an instance." is displayed. // the second "()" is equals to .invoke()
 - [ ] A compile error occurs. You cannot override the `invoke()` method.
 
+[reference](https://kotlinlang.org/docs/operator-overloading.html#invoke-operator)
+
 #### Q71. Which statement declares a variable mileage whose value never changes and is inferred to be an integer?
 
 - [ ] `val mileage:Int = 566`
 - [ ] `var mileage:Int = 566`
 - [x] `val mileage = 566` (Note: inferred)
 - [ ] `const int mileage = 566`
+
+[reference](https://kotlinlang.org/docs/properties.html#getters-and-setters)
 
 #### Q72. What is the preferred way to create an immutable variable of type long?
 
@@ -980,7 +1003,7 @@ fun main() {
 - [x] `val longInt = 10L`
 - [ ] `val longInt:Long = 10`
 
-#### Q73. Which line converts the binaryStr, whish contain only 0s and 1s, to an integer representing its decimal value?
+#### Q73. Which line converts the binaryStr, which contains only 0s and 1s, to an integer representing its decimal value?
 
 ```kotlin
 val binaryStr = "00001111"
@@ -1030,11 +1053,11 @@ fun sort(list: List<T>): List <T> {
 - [ ] final means that you cannot use interfaces with this class.
 - [ ] final means that this is the only file that can use the class.
 - [x] final means that you cannot extend the class.
-- [ ] final classes cannot be used in the finally section of a try/catch block.
+- [ ] final classes cannot be used in the final section of a try/catch block.
 
 [reference](https://kotlinlang.org/docs/inheritance.html)
 
-#### Q78. You have created an array to hold three strings. When you run the code bellow, the compiler displays an error. Why does the code fail?
+#### Q78. You have created an array to hold three strings. When you run the code below, the compiler displays an error. Why does the code fail?
 
 ```
 val names = arrayOf<String>(3)
@@ -1056,7 +1079,7 @@ names[3]= "Delta"
 
 [reference](https://kotlinlang.org/docs/classes.html#secondary-constructors)
 
-#### Q80. When you can omit constructor keyword from the primary constructor?
+#### Q80. When you can omit the constructor keyword from the primary constructor?
 
 - [ ] It can be omitted only if an init block is defined.
 - [ ] It can be omitted anytime; it is not mandatory.
@@ -1084,7 +1107,7 @@ names[3]= "Delta"
 
 [reference](https://kotlinlang.org/docs/visibility-modifiers.html)
 
-#### Q83. The code below compiles and executes without issue, but is not idiomatic kotlin. What is a better way to impelement the `printlln()`?
+#### Q83. The code below compiles and executes without issue, but is not idiomatic kotlin. What is a better way to implement the `printlln()`?
 
 ```kotlin
 fun main() {
@@ -1101,7 +1124,7 @@ fun main() {
 
 [reference](https://kotlinlang.org/docs/basic-syntax.html#string-templates)
 
-#### Q84. You have enum class Signal that represent state of network connection. You want to iterate over each the member of the enum. Which line of code shows how to do that `?
+#### Q84. You have enum class Signal that represents a state of the network connection. You want to iterate over each member of the enum. Which line of code shows how to do that `?
 
 - [ ] Signal.sequence().
 - [ ] Signal.toArray().
@@ -1110,7 +1133,7 @@ fun main() {
 
 [reference](https://kotlinlang.org/docs/enum-classes.html#working-with-enum-constants)
 
-#### Q85. You'd like to create multiline string that includes the carriage return characther. What should you use to enclose the string?
+#### Q85. You'd like to create a multiline string that includes the carriage return character. What should you use to enclose the string?
 
 - [ ] Double quotes("").
 - [ ] Single quotes(').
@@ -1128,7 +1151,7 @@ fun main() {
 
 [reference](https://kotlinlang.org/docs/visibility-modifiers.html#class-members)
 
-#### Q87. which line of code shows how to create a finite sequence of the numbers 1 to 99 and then convert it into a list?
+#### Q87. Which line of code shows how to create a finite sequence of the numbers 1 to 99 and then convert it into a list?
 
 - [x] val lessThan99 = generateSequence(1){ if (it < 99) it + 1 else null }.toList().
 - [ ] val lessThan99 = generateSequence(0){ if (it < 99)}.toList().
@@ -1139,13 +1162,208 @@ fun main() {
 
 #### Q88. What is wrong with this class definition?
 
-```class Empty
+```
+class Empty
 
 ```
 
 - [x] The class is properly defined, so nothing is wrong with it.
 - [ ] The parentheses are missing-it should be declared as class Empty().
 - [ ] Empty is a Kotlin keyword, so the code will generate an error when compiled.
-- [ ] The curely braces are missing from the declaration of Empty.
+- [ ] The curly braces are missing from the declaration of Empty.
 
 [reference](https://kotlinlang.org/docs/classes.html)
+
+#### Q89. What is a higher-order function in Kotlin?
+
+- [ ] A higher-order function is a function that returns a value other than Unit.
+- [ ] A higher-order function is the function that appears before others in a file.
+- [ ] A higher-order function is one that can be stored in a variable.
+- [x] A higher-order function is a function that takes a function as a parameter or returns a function.
+
+[reference](https://kotlinlang.org/docs/lambdas.html)
+
+#### Q90. What is Kotlin?
+
+- [ ] A markup language commonly used for web development.
+- [x] A general-purpose, statically typed, open-source programming language.
+- [ ] A relational database management system.
+- [ ] A web framework for building dynamic web applications.
+
+#### Q91. Who developed Kotlin?
+
+- [ ] Google
+- [ ] Apple
+- [ ] Microsoft
+- [x] JetBrains
+
+#### Q92. Which of the following platforms can Kotlin be used for?
+
+- [x] Android app development
+- [x] Server-side applications
+- [x] Web development
+- [x] Desktop application development
+
+#### Q93. What are some key features of Kotlin?
+
+- [x] Conciseness
+- [x] Null safety
+- [x] Full Java interoperability
+- [x] Smart Cast
+- [x] Extension functions
+- [ ] Automatic memory management
+
+#### Q94. Why do some developers switch to Kotlin from Java?
+
+- [x] Kotlin is more concise and cleaner.
+- [x] Kotlin offers useful features not present in Java.
+- [x] Kotlin has good support for Android development.
+- [x] Kotlin is interoperable with Java.
+- [x] All of the above
+
+#### Q95. How does Kotlin work on Android?
+
+- [ ] Kotlin code is compiled directly into machine code.
+- [ ] Kotlin code is interpreted at runtime.
+- [x] Kotlin code is compiled into Java bytecode and runs on the JVM.
+- [ ] Kotlin code is compiled into C++ code for Android.
+
+#### Q96. What is the difference between variable declaration with `var` and `val` in Kotlin?
+
+- [x] `var` is used for mutable variables, while `val` is used for immutable variables.
+- [ ] `var` is used for immutable variables, while `val` is used for mutable variables.
+- [ ] `var` and `val` are interchangeable; there is no difference.
+- [ ] `var` and `val` are used for completely different purposes.
+
+#### Q97. What is the difference between variable declaration with `val` and `const` in Kotlin?
+
+- [ ] There is no difference; `val` and `const` can be used interchangeably.
+- [ ] `val` variables must be initialized at compile-time, while `const` variables can be initialized at runtime.
+- [ ] `const` is used for mutable variables, while `val` is used for immutable variables.
+- [x] `const` is used for compile-time constants, while `val` is used for immutable variables that can be initialized at runtime.
+
+#### Q98. How can you create a singleton in Kotlin?
+
+- [ ] By defining a private constructor in the class.
+- [x] By using an `object`.
+- [ ] By declaring a class as `final`.
+- [ ] By implementing the `Singleton` interface.
+
+#### Q99. What is a primary constructor in Kotlin?
+
+- [ ] It is a constructor that can only be called from within the same class.
+- [ ] It is a constructor that has no parameters.
+- [x] It is the constructor defined in the class header.
+- [ ] It is a constructor that is used for deserialization.
+
+#### Q100. What do you understand by Null safety in Kotlin?
+
+- [x] Null safety is a feature that helps prevent null pointer exceptions in code.
+- [ ] Null safety is a way to force variables to always have null values.
+- [ ] Null safety is a technique for creating nullable variables.
+- [ ] Null safety is a feature to allows null values without checks.
+
+[reference](https://blog.logrocket.com/complete-guide-null-safety-kotlin/)
+
+#### Q101. How can you ensure null safety in Kotlin?
+
+- [ ] By using the `!!` operator to force variables to be non-null.
+- [x] By using safe calls (`?.`) and the Elvis operator (`?:`).
+- [ ] By declaring all variables as nullable.
+- [ ] Null safety cannot be ensured in Kotlin.
+
+#### Q102. What is a data class in Kotlin?
+
+- [ ] A class used for storing confidential data.
+- [x] A class designed to hold data with automatically generated methods.
+- [ ] A class used to create instances of other classes.
+- [ ] A class used to define the structure of data in a database.
+
+#### Q103. What is the default behavior of Kotlin classes?
+
+- [ ] All classes are open by default.
+- [x] All classes are final by default.
+- [ ] All classes are abstract by default.
+- [ ] All classes are static by default.
+
+#### Q104. Does Kotlin provide support for primitive data types?
+
+- [x] No, Kotlin does not provide support for primitive data types like in Java.
+- [ ] Yes, Kotlin supports primitive data types in addition to objects.
+- [ ] Only for certain primitive data types, such as `int`.
+- [ ] Yes, Kotlin provides support for primitive data types like in Java.
+
+#### Q105. Does Kotlin provide support for macros?
+
+- [ ] Yes, Kotlin has a rich set of macros for code generation.
+- [ ] No, Kotlin does not support macros.
+- [x] Yes, Kotlin supports macros for advanced metaprogramming.
+- [ ] Macros are not needed in Kotlin as it use a different approach.
+
+#### Q106. What is the use of the `open` keyword in Kotlin?
+
+- [ ] The `open` keyword is used to declare a variable as mutable.
+- [x] The `open` keyword is used to allow a class or function to be subclassed or overridden.
+- [ ] The `open` keyword is used to specify a class as abstract.
+- [ ] The `open` keyword is used to indicate that a variable is always null.
+
+#### Q107. What do you understand by the Ranges operator in Kotlin?
+
+- [x] The Ranges operator is used to iterate within a range of values.
+- [ ] The Ranges operator is used to perform bitwise operations.
+- [ ] The Ranges operator is used to concatenate strings.
+- [ ] The Ranges operator is used for logical comparisons.
+
+#### Q108. Where should we use `var` and `val` in Kotlin?
+
+- [ ] `var` and `val` can be used interchangeably; there is no difference.
+- [x] Use `var` for mutable variables and `val` for immutable variables.
+- [ ] Use `var` for integers and `val` for strings.
+- [ ] Use `var` for class properties and `val` for local variables.
+
+#### Q109. What is the difference between a safe call (`?.`) and a null check (`!!`) in Kotlin?
+
+- [x] The safe call (`?.`) checks if a variable is null and returns null if it is, while the null check (`!!`) throws a `KotlinNullPointerException` if the variable is null.
+- [ ] The safe call (`?.`) and null check (`!!`) perform the same operation.
+- [ ] The safe call (`?.`) and null check (`!!`) both return the value of the variable if it is null.
+- [ ] The safe call (`?.`) and null check (`!!`) are not valid Kotlin operators.
+
+#### Q110. What is the basic difference between `fold` and `reduce` in Kotlin?
+
+- [x] `fold` takes an initial accumulator value and applies a binary operation to the elements and the accumulator, while `reduce` uses the first element as the initial accumulator value.
+- [ ] `fold` and `reduce` are equivalent and can be used interchangeably.
+- [ ] `fold` can only be used with collections, while `reduce` can be used with any data type.
+- [ ] `fold` and `reduce` are both used for filtering elements in a collection.
+
+#### Q111. What are the advantages of "when" over "switch" in Kotlin?
+
+- [x] "when" in Kotlin is more concise and powerful than "switch" in Java.
+- [ ] "when" in Kotlin is less flexible than "switch" in Java.
+- [ ] "when" in Kotlin can only be used with integers.
+- [ ] "when" in Kotlin is less efficient than "switch" in Java.
+
+#### Q112. Why does this code snippet not compile?
+
+```kotlin
+interface Vehicle
+
+fun main() {
+  val myCar = Vehicle()
+}
+```
+
+- [x] Vehicle is an interface.
+- [ ] Vehicle needs an init block.
+- [ ] The keyword new is missing.
+- [ ] Vehicle lacks a constructor.
+
+[reference](https://kotlinlang.org/docs/interfaces.html)
+
+#### Q113. What is the difference between a primary constructor and a secondary constructor in Kotlin?
+
+- [x] A primary constructor is declared in the class header, while a secondary constructor is declared in the class body.
+- [ ] A primary constructor can have only one parameter, while a secondary constructor can have multiple parameters.
+- [ ] A primary constructor must initialize all of the class's properties, while a secondary constructor does not have to initialize all of the class's properties.
+- [ ] A primary constructor can only be called once, while a secondary constructor can be called multiple times.
+
+[reference](https://kotlinlang.org/docs/classes.html#constructors)

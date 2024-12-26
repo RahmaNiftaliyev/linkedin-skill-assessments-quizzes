@@ -296,9 +296,9 @@
 
 #### Q43. What is the relationship between SAM template and CloudFormation template files?
 
-- [ ] SAM templates are a superset of CloudFormation templates. SAM templates include additional resource types.
 - [ ] SAM templates have some overlap with CloudFormation templates. Both SAM and CloudFormation templates include resource types that are not in the other type of template.
-- [x] CloudFormation templates are a superset of SAM templates. CloudFormation templates include additional resource types.
+- [x] SAM templates are a superset of CloudFormation templates. SAM templates include additional resource types.
+- [ ] CloudFormation templates are a superset of SAM templates. CloudFormation templates include additional resource types.
 - [ ] SAM templates are a different name for CloudFormation templates. Both template types include the same resource types.
 
 #### Q44. What service deploys Lambdas regionally?
@@ -324,7 +324,7 @@
 
 #### Q47. You want to minimize cold start time for your Lambda. What do you do?
 
-- [ ] Add extra code to check if the transient cache, or the /tmp directory, has the data that you stored.
+- [x] Add extra code to check if the transient cache, or the /tmp directory, has the data that you stored.
 - [ ] Add extra code to check if the permanent cache, or the /cache directory, has the data that you stored.
 - [ ] Do nothing. AWS minimizes cols start time by default.
 - [ ] Create a warm-up Lambda that calls your Lambda every minute
@@ -344,8 +344,10 @@
 
 - [ ] at the function level
 - [ ] at the alias or function level
-- [ ] at the version, alias, or function level
+- [x] at the version, alias, or function level
 - [ ] at the version or function level
+
+[Reference](https://docs.aws.amazon.com/lambda/latest/dg/access-control-resource-based.html)
 
 #### Q50. Lambda can read events from which other AWS services? (ref-https://docs.aws.amazon.com/lambda/latest/dg/lambda-services.html)
 
@@ -422,7 +424,7 @@
 
 #### Q59. You need to quickly understand execution times for two different Lambda functions with different invocation types: asynchronous and synchronous. What do you do?
 
-- [ ] Enable tracing, rerun the lambdas, and view in the lambda console
+- [x] Enable tracing, rerun the lambdas, and view in the lambda console
 - [ ] View the logs in CloudTrail
 - [ ] View the logs in CloudWatch
 - [ ] Enable tracing, rerun the Lambdas, and view in the X-Ray console
@@ -432,4 +434,216 @@
 - [ ] AWS SAM
 - [ ] AWS CLI
 - [ ] AWS CloudFormation
-- [ ] AWS SAM CLI
+- [x] AWS SAM CLI
+
+#### Q61. Your function failed to execute due to a timeout. What type of error is this?
+
+- [ ] Caller
+- [x] Runtime
+- [ ] Request
+- [ ] Account
+
+#### Q62. A company will be modernizing their application which is currently running on Amazon Elastic Cloud Compute (EC2) instances. They have experience with scaling this infrastructure using Amazon EC2 Autoscaling. They want to move to serverless infrastructure consisting of an Amazon API Gateway that triggers Lambda functions. They are consulting you about scaling this new infrastructure. What should the company consider in order to make sure the serverless infrastructure scales to their needs?
+
+- [ ] Enable Auto Scaling Groups for AWS Lambda to ensure that enough Lambda functions are ready to handle the incoming requests
+- [ ] Throttle Lambda functions by configuring reserved concurrency, sending the excess traffic to Dead Letter Queues (DLQ) that will be handled when the request volume reduces.
+- [x] Look at service limits for Amazon API Gateway and Lambda functions used in order to identify potential bottlenecks and balance performance requirements, costs, and business impact
+- [ ] Do nothing. API Gateway and AWS Lambda are managed services that have built-in horizontal scaling, security, and high availability to handle unlimited amount of requests
+
+**Explanation**
+
+- `In serverless it is important to understand the service limits of all the services used end to end to understand the level of requests that can be handled.`
+
+#### Q63. Can we use pakages with AWS Lambda?
+
+- [ ] No, AWS Lambda does not support the use of external packages.
+- [x] Yes, AWS Lambda supports the use of custom and NPM packages
+- [ ] AWS Lambda only supports built-in packages.
+- [ ] Packages can be used but require additional fees.
+
+#### Q64. Are AWS Lambda functions available and to what extent?
+
+- [ ] AWS Lambda functions are available 24/7 without any limitations.
+- [ ] AWS Lambda functions are available but may experience scheduled downtimes.
+- [x] AWS Lambda functions are highly available with redundancy and replications.
+- [ ] AWS Lambda functions are available only during business hours.
+
+#### Q65. Is there any default limit to be applied at a functional level?
+
+- [ ] Yes, there is a default limit to be applied at a functional level.
+- [x] No, there is no default limit to be applied at a functional level.
+- [ ] The default limit depends on the AWS Lambda service plan.
+- [ ] Functional limits are set by users during configuration.
+
+#### Q66. How long can an AWS Lambda function execute?
+
+- [ ] 60 seconds
+- [x] 300 seconds
+- [ ] 600 seconds
+- [ ] 30 seconds
+
+#### Q67. How does AWS Lambda secure my code?
+
+- [ ] AWS Lambda stores code in plaintext without encryption
+- [x] AWS Lambda encrypts and stores it in Amazon S3.
+- [ ] AWS Lambda does not provide any security measures for code.
+- [ ] AWS Lambda relies on third-party security tools for code protection.
+
+#### Q68. Which languages are supported by AWS Lambda?
+
+- [x] Python, C#, JavaScript and Java
+- [ ] Ruby, PHP, Swift
+- [ ] C++ and Rust
+- [ ] # HTML and CSS
+  In serverless it is important to understand the service limits of all the services used end to end to understand the level of requests that can be handled.
+
+#### Q63. What does AWS Lambda mean?
+
+- [ ] a) AWS Lambda is a database service offered by AWS.
+- [x] b) AWS Lambda is a serverless computing service provided by AWS.
+- [ ] c) AWS Lambda is a machine learning framework developed by AWS.
+- [ ] d) AWS Lambda is an IoT platform developed by AWS.
+
+#### Q64. What restrictions apply to AWS Lambda function code?
+
+- [x] a) Lambda imposes restrictions on the use of outbound network connections.
+- [ ] b) Lambda imposes restrictions on trace calls for debugging.
+- [ ] c) Lambda allows unlimited TCP port 25 traffic.
+- [ ] d) Lambda imposes restrictions on the execution time of functions.
+
+#### Q65. How long can an AWS Lambda function execute?
+
+- [ ] a) 60 seconds
+- [x] b) 300 seconds
+- [ ] c) 600 seconds
+- [ ] d) 30 seconds
+
+#### Q66. How does AWS Lambda secure my code?
+
+- [ ] a) AWS Lambda stores code in plaintext without encryption.
+- [x] b) AWS Lambda encrypts code and stores it in Amazon S3.
+- [ ] c) AWS Lambda does not provide any security measures for code.
+- [ ] d) AWS Lambda relies on third-party security tools for code protection.
+
+#### Q67. Which languages are supported by AWS Lambda?
+
+- [x] a) Python, C#, JavaScript, and Java
+- [ ] b) Ruby, PHP, and Swift
+- [ ] c) C++ and Rust
+- [ ] d) HTML and CSS
+
+#### Q68. What is the definition of Auto-Scaling?
+
+- [ ] a) Auto-Scaling is a feature that automatically scales AWS Lambda functions.
+- [x] b) Auto-Scaling is a feature that automatically scales AWS EC2 instances.
+- [ ] c) Auto-Scaling is a feature that automatically scales AWS S3 storage.
+- [ ] d) Auto-Scaling is a feature that automatically scales AWS RDS databases.
+
+#### Q69. Is the infrastructure accessible on which the AWS Lambda runs?
+
+- [ ] a) Yes, users have full access to the underlying infrastructure.
+- [x] b) No, AWS Lambda abstracts the underlying infrastructure and does not provide access.
+- [ ] c) Users have access to infrastructure but with limited permissions.
+- [ ] d) Users can request access to infrastructure from AWS support.
+
+#### Q70. Can I use packages with AWS Lambda?
+
+- [ ] a) No, AWS Lambda does not support the use of external packages.
+- [x] b) Yes, AWS Lambda supports the use of custom and NPM packages.
+- [ ] c) AWS Lambda only supports built-in AWS packages.
+- [ ] d) Packages can be used but require additional fees.
+
+#### Q71. Are AWS Lambda functions available and to what extent?
+
+- [ ] a) AWS Lambda functions are available 24/7 without any limitations.
+- [ ] b) AWS Lambda functions are available but may experience scheduled downtimes.
+- [x] c) AWS Lambda functions are highly available with redundancy and replication.
+- [ ] d) AWS Lambda functions are available only during business hours.
+
+#### Q72. Is there any default limit to be applied at a functional level?
+
+- [ ] a) Yes, there is a default limit applied at a functional level.
+- [x] b) No, there is no default limit applied at a functional level.
+- [ ] c) The default limit depends on the AWS Lambda service plan.
+- [ ] d) Functional limits are set by users during configuration.
+
+#### Q73. You are using lambda (with large ram allocations) to process videos uploaded to S3 and to convert from their video format to H264. However the operation fails when dealing with particularly large video files. What is the cause of this?
+
+- [x] The default 5 mintutes timeout.
+- [ ] Lambda does not allow vedio encoding.
+- [ ] s3 transfer bottlenecks
+- [ ] s3 cannot talk to Lambda
+
+#### Q74. What is an AWS service or application that triggers a Lambda to run?
+
+- [ ] an input trigger
+- [ ] an input event
+- [x] an event source
+- [ ] an event trigger
+
+**Explanation**
+
+- `An event source is an AWS service or developer-created application that produces events that trigger an AWS Lambda function to run. Some services publish these events to Lambda by invoking the cloud function directly (for example, Amazon S3).` https://aws.amazon.com/lambda/faqs/#:~:text=An%20event%20source%20is%20an,for%20example%2C%20Amazon%20S3
+
+#### Q75. What does a Lambda need to access DynamoDB tables?
+
+- [ ] HTTPS certificate
+- [x] IAM role permissions
+- [ ] DynamoDB SDK
+- [ ] admin role
+- [ ]
+
+#### Q76. Which of the following is true about AWS Lambda pricing?
+
+- [ ] You are charged based on the number of Lambda functions you create.
+- [x] You are charged for each Lambda invocation and the duration of execution time.
+- [ ] You are charged based on the memory allocated to the function, irrespective of invocation.
+- [ ] You are charged a flat monthly fee for using Lambda.
+
+**Explanation**
+
+- AWS Lambda charges are based on the number of requests (invocations) and the duration of time the code runs. Lambda pricing is based on the total number of requests and the time your code runs (in increments of 1 millisecond) from the start of the function until it returns or otherwise terminates. The duration is rounded up to the nearest 1ms.
+
+#### Q77. What is the maximum execution timeout for an AWS Lambda function?
+
+- [ ] 5 minutes
+- [x] 15 minutes
+- [ ] 60 minutes
+- [ ] 10 minutes
+
+**Explanation**
+
+- AWS Lambda allows a maximum execution timeout of 15 minutes for a single invocation. After 15 minutes, the function will be automatically terminated, even if the function's process is still running. This is useful for long-running tasks but imposes a limit to ensure scalability and efficiency.
+
+#### Q78. Which of the following triggers can NOT directly invoke a Lambda function?
+
+- [ ] Amazon S3
+- [x] Amazon RDS
+- [ ] Amazon DynamoDB Streams
+- [ ] Amazon API Gateway
+
+**Explanation**
+
+- Amazon RDS (Relational Database Service) cannot directly trigger a Lambda function. RDS is a managed database service and does not have built-in functionality to trigger Lambda directly. However, other services like S3, DynamoDB Streams, and API Gateway can trigger Lambda functions when specific events occur (e.g., file uploads, data changes, API calls).
+
+#### Q79. You work for a company that has an AWS cloud deployment utilizing Lambda functions for various tasks. You need to select the appropriate resource types and sizes for these tasks. How should you optimize the amount of memory configured for Lambda functions on your AWS cloud?
+
+- [ ] Use CloudTrail to track all API calls made on the system.
+- [x] Use CloudWatch to monitor memory-bound functions.
+- [ ] Utilize CloudFront for caching data for end users.
+- [ ] Create a new VPC with an AWS Batch computing environment in it.
+
+**Explanation**
+
+- `You would use CloudWatch to monitor memory-bound functions and create an alarm when memory consumption nears a preset limit. This will help you find out when memory consumption reaches close to the preset maximum value so that you can avoid processing bottlenecks by increasing the configured memory for the functions. AWS CloudWatch allows you to monitor the AWS system in real time by monitoring and tracking resource metrics.`
+
+#### Q80. You are running a photo-sharing website using various AWS services. You have an AWS Lambda function that performs image resizing and cropping whenever a user uploads a picture to an S3 bucket. You need to find a way to allow other AWS accounts and services to invoke this function when necessary. What would you do to implement this functionality?
+
+- [ ] Use an identity-based policy to grant the needed permissions.
+- [x] Use a resource-based policy to grant the needed permissions.
+- [ ] Create an IAM user group to allow access to resources.
+- [ ] Set the permissions for the S3 bucket to public.
+
+**Explanation**
+
+- `You would use a resource-based policy to grant the needed permissions. A resource-based policy is attached to an AWS resource such as an Amazon Simple Storage Service (S3) bucket, a virtual private cloud (VPC) endpoint, AWS Key Management Service (KMS) encryption keys, and Amazon Simple Queueing Service (SQS) queues. Using a resource-based policy, you specify the principal who can access the resource and their permissible actions on the resource. A principal can be an account, user, role, or session principal. Session principals can be IAM federated users or role sessions. Policies are AWS objects that specify the permissions of an identity or a resource. You can choose an identity-based or resource-based policy when you create a permissions policy for restricted access to resources.`

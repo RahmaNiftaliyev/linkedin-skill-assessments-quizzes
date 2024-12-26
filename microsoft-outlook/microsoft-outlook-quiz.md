@@ -7,7 +7,7 @@
 - [ ] email messages
 - [ ] appointments and meetings
 
-#### Q2. What is the default permission that other people in your organization have to your calendar?
+#### Q2. What is the default permission that other people in your organization have with respect to your calendar?
 
 - [x] They can view free/busy details only.
 - [ ] They can edit.
@@ -16,14 +16,14 @@
 
 [Reference](https://support.microsoft.com/en-us/office/share-an-outlook-calendar-with-other-people-353ed2c1-3ec5-449d-8c73-6931a0adab88)
 
-#### Q3. Your boss sends you an email with a request to set up a meeting and copies all meeting attendees on the message. What is the fastest way to create the calendar appointment
+#### Q3. Your boss sends you an email with a request to set up a meeting and copies all meeting attendees on the message. What is the fastest way to create the calendar appointment?
 
 - [ ] Click New Items > New Appointment.
 - [ ] Click Calendar > New Meeting, and then copy and paste information as needed.
 - [x] with the email open, click Meeting on the Home ribbon or Message tab.
 - [ ] Click Reply All.
 
-#### Q4. You are running low on Outlook storage space. How might you address this problem?
+#### Q4. You are running low on Outlook storage space. How would you address this problem?
 
 - [x] all of these answers
 - [ ] Archive messages you are done with.
@@ -106,12 +106,12 @@ C. Read receipts are expensive, so some organizations turn them off.
 - [ ] The Delete Key
 - [x] Clean Up Conversation
 
-#### Q15. You have sent several emails to a customer and have not received a response. What option do you set to know whether the customer receives your messages?
+#### Q15. You have sent several message to a customer and have not received a response. Which option can you use to determine if the message was successfully transmitted to the customer?
 
-- [x] Delivery receipt
-- [ ] All of these answers
-- [ ] Read receipt
-- [ ] Tracking
+- [ ] tracking
+- [ ] read receipt
+- [x] delivery receipt
+- [ ] out of office
 
 #### Q16. A message on your summary list appears with a paper clip icon and an arrow pointing to the left. What does this indicate?
 
@@ -134,7 +134,7 @@ C. Read receipts are expensive, so some organizations turn them off.
 - [ ] Drag the email message and drop it on the Tasks icon
 - [ ] Right click the email message, drag and drop it on the Tasks icon, and click Move Here as Task with Attachment
 
-#### Q19. There are two types of Outlook rules. One is server-based rules, which run for Exchange Server. What are the other kind, which in part or in whole cannot run on Exchange Server, and when do the execute?
+#### Q19. There are two types of Outlook rules. One is server-based rules, which run for Exchange Server. What is the other kind, which in part or in whole cannot run on Exchange Server, and when do they execute?
 
 - [x] client-only rules; when Outlook is running
 - [ ] Outlook-based rules; when Outlook is running
@@ -148,12 +148,12 @@ C. Read receipts are expensive, so some organizations turn them off.
 - [ ] Create a rule to apply conditional formatting to all messages where you are in the CC line
 - [x] Turn on Focused Inbox
 
-#### Q21. How can you quickly locate emails with large attachment?
+#### Q21. How can you quickly locate emails with large attachments?
 
-- [ ] Sort the messages by size then filter by Has: Attachments
+- [ ] Sort the messages by size then filter by **Has: Attachments**
 - [ ] Sort the messages by sender
-- [ ] Sort the messages by Has: Attachments and then filter by Is: Large
-- [x] Sort the messages by Has: Attachments and then by size
+- [ ] Sort the messages by **Has: Attachments** and then filter by **Is: Large**
+- [x] Sort the messages by **Has: Attachments** and then by size
 
 #### Q22. What is not a built-in search filter for message folder?
 
@@ -162,12 +162,12 @@ C. Read receipts are expensive, so some organizations turn them off.
 - [ ] Categorized
 - [ ] Not sent directly to me
 
-#### Q23. You created a meeting for next Friday at 1 PM, and several invitees have accepted. How do you change only your version of the meeting to 12 PM to allow time to setup?
+#### Q23. You created a meeting for next Friday at 1 p.m., and several invitees have accepted. How do you change only your version of the meeting to 12 p.m. to allow yourself time to set up?
 
-- [ ] Double click the meeting to open its form, and then change the start time and close it
-- [ ] None of these answers
-- [ ] Open the calendar in Day, Week, or Work Week view and drag the start time to 12 PM
-- [x] You must create a separate appointment for yourself from 12 PM to 1 PM
+- [ ] You cannot—instead, create a separate appointment for yourself from 12 p.m. to 1 p.m.
+- [x] Double-click the meeting to open its form, change the start timer and close the form.
+- [ ] Double-click the meeting to open its form, change the reminder to 1 hour, and click **Save**
+- [ ] Open the calendar in Day, Week, or Work Week view and drag the start time to 12 p.m.
 
 #### Q24. What is the fastest way to find a message sent by Bonnie Bradford that includes an attachment?
 
@@ -176,7 +176,7 @@ C. Read receipts are expensive, so some organizations turn them off.
 - [x] All of these answers
 - [ ] Enter "Bonnie Bradford attachment" in the search box
 
-#### Q25. Each category must have a unique \_
+#### Q25. When creating color categories for conversations, each category must have a unique \_\_\_\_\_
 
 - [ ] color
 - [ ] folder
@@ -213,12 +213,12 @@ C. Read receipts are expensive, so some organizations turn them off.
 - [ ] the current date in Day view
 - [ ] the current date in Week view
 
-#### Q30. When you @mention a colleague in an email message, what does not happen?
+#### Q30. When you @mention a colleague in an email message, what does _not_ happen?
 
-- [ ] Your colleague's name is highlighted in the message
-- [x] The colleague is automatically added to the To line
-- [ ] @ appears next to the message in your colleague's Inbox
-- [ ] @ appears next to the email in your Sent items folder (Sent folder in Outlook for Mac)
+- [ ] Your colleague's name is highlighted in the message.
+- [x] The colleague is automatically added to the To line.
+- [ ] @ appears next to the colleague's name in the body of the email in your colleague's Inbox.
+- [ ] @ appears next to the email in your Sent items folder (Windows) or Sent folder (Mac).
 
 #### Q31. What is an appropriate use for voting buttons?
 
@@ -240,14 +240,14 @@ C. Some people have already accepted, so you must cancel this meeting and create
 - [x] A or B
 - [ ] A
 
-#### Q33. What permission allows your delegates to read, create, change, and delete items that they create, but not items that you created?
+#### Q33. What permission level allows your delegates to read, create, change, and delete items that _they_ created, but not items that _you_ created?
 
 - [ ] Reader
 - [x] Author
 - [ ] Reviewer
 - [ ] Editor
 
-#### Q34. Why might you create an additional contacts folder?
+#### Q34. Why would you create an additional contacts folder?
 
 - [x] To store contacts to share with colleagues
 - [ ] To avoid exceeding 500 contacts per folder limit
@@ -291,10 +291,10 @@ C. Some people have already accepted, so you must cancel this meeting and create
 - [x] Group By
 - [ ] By Sender
 
-#### Q40. You have a contact folder for members and you need to track two additional pieces of member information: start date and last renewal. What is the simplest wat to track this information?
+#### Q40. You have a contact folder for members and you need to track two additional pieces of member information: start date and last renewal. What is the simplest way to track this information?
 
 - [ ] Export your contacts to Excel, which ash lots of columns; add the data; and then import the contacts back to Outlook
-- [ ] Use the Field Chooser to create two new columns of type Date in the folder
+- [x] Use the Field Chooser to create two new columns of type Date in the folder
 - [ ] Create a custom contacts form that includes two text boxes to collect this data
 - [ ] All of these answers
 
@@ -307,7 +307,7 @@ C. Because the unread messages count for the Inbox folder will not include Proje
 D. Because you cannot create a search folder for a subfolder
 ```
 
-- [ ] A and C
+- [x] A and C
 - [ ] A, C, and D
 - [ ] A and B
 - [ ] B and D
@@ -319,31 +319,32 @@ D. Because you cannot create a search folder for a subfolder
 - [ ] user; new messages and replies
 - [ ] user; new messages and replies or forwards
 
-#### Q43. While using Focused Inbox, you notice that Outlook sometimes puts important messages from a specific customer on the other tab. How do you fix this for future messages?
+#### Q43. While using Focused Inbox, you notice that Outlook sometimes puts important messages from a specific customer on the **Other** tab. How do you fix this for all future messages?
 
-- [x] Right-click a message that was incorrectly organized and click Move to Focused.
-- [ ] Right-click a message that was incorrectly organized and click Always Move to Focused.
-- [ ] Close the Outlook application and relaunch.
-- [ ] Locate that customer in the People Hub and select the Focused check box.
+- [ ] Right-click (Windows) or Control+click (Mac) a message that was incorrectly organized and select **Prioritize**.
+- [x] Right-click (Windows) or Control+click (Mac) a message that was incorrectly organized and select **Always Move to Focused**.
+- [ ] On the **People** page, open the customer's contact card and assign a **Color Category**.
+- [ ] Locate that customer in the **People** page and select the **Focused** check box.
 
 #### Q44. In the Outlook interface shown below, why is the Show as Conversations option grayed out?
 
 - [ ] The Inbox folder is sorted by size.
 - [ ] The People peek is open and Sally Kerner's card has focus.
-- [ ] Focused Inbox is being used.
+- [x] Focused Inbox is being used.
 - [ ] The People peek is open and has focus.
 
 #### Q45. Suppose you select a message in Focused Inbox and then chose Move to Other, but the message does not move. What is the most likely cause?
 
-- [ ] Clutter is prioritizing the messages.
+- [x] Clutter is prioritizing the messages.
 - [ ] Your mailbox is not ser for random synchronization.
 - [ ] The mailbox is offline.
 - [ ] The mailbox is a shared mailbox.
+      [Reference](https://support.microsoft.com/en-us/office/focused-inbox-for-outlook-f445ad7f-02f4-4294-a82e-71d8964e3978)
 
 #### Q46. For efficiency, how should you save a search that you run frequently?
 
-- [x] as a search folder (Smart Folder on Mac)
-- [ ] none of these answers
+- [x] as a search folder (Windows) or Smart Folder (Mac)
+- [ ] by typing the search term in the **Search** box, right-clicking, and selecting **Add to Favorites**
 - [ ] as a column
 - [ ] as a criteria set
 
@@ -379,17 +380,18 @@ D. Because you cannot create a search folder for a subfolder
 
 #### Q51. When adding a calendar to view, which is not a valid option?
 
-- [ ] From Internet
+- [x] From Internet
 - [ ] From Contacts
 - [ ] From Address Book
 - [ ] From Room List
+      [Reference](https://learn.microsoft.com/en-us/outlook/troubleshoot/calendaring/cannot-add-an-internet-calendar)
 
 #### Q52. Which criteria can you select to filter email in the Focused folder?
 
-- [ ] unread status
-- [ ] importance
+- [x] unread status
+- [x] importance
 - [ ] message size
-- [ ] date received
+- [x] date received
 
 #### Q53. A meeting reminder showed up and you accidently closed it. What is the best way to bring back the reminder when in Calendar view?
 
@@ -417,7 +419,7 @@ D. Because you cannot create a search folder for a subfolder
 - [ ] importance level
 - [ ] priority level
 - [ ] category
-- [ ] due date
+- [x] due date
 
 #### Q57. What happens when you drag an email to the Calendar icon?
 
@@ -458,7 +460,7 @@ D. Because you cannot create a search folder for a subfolder
 
 - [ ] Create subcategories for the folders based on frequency of use.
 - [ ] Assign the frequently used folders to the same color category.
-- [ ] Save the folders to Favorites.
+- [x] Save the folders to Favorites.
 - [ ] Assign each folder a priority number.
 
 #### Q63. You accidentally delete an email from your inbox. How can you retrieve the deleted email?
@@ -492,20 +494,22 @@ D. Because you cannot create a search folder for a subfolder
 #### Q67. In Outlook, a rule is applied to
 
 - [ ] contacts
-- [ ] messages
+- [x] messages
 - [ ] tasks
 - [ ] meetings
+      [Reference](https://support.microsoft.com/en-gb/office/manage-email-messages-by-using-rules-c24f5dea-9465-4df4-ad17-a50704d66c59_
 
 #### Q68. You want to change the default font used for new messages and in the Notes field in Calendar, Contacts, and Tasks. How do you do this?
 
 - [ ] Change the fonts used for mail in File > Options > Mail > Stationery and Fonts (Windows) or Outlook > Preferences > Fonts (Mac). The fonts used in the Notes field in Calendar, Contacts, and Tasks cannot be changed.
 - [ ] Click File > Options > General > Stationery and Fonts (Windows) or Outlook > Preferences > Composing (Mac).
-- [ ] Click File > Options > Mail > Stationery and Fonts (Windows) or Outlook > Preferences > Fonts (Mac).
+- [x] Click File > Options > Mail > Stationery and Fonts (Windows) or Outlook > Preferences > Fonts (Mac).
 - [ ] Select the desired font in a new message. Outlook will use it for future messages and notes.
+      [Reference](https://answers.microsoft.com/en-us/outlook_com/forum/all/change-note-font-size-in-outlook-365/cf130bfa-6c7f-4f1c-b42d-223c82ec6468)
 
 #### Q69. What does the Groups section contain in Outlook?
 
-- [ ] Microsoft 365 Groups you are a member of
+- [x] Microsoft 365 Groups you are a member of
 - [ ] Microsoft 365 Groups across your company
 - [ ] Contact Groups across your company
 - [ ] Contact Groups you have created
@@ -515,7 +519,7 @@ D. Because you cannot create a search folder for a subfolder
 - [ ] The calendar view is not displaying properly. Click Reset View to fix it.
 - [ ] When you add a category to an appointment, the category color is used as the background color.
 - [ ] You have an appointment that ends after midnight.
-- [ ] You have an all-day event marked as Busy, Out of Office, or Tentative.
+- [x] You have an all-day event marked as Busy, Out of Office, or Tentative.
 
 #### Q71. You are having difficulty reading an email due to the small text size. What is the easiest way to make this email more readable?
 
@@ -528,7 +532,7 @@ D. Because you cannot create a search folder for a subfolder
 
 - [ ] Change the From field to your colleague's email address.
 - [ ] Forward the email to the colleague before anyone responds.
-- [ ] Click Delivery Options > Have Replies sent to.
+- [x] Click Delivery Options > Have Replies sent to.
 - [ ] Include the colleague's email address in the To field.
 
 #### Q73. The commands on which bar are available in all Outlook applications?
@@ -536,7 +540,7 @@ D. Because you cannot create a search folder for a subfolder
 - [ ] the Simplified Ribbon
 - [ ] To-Do Bar
 - [ ] Quick Access Toolbar
-- [ ] Navigation Bar
+- [x] Navigation Bar
 
 #### Q74. To keep your Inbox folders organized and lean, where should you move old messages?
 
@@ -554,12 +558,12 @@ D. Because you cannot create a search folder for a subfolder
 - [ ] The contents are moved to Deleted Items, and then the empty folder is moved to Deleted Items.
 - [x] The folder and its contents are moved to Deleted Items at the same time.
 
-#### Q76. You are organizing your Outlook folders. For all emails that are sent directly to you, they should appear in your inbox. For all emails on which you are cc'd, they should be automatically hidden for later review. What is the best way to accomplish these goals?
+#### Q76. You are organizing your Outlook folders. For all emails that are sent _directly_ to you, they should appear in your Inbox. For all emails on which you are cc'd, they should be automatically hidden for later review. What is the best way to accomplish these goals?
 
 - [x] Create a Cc'd folder, and then create a rule to move all messages where you are on the cc line to that folder.
-- [ ] Create a rule to move all messages where you are in the Cc line to the Deleted items folder.
+- [ ] Create a rule to move all messages where you are in the cc line to the Deleted Items folder.
 - [ ] Turn on Focused Inbox.
-- [ ] Create a rule to apply conditional formatting to all messages where you are in the Cc line.
+- [ ] Create a rule to apply conditional formatting to all messages where you are in the cc line.
 
 #### Q77. What is the easiest way to add the contact of someone who sent you an email?
 
@@ -673,17 +677,17 @@ D. Because you cannot create a search folder for a subfolder
 
 #### Q92. You have a meeting from 2 to 3 p.m. next friday and have been invited to a second meeting in a different bulding starting at 3 p.m.. You want to attend both meetings but need time to get from the first to the second. What is an efficient way to respond to the organizer of the second meeting to allot 30 minutes of travel?
 
-- [ ]
-- [ ]
+- [ ] `&shy;`
+- [ ] `&shy;`
 - [ ] decline and propose new time
 - [x] tenctative and propose new time
 
 #### Q93. What happens when you try to add new account on Outlook?
 
 - [x] transmission
-- [ ]
-- [ ]
-- [ ]
+- [ ] `&shy;`
+- [ ] `&shy;`
+- [ ] `&shy;`
 
 #### Q94. When you back up or export your contacts directly from Outlook without using additional applications, what type of file will you export?
 
@@ -693,3 +697,46 @@ D. Because you cannot create a search folder for a subfolder
 - [ ] DOCX Windows) or DOCM (Mac)
 
 [Reference link](https://www.codetwo.com/admins-blog/export-outlook-contacts/)
+
+#### Q95. Without leaving the Email page, which is the most efficient way to add the contact of someone who sent you an email?
+
+- [x] Copy and paste their email address into a new contact form.
+- [ ] Open the email and press Ctrl+Q (Windows) or Command + Q (Mac).
+- [ ] On Windows, right-click the sender's name in the message and select Add to Outlook Contacts. On Mac, Control+click the sender's name in the message and select Open Outlook contact > Add to Contacts > Save and then Close.
+- [ ] Double-click the sender's email address in the message and select Add to Outlook Contacts (Windows) or Open Outlook contacts (Mac).
+
+#### Q96. Why would you change the Outlook setting to **Work Offline**? You can adjust this setting on the Send and Receive tab (Windows) or the **Outlook** menu (Mac).
+
+- [ ] It stops incoming emails but allows outgoing emails.
+- [ ] It disconnects the computer from the network to avoid network slowdowns.
+- [ ] It allows incoming emails but stops outgoing emails.
+- [x] It disconnects Outlook from the server to stop incoming and outgoing emails to avoid sending or receiving messages while using a slow or unstable connection, or to avoid being charged for connection while traveling.
+      [Reference](https://support.microsoft.com/en-us/office/work-offline-in-outlook-f3a1251c-6dd5-4208-aef9-7c8c9522d633)
+
+#### Q97. You are working in Outlook and need to share contacts folder with Abby, Baldur and Javier. You assign Javier **\_** permissions so he can **create, edit, and delete his own items and those created by others**. Abby and Baldur need to **view all the items, add contacts, and edit the contacts they create**, so you grant them **\_** permissions.
+
+- [x] Editor; Author
+- [ ] Owner; Author
+- [ ] Editor; Reviewer
+- [ ] Author; Reviewer
+
+#### Q98. Shanti Keller is the only person named Shanti in your contacts. You have typed "Shanti" in the To address box, and the name Shanti Adams appears. Why might this happen?
+
+- [ ] Shanti Adams appears in your coworker's personal contact list. Although you and your coworker do not share an Outlook account, Shanti Adams appears in your personal contacts, too.
+- [ ] Shanti Adams was mentioned in a Teams meeting and was listed in the Meeting Insights without an email address.
+- [x] You previously received and replied to an email from Shanti Adams. Autocomplete is now automatically suggesting her name and email address.
+- [ ] It is random. If you type "Shanti" again, Shanti Keller may appear.
+
+#### Q99. What happens when you add an additional email account in Outlook?
+
+- [ ] Outlook stops you because you can only use one email account at a time.
+- [x] Outlook prompts you for the transmission protocol you would like to use.
+- [ ] Outlook automatically applies the default configurations.
+- [ ] Outlook prompts you to remove an exisiting account first.
+
+## Q100. You recieved a message with five attachments and need to save all of them in your Documents folder. How can you efficiently accomplish this?
+
+- [ ] Click the **Download All** link below the attachments (Windows) or expand the attachment menu and select **Save All Attachments** (Mac)
+- [ ] Open each attachment and use the Save command in the application to save to your Documents folder.
+- [ ] Expand the attachment menu and select **Save All Attachments** (Windows) or click the **Download All** (Mac) link below the attachments.
+- [x] Right-click (Windows) or Control+click (Mac) the message and select **Save All Attachments**.

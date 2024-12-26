@@ -84,7 +84,7 @@
 - [ ] Zookeeper; commercial software
 - [x] Zookeeper; open source
 
-#### Q13. For high availability, use multiple nodes of which type?
+#### Q13. For high availability, which type of multiple nodes should you use?
 
 - [ ] data
 - [x] name
@@ -182,7 +182,7 @@
 - [ ] external schema
 - [x] schema on read
 
-#### Q27. HDFS file are of what type?
+#### Q27. HDFS files are of what type?
 
 - [ ] read-write
 - [ ] read-only
@@ -216,7 +216,7 @@
 
 - [ ] Override the default Partitioner.
 - [ ] Skip bad records.
-- [ ] Break up Mappers that do more than one task into multiple Mappers.
+- [x] Break up Mappers that do more than one task into multiple Mappers.
 - [ ] Combine Mappers that do one task into large Mappers.
 
 #### Q32. When implemented on a public cloud, with what does Hadoop processing interact?
@@ -282,7 +282,7 @@
 - [ ] operating system
 - [ ] productivity tool
 
-#### Q41. If no reduction is desired, you should set the numbers of \_ tasks to zero
+#### Q41. If no reduction is desired, you should set the numbers of \_ tasks to zero.
 
 - [ ] combiner
 - [x] reduce
@@ -296,14 +296,14 @@
 - [ ] combiner
 - [x] counter
 
-#### Q43. \_ is the query language, and \_ is storage for NoSQL on Hadoop
+#### Q43. \_ is the query language, and \_ is storage for NoSQL on Hadoop.
 
 - [ ] HDFS; HQL
 - [x] HQL; HBase
 - [ ] HDFS; SQL
 - [ ] SQL; HBase
 
-#### Q44. MapReduce 1.0 \_ YARN
+#### Q44. MapReduce 1.0 \_ YARN.
 
 - [x] does not include
 - [ ] is the same thing as
@@ -320,7 +320,7 @@
 #### Q46. HQL queries produce which job types?
 
 - [ ] Impala
-- [ ] MapReduce
+- [x] MapReduce
 - [ ] Spark
 - [ ] Pig
 
@@ -362,7 +362,7 @@
 - [ ] lookup store
 - [ ] registry
 
-#### Q52. To view the execution details of an Impala query plan, which function would you use ?
+#### Q52. To view the execution details of an Impala query plan, which function would you use?
 
 - [x] explain
 - [ ] query action
@@ -376,7 +376,7 @@
 - [ ] replication
 - [ ] high availability
 
-[Reference](https://hadoop.apache.org/docs/r1.2.1/hdfs_design.html#:~:text=is%20not%20supported.-,Snapshots,known%20good%20point%20in%20time.)
+[Reference](https://hadoop.apache.org/docs/r1.2.1/hdfs_design.html#Snapshots)
 
 #### Q54. Hadoop Common is written in which language?
 
@@ -415,7 +415,7 @@
 
 #### Q59. To get information about Reducer job runs, which object should be added?
 
-- [ ] Reporter
+- [x] Reporter
 - [ ] IntReadable
 - [ ] IntWritable
 - [ ] Writer
@@ -425,7 +425,7 @@
 - [ ] all data
 - [ ] no data
 - [ ] existing data
-- [ ] new data
+- [x] new data
 
 #### Q61. Which statement should you add to improve the performance of the following query?
 
@@ -440,7 +440,7 @@ FROM customers c;
 - [ ] GROUP BY
 - [ ] FILTER
 - [ ] SUB-SELECT
-- [ ] SORT
+- [x] SORT
 
 #### Q62. What custom object should you implement to reduce IO in MapReduce?
 
@@ -451,7 +451,7 @@ FROM customers c;
 
 #### Q63. You can optimize Hive queries using which method?
 
-- [ ] secondary indices
+- [x] secondary indices
 - [ ] summary statistics
 - [ ] column-based statistics
 - [ ] a primary key index
@@ -473,7 +473,7 @@ FROM customers c;
 #### Q66. When you implement a custom Writable, you must also define which of these object?
 
 - [ ] a sort policy
-- [ ] a combiner policy
+- [x] a combiner policy
 - [ ] a compression policy
 - [ ] a filter policy
 
@@ -493,7 +493,7 @@ FROM customers c;
 
 #### Q69. To see how Hive executed a JOIN operation, use the \_ statement and look for the \_ value.
 
-- [ ] EXPLAIN; JOIN Operator
+- [x] EXPLAIN; JOIN Operator
 - [ ] QUERY; MAP JOIN Operator
 - [ ] EXPLAIN; MAP JOIN Operator
 - [ ] QUERY; JOIN Operator
@@ -504,3 +504,46 @@ FROM customers c;
 - [ ] Three
 - [ ] Four
 - [ ] Five
+
+#### Q71. After loading data, **\_** and then run a(n) **\_** query for interactive queries.
+
+- [x] invalidate metadata; Impala
+- [ ] validate metadata; Impala
+- [ ] invalidate metadata; Hive
+- [ ] validate metadata; Hive
+
+#### Q72. In Hadoop MapReduce job code, what must be static?
+
+- [ ] configuration
+- [x] Mapper and Reducer
+- [ ] Mapper
+- [ ] Reducer
+
+[Reference](https://stackoverflow.com/questions/14828131/do-mappers-and-reducers-in-hadoop-have-to-be-static-classes)
+
+#### Q73. In Hadoop simple mode, which object determines the identity of a client process?
+
+- [ ] Kerberos ticket
+- [ ] kubernetes token
+- [ ] guest operating system
+- [x] host operating system
+
+[Reference](http://doc.isilon.com/ECS/3.2/DataAccessGuide/vipr_c_hdfs_security_model.html)
+
+#### Q74. Which is not a valid input format for a MapReduce job?
+
+- [x] FileReader
+- [ ] CompositeInputFormat
+- [ ] RecordReader
+- [ ] TextInputFormat
+
+[Reference](https://hadoop.apache.org/docs/stable/api/org/apache/hadoop/mapred/InputFormat.html#:~:text=All%20Known%20Implementing%20Classes)
+
+#### Q75. If you see org.apache.hadoop.mapred, which version of MapReduce are you working with?
+
+- [x] 1.x
+- [ ] 0.x
+- [ ] 2.x
+- [ ] 3.x
+
+[Reference](https://www.edureka.co/community/40266/what-is-the-difference-between-mapred-and-mapreduce)

@@ -161,7 +161,7 @@
 - [x] \$lookup
 - [ ] \$project
 
-#### Q24. For your mobile application, you need to select a Google cloud databse that can support compound, filtered document queries. Which do you choose?
+#### Q24. For your mobile application, you need to select a Google cloud database that can support compound, filtered document queries. Which do you choose?
 
 - [ ] Cloud SQL
 - [ ] Cloud Spanner
@@ -180,7 +180,7 @@
 - [ ] Neo4j
 - [ ] Cassandra
 - [x] Redis
-- [ ] MyS#### QL
+- [ ] MySQL
 
 #### Q27. SQL databases and NoSQL are which types of scalable?
 
@@ -295,7 +295,7 @@ MATCH (c:Company {name: 'Neo4j'}) RETURN c, MATCH (p:Person) WHERE p.name = 'Jen
 MATCH (t:Technology)-[:LIKES]-(a:Person {name: 'Jennifer'}) RETURN t.type;
 ```
 
-- [ ] B
+- [x] B
 
 ```
 MATCH (c:Company {name: 'Neo4j'}) RETURN c, MATCH (p:Person) WHERE p.name = 'Jennifer' RETURN p,
@@ -315,6 +315,8 @@ AND MATCH (t:Technology)-[:LIKES]-(a:Person {name: 'Jennifer'}) RETURN t.type;
 MATCH (c:Company {name: 'Neo4j'}) RETURN c;MATCH (p:Person) WHERE p.name = 'Jennifer' RETURN p;
 MATCH (t:Technology)-[:LIKES]-(a:Person {name: 'Jennifer'}) RETURN t.type;
 ```
+
+[Explanation:]The correct Cypher code to execute a multiquery block would use commas to separate each query in a single statement. In this case, option B has all the queries separated by commas, making it the correct choice. Option A has the correct queries, but they are separated by "RETURN" which is not correct syntax for multiquery. Option C has an additional "AND" before the second query which is also not correct syntax. Option D has each query separated by semicolons, which would execute them as separate queries, not as a multiquery block.
 
 #### Q42. You need to create a scalable database that supports immutable writes. What do you use?
 
@@ -365,4 +367,29 @@ MATCH (t:Technology)-[:LIKES]-(a:Person {name: 'Jennifer'}) RETURN t.type;
 - [ ] a graph database
 - [ ] a ledger database
 
+#### Q49. Which command gets all documents in a MongoDB datastore where the status equals A or the quantity is less than 30?
+
+- [ ] db.inventory.find( { status: "a", qty: { $lt: 30 } } )
+- [x] db.inventory.find( { $or: [ { status: "A" }, { qty: { $lt: 30 } } ] } )
+- [ ] db.inventory.find( { status: "A", qty: { $lt: 30 } } )
+- [ ] db.inventory.find( { $or: [ { status: "a" }, { qty: { $lt: 30 } } ] } )
+
 [store and query JSON](https://aws.amazon.com/nosql/document/#:~:text=The%20document%20database%20defined,use%20in%20their%20application%20code.)
+
+#### Q50. Benefit of using NoSQL database?
+
+- [ ] Strict data modeling
+- [ ] Limited scalability
+- [x] Easy schema evolution
+- [ ] Limited data storage capacity
+
+[Explanation:]One of the benefits of using NoSQL databases is easy schema evolution. NoSQL databases are designed to handle flexible data models, which can be easily modified and updated as the data evolves. This makes it easier to handle changing.
+
+#### Q51. NoSQL databases are most often referred to as?
+
+- [ ] Relational
+- [x] Distributed
+- [ ] Object-oriented
+- [ ] Network
+
+[Explanation:]Since this non-relational database design does not require a schema, it offers rapid scalability to manage large and typically unstructured data sets. NoSQL is also type of distributed database, which means that information is copied and stored on various servers, which can be remote or local.

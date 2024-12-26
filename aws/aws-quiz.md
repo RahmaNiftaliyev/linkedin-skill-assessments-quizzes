@@ -4,8 +4,8 @@
 
 - [ ] cost
 - [ ] ease of maintenance vs. granularity of control
-- [x] all of these answers
 - [ ] the current storage engine used by the application, such as InnoDB or MyISAM
+- [x] All of the above
 
 #### Q2. Which database is a NoSQL database type that can quickly store and retrieve key-value pairs?
 
@@ -25,17 +25,17 @@
 
 - [ ] CodePipeline
 - [ ] CodeDeploy
-- [x] all of these answers
 - [ ] CodeBuild
+- [x] All of the above
 
 #### Q5. Which AWS service complies with the standards outlined in Payment Card Industry Data Security Standard (PCI DSS) Level 1 for the handling and transmission of credit card data?
 
 - [ ] API Gateway
-- [x] all of these answers
 - [ ] Simple Queue Service (SQS)
 - [ ] Kinesis Data Streams
+- [x] All of the above
 
-#### Q6. You have a large amount of files on your network-attached storage array that must be archived and maintained for a period of 10 years due to industry regulations. This data will be infrequently accessed but must be kept What is the best AWS service for storing this data?
+#### Q6. You have a large amount of files on your network-attached storage array that must be archived and maintained for a period of 10 years due to industry regulations. This data will be infrequently accessed but must be kept. What is the best AWS service for storing this data?
 
 - [ ] EFS
 - [ ] Snowball
@@ -47,7 +47,7 @@
 - [ ] Create an AM role for the account administrator with the highest privileges. Do not store the root password, but when the root account is needed reset the password on the root account via email confirmation and repeat this procedure.
 - [ ] Store your randomly generated password in your organizational secrets database using a service such as 1Password or LastPass, and only grant access to this secret to the DevOps team.
 - [ ] Create IAM accounts for your administrators and attach the AdministratorAccess policy to their accounts. Disable the root account in the user settings.
-- [x] Create an IAM role for the account administrator with the highest privileges and do not use the root account in day-today operations. Enable two-factor authentication on the root account
+- [x] Create an IAM role for the account administrator with the highest privileges and do not use the root account in day-to-day operations. Enable two-factor authentication on the root account
 
 #### Q8. Which Elastic Load Balancing option supports Lambda as a target?
 
@@ -69,7 +69,7 @@
 
 - [ ] All images in the AWS Marketplace incur additional hourly fees in addition to the charges from the instance size you select.
 - [ ] You can only launch images that were created by other users on your AWS account, so you pay only for the instance size you select and the S3 storage costs for the base image.
-- [x] Each image has its own pricing that could either be free, or include charges for software licensing costs. You will also pay for the instance the image runs on
+- [x] Each image has its own pricing that could either be free or include charges for software licensing costs. You will also pay for the instance the image runs on
 - [ ] All images in the AWS Marketplace contain only open-source software with no additional fees and are created by other AWS users. You will pay only for the instance size you select.
 
 #### Q11. When using an ECS cluster with EC2 instances, what maintenance tasks should you perform on the EC2s?
@@ -114,7 +114,7 @@
 - [ ] The primary key should be a partition key of the title field.
 - [ ] The primary key should be the title field and the partition key should be the genres field.
 - [ ] The primary key should be a composite key comprised of a partition key on the title field and a sort key on the year field.
-- [x] The primary key should be created as a completely unique value, such a sequential numerical list of movie IDs. The partition key should be title field for fast lookup.
+- [x] The primary key should be created as a completely unique value, such as a sequential numerical list of movie IDs. The partition key should be the title field for fast lookup.
 
 #### Q16. What data store provides a simple and quick way of storing basic user attributes in an object-based format?
 
@@ -123,7 +123,7 @@
 - [ ] Neptune
 - [x] DynamoDB
 
-#### Q17. You need a schemaless database. Which Amazon database service provides that solution?
+#### Q17. You need a schematic database. Which Amazon database service provides that solution?
 
 - [ ] ORDS
 - [ ] Aurora
@@ -155,7 +155,7 @@
 
 - [ ] Check the routing tables for the VPC.
 - [x] Verify that the assigned security groups allow TCP port 1433 traffic from your current IP address.
-- [ ] Check the policies within Windows Firewall.
+- [ ] Check the policies within the Windows Firewall.
 - [ ] Verify that you are connecting to the instance using a user that is not sa.
 
 #### Q22. You are hosting an application configured to stream media to its clients on TCP ports 3380-3384, 3386-3388, and 3390. The Inbound tab below shows three incoming security group policies attached to this instance. Which policy should you use?
@@ -240,7 +240,7 @@
 
 #### Q31. What's the best practice for horizontally scaling a legacy ASP.NET web application that relies on Active Directory and is currently deployed to a single Windows EC2 instance?
 
-- [x] Use Sysprep to shut down the instance during a maintenance window. Create an AMI image and place both servers behind Application Load Balancer with sticky sessions.
+- [x] Use Sysprep to shut down the instance during a maintenance window. Create an AMI image and place both servers behind the Application Load Balancer with sticky sessions.
 - [ ] Launch a new EC2 with the latest version of Windows Server and install the application again. Use Application Load Balancer and sticky sessions to balance between both servers.
 - [ ] Create a clone of the server using an AMI image and user Application Load Balancer to balance the traffic between both instances using sticky sessions.
 - [ ] Horizontal scaling is not the best practice in this situation. Increase the size of the existing EC2 instance and vertically scale the application.
@@ -293,8 +293,8 @@ FlowLog:
 
 #### Q37. Where is the best place to store database backups on an EC2 instance that is configured as a database server?
 
-- [x] an S3 bucket, synced with the database backups via a script that calls the AWS CLI
-- [ ] EBS volume attached to the instance
+- [ ] an S3 bucket, synced with the database backups via a script that calls the AWS CLI
+- [x] EBS volume attached to the instance
 - [ ] instance attached to the instance
 - [ ] instance storage, with a script that replicates the database backups to another instance in a different availability zone.
 
@@ -305,7 +305,7 @@ FlowLog:
 - [x] You cannot create a CIDR block with a netmask larger than /16
 - [ ] You can have only 10 subnets within a VPC
 
-#### Q39. You have a Linux EC2 instance that is not responding to requests and you can not connect to it via SSH. Using the EC2 console, you issued a command to stop the instance, but for the past 10 minutes the instance has been in the "stopping" state. What is the next step you should take?
+#### Q39. You have a Linux EC2 instance that is not responding to requests and you can not connect to it via SSH. Using the EC2 console, you issued a command to stop the instance, but for the past 10 minutes, the instance has been in the "stopping" state. What is the next step you should take?
 
 - [x] Issue another stop action via the EC2 console, and choose the option to forcefully stop the instance.
 - [ ] Create an AMI image of the instance, and choose the option to take the image without restarting the instance.
@@ -314,7 +314,7 @@ FlowLog:
 
 #### Q40. You have 14 on-premise web servers, 4 database servers, 6 servers using GIS software, 3 file servers, and 4 development servers. What considerations should you take into account when migrating these servers into AWS?
 
-- [ ] AWS does not have a way to separate billing for compute costs, so you will need to design a way to split the budget between departments.
+- [ ] AWS does not have a way to separate billing for computing costs, so you will need to design a way to split the budget between departments.
 - [ ] Software licensing costs are always included in services such as RDS, so factor the loss of use of your on-premise licenses in your budget.
 - [x] New AWS accounts are limited to 20 on-demand EC2 instances. Submit a request to increase your rate limits before starting a migration.
 - [ ] The only way to transfer large amounts of database data up to AWS is via S3, which can have a slow upload speed. Plan for this delay and cost in your migration plan.
@@ -328,7 +328,7 @@ FlowLog:
 
 #### Q42. You have a T2 EC2 instance that is critical to your infrastructure. How would you monitor the most important metric for this instance?
 
-- [x] Turn on CloudWatch Auto Recovery and put monitors on the System Status and Instance Status checks for the instance to notify you when either is in alarm.
+- [x] Turn on CloudWatch Auto Recovery and put monitors on the System Status and Instance Status check for the instance to notify you when either is in alarm.
 - [ ] Use CloudWatch to put monitors on the remaining CPU credits. If you run out of CPU credit the instance will be stopped.
 
 #### Q43. Which feature can be used to respond to a sudden increase in web traffic?
@@ -336,14 +336,14 @@ FlowLog:
 - [ ] EC2 Auto Scaling groups
 - [ ] AWS Shield Advanced
 - [ ] RDS Read Replicas
-- [x] all of these answers
+- [x] All of the above
 
 #### Q44. If a set of servers are located within a private subnet of your VPC, how can you connect those servers to on-premise servers?
 
 - [ ] Establish a connection with AWS Direct Connect.
 - [ ] Use the AWS Client VPN.
 - [ ] Install a OpenVPN server on an instance that is located within the subnet with an elastic IP.
-- [x] All of these options can establish a connection to a private subnet.
+- [x] All of the above can establish a connection to a private subnet.
 
 #### Q45. You have a UDP load balancer that is created by an instance that is running an NGINX proxy. Your application performance management (APM) solution can detect failures in your load balancer instance and transfer the Elastic IP to a passive standby instance. Using the AWS CLI, which script do you program into your APM to move the Elastic IP?
 
@@ -434,13 +434,13 @@ aws ec2 associate-address --instance-id i-8b953 --allocation-id eipalloc-02d021a
 - [ ] RDS will automatically increase the allocated space by 10% and will send the AWS root account an email with resolution steps. Allocate more space to avoid overage charges.
 - [x] The database instance will report a STORAGE_FULL status and become inaccessible if the instance does not have enough remaining storage to operate. Allocate more space to the instance.
 - [ ] SQL Server will close all existing connections to the databases and attempt to shrink its log files to reclaim storage space.
-- [ ] RDS will automatically increase the allocated space by 5% and will continue to allocate new space up to 50% of the orginal allocated space. When storage space has increase 50%, RDS will automatically stop the instance to preserve data integrity.
+- [ ] RDS will automatically increase the allocated space by 5% and will continue to allocate new space up to 50% of the original allocated space. When storage space has increase 50%, RDS will automatically stop the instance to preserve data integrity.
 
 #### Q54. You have a fleet of IoT devices that send telemetry to a server-side application provided by your IoT vendor for decoding a proprietary messaging format. The devices are provisioned to send telemetry reports to your server via UDP on port 6339. What is the best way scale this server as more Iot devices are added to your fleet?
 
 - [ ] Use a Network Load Balancer to distribute the traffic across your servers. Use UDP health checks to determine if the server is available to receive traffic.
 - [x] Use Route 53 with HTTP health checks. Create an application on the server to report the readiness status of the vendor-provided server software to Route 53 via HTTP.
-- [ ] Use Route 53 with UDP health checks. As you scale up, Route 53 wiwll route the traffic to the new servers if they pass the health checks.
+- [ ] Use Route 53 with UDP health checks. As you scale up, Route 53 will route the traffic to the new servers if they pass the health checks.
 - [ ] Use Application Load Balancer to distribute the traffic across your servers.
 
 #### Q55. the outbound rules of a security group only allow traffic going to 0.0.0.0/0 on TCP Port 22 (SSH) and TCP port 3306 (MySQL). Review the inbound rules listed in the image below. What is the most important issue to fix with this security group configuration, for an Ubuntu EC2 instance acting as a web server?
@@ -543,9 +543,9 @@ aws ec2 start-instances --instance-ids i-0b263919b6498b123
 ![065](https://user-images.githubusercontent.com/33999631/179728393-8a2636ea-04e7-4597-b0cc-8150e2bc91de.png?raw=png)
 
 - [ ] All traffic on all ports is being denied into this instance, which overwrites the HTTP rule and makes it redundant.
-- [x] The instance was launched with the default security group, but there is no way for an administrator to SSH into the instance.
+- [ ] The instance was launched with the default security group, but there is no way for an administrator to SSH into the instance.
       Add another rule that allows for SSH access from a secured source, such as a single IP or a range of managed IP addresses.
-- [ ] There is nothing wrong with this security group rule. Assuming that sg-269afc5e is applied to other resources that are properly
+- [x] There is nothing wrong with this security group rule. Assuming that sg-269afc5e is applied to other resources that are properly
       secured, this rule allows all traffic to pass through that is also assigned security group sg-269afc5e.
 - [ ] All traffic on all ports are allowed into this instance. This exposes the instance to all public internet traffic and
       overwrites the incoming HTTP rule.
@@ -688,7 +688,7 @@ aws ecs create-service \
 
 - [ ] Use a Classic Load Balancer, not Application Load Balancer.
 - [x] Application Load Balancer does not preserve the original source IP address. The analytics software needs to be configured to look at the 'X-Forwarded-For' HTTP request header for the correct source IP address.
-- [ ] Application Load Balencer has to be configured to retain the source IP address of the traffic it is forwarding. Create a policy that enables ProxyProtocol support and attach it to the ALB using the AWS CLI.
+- [ ] Application Load Balancer has to be configured to retain the source IP address of the traffic it is forwarding. Create a policy that enables ProxyProtocol support and attach it to the ALB using the AWS CLI.
 - [ ] Configure the web server EC2 instances to only have private IP addresses. The public IP addresses of the instances are being recorded into the web server logs, bug only ALB should have a public interface and it will route traffic to instances via the private interface.
 
 #### Q77. What is `not` a default user of a common Linux instance launched from an AMI?
@@ -758,8 +758,8 @@ aws ecs create-service \
 
 - [ ] In the VPC dashboard, click Elastic IPs. Select the Elastic IP and click Associate Address. Select each EC2 instance you wish to assign this address to.
 - [ ] In the EC2 dashboard, click on EC2 instance. Under Actions, select networking > Manage IP Addresses. click to add a new IP address and type in the address of the Elastic IP. Repeat the process for each EC2 instance you want to assign this Elastic IP to.
-- [ ] Use the AWS CLI and pass in several '--instance-id' options to hte aws ec2 assosiate-address command.
-- [x] An elastic IP cannot be assigned to multiple EC2 instances. It can only be assosiated to a single EC2 instance.
+- [ ] Use the AWS CLI and pass in several '--instance-id' options to hte aws ec2 associate-address command.
+- [x] An elastic IP cannot be assigned to multiple EC2 instances. It can only be associated to a single EC2 instance.
 
 [Reference](https://stackoverflow.com/questions/54742522/assign-multiple-ec2-instances-to-one-elastic-ip)
 
@@ -790,7 +790,7 @@ aws ecs create-service \
 
 - [ ] Create the S3 bucket as a target for Application Load Balancer. Use Web Application Firewall (WAF) to create a rule to limit access to the S3 bucket by source IP.
 - [ ] You can not limit access to an S3 bucket by IP address.
-- [ ] In the preperties of the S3 bucket, add an access control option that limit access to the bucket by source IP address. Input the list of IPs into dialog.
+- [ ] In the properties of the S3 bucket, add an access control option that limit access to the bucket by source IP address. Input the list of IPs into dialog.
 - [x] Create a bucket policy with a condition that limit access to a list of approved IP addresses. Attach this policy to the bucket.
 
 #### Q89. What is the benefits of using S3 Glacier for storage?
@@ -804,8 +804,8 @@ aws ecs create-service \
 
 - [ ] Cognito Sync Trigger, SNS
 - [ ] SNS, SQS
-- [x] all of these answers
 - [ ] SQS, DynamoDB
+- [x] All of the above
 
 #### Q91. When creating a RESTful API into a DynamoDB table, which is the right service to facilitate this?
 
@@ -837,7 +837,7 @@ aws ecs create-service \
 - [ ] Amazon Machine Instances are sized at various levels and rented on a computing/hour basis
 - [ ] The metrics obtained by CloudWatch may be used to enable a feature called Auto Scaling
 - [ ] A number of tools are used to support EC2 services
-- [x] None of the mentioned
+- [x] None of the above
 
 #### Q95. In terms of Amazon VPC design, a VPC with a single public subnet is ideal for which of the following application designs?
 
@@ -967,7 +967,121 @@ aws ecs create-service \
 
 #### Q113. Which of the following statements is true of Amazon CloudFront when you can control how long your objects stay in a CloudFront cache before it forwards another request to your origin?
 
-- [x] All answers listed are correct.
 - [ ] Reducing the duration allows you to serve dynamic content.
 - [ ] Increasing the duration means your customers get better performance.
 - [ ] A longer duration also reduces the load on your origin.
+- [x] All of the above
+
+#### Q114. You are tasked with supporting users of a mobile app. The app allows users to view content (e.g., images) but only upload images if they are logged in to the app via Cognito. Which option would require the least amount of development time and provide the highest security to prevent non-authenticated users from posting content?
+
+- [ ] Create a Cognito Identity Pool with roles for both authorized and unauthorized user and appropriate permissions on those roles.
+- [ ] Switch API access keys at run-time based on the user's log in state.
+- [ ] Set policies on the database table (DynamoDB or RDS) for user permissions.
+- [x] Expose an API Gateway for public use to fetch content and a second API for writing content requiring an auth token.
+
+#### Q115. If a user requires programmatic access to your AWS resources, what is required to authenticate?
+
+- [x] Access Keys
+- [ ] Key pair
+- [ ] MFA activated on the user account
+- [ ] A role association
+
+[Reference](http://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys)
+
+#### Q116. \***\*\_\_\_\*\*** are predefined, out-of-the-box policies that grant permissions for common use cases to eliminate the need to determine what permissions are needed.
+
+- [ ] Resource policies
+- [x] AWS managed policies
+- [ ] Customer managed policies
+- [ ] Inline policies
+
+[Reference](http://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys)
+
+#### Q117. Within an IAM policy, the **\_\_** **\_ \_\_\_\_** are top-level policy elements whereas the rest of them are statement-level elements.
+
+- [ ] ID and Principal
+- [ ] Version and ID
+- [ ] ID and Statement
+- [x] Version and Statement
+
+[Reference](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html)
+
+#### Q118. Return traffic to all EC2 instances in a VPC's new public subnet is somehow blocked. You would like to ensure that return traffic from all potential clients is received moving forward. Which port range should you allow to ensure that return traffic from all potential clients is received?
+
+- [ ] 1-1024
+- [x] 1024-65535
+- [ ] 1024-50000
+- [ ] 1-65535
+
+[Reference](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html#VPC_ACLs_Ephemeral_Ports)
+
+#### Q119. You manage AWS credentials for a company that is onboarding two new employees: one is an HR administrator, and the other is a developer. The Dev team is large and has an IAM group within the company's AWS accounts, but Human Resources currently has a single employee with no plans to expand the department. It is company policy to provide long-term credentials to AWS employees in a manner that allows simple reassignment in the case of any promotions or resignations. How can you provide appropriate AWS access to the new developer and follow company policy? (Choose 2 answers)
+
+- [ ] Attach appropriate IAM policies to the new developer's IAM user.
+- [x] Add the new developer to the Developer IAM Group.
+- [ ] Attach a new IAM role to the new developer's IAM user.
+- [x] Create a new IAM user for the developer.
+
+[Reference](https://docs.aws.amazon.com/IAM/latest/UserGuide/id.html)
+
+#### Q120. Which of the following is a fully-managed AWS database service?
+
+- [ ] Amazon s3
+- [x] Amazon RDS
+- [ ] Amazon MQ
+- [ ] Amazon VPC
+
+#### Q121. Which AWS database service is a fully managed, serverless, multi-model database that supports document, key-value, and wide-column data models?
+
+- [ ] Amazon RDS
+- [ ] Amazon Redshift
+- [x] Amazon DynamoDB
+- [ ] Amazon Neptune
+- [ ] Amazon Aurora
+
+#### Q122. Which AWS service is primarily used to store and retrieve any amount of data at any time from anywhere on the web?
+
+- [ ] Amazon EC2
+- [x] Amazon S3
+- [ ] Amazon RDS
+- [ ] AWS Lambda
+
+**Explanation**
+
+- Amazon S3 (Simple Storage Service) is an object storage service that allows users to store and retrieve any amount of data at any time. It is designed to be highly durable and scalable, making it suitable for storing a wide variety of data types, including web applications, backups, and large data lakes. EC2 (Elastic Compute Cloud) is used for scalable computing capacity, RDS (Relational Database Service) is for relational databases, and AWS Lambda is used for running code without provisioning or managing servers.
+
+#### Q123. What is the maximum size of a single object that can be uploaded to Amazon S3 in a single PUT operation?
+
+- [x] 5 GB
+- [ ] 100 GB
+- [ ] 10 GB
+- [ ] 500 MB
+
+**Explanation**
+
+- Amazon S3 allows the upload of a single object up to 5 GB in size in a single PUT operation. For objects larger than 5 GB, users need to use multipart upload, which supports objects up to 5 TB in size. This multipart upload functionality allows for parallel uploads, making the process faster and more efficient for larger files.
+
+#### Q124. Which of the following services is used to automatically distribute incoming application traffic across multiple targets, such as EC2 instances, containers, and IP addresses?
+
+- [ ] Amazon Route 53
+- [ ] AWS Auto Scaling
+- [x] AWS Elastic Load Balancer (ELB)
+- [ ] AWS CloudFront
+
+**Explanation**
+
+- AWS Elastic Load Balancer (ELB) is designed to automatically distribute incoming traffic across multiple targets, such as EC2 instances or containers, to ensure high availability and fault tolerance. Route 53 is used for domain name system (DNS) services, Auto Scaling is for automatically adjusting the number of instances, and CloudFront is a content delivery network (CDN) used to deliver content with low latency.
+
+#### Q125. You work as a cloud consultant for an IT company. As most of the employees are working from home, you need to find a way to provide them with secure access to the company’s internal sites and SaaS applications. Which of the following AWS services would you suggest them to use?
+
+- [ ] AWS Direct Connect
+- [ ] AWS VPN CloudHub
+- [x] Amazon WorkSpaces Web
+- [ ] Amazon Storage Gateway
+
+#### Q126. Which AWS service can convert text to lifelike speech?
+
+- [ ] AAmazon Translate
+- [x] Amazon Polly
+- [ ] Amazon Rekognition
+- [ ] Amazon Comprehend

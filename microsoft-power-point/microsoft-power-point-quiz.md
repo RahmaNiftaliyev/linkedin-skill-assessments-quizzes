@@ -7,7 +7,7 @@
 - [ ] Title and Content
 - [ ] Title Onty
 
-#### Q2. What do you use to align objects on a slide to one another?
+#### Q2. What do you use to align objects on a slide with each other?
 
 - [ ] Layout tools
 - [x] Arrange tools
@@ -25,7 +25,7 @@
 
 #### Q4. Which feature analyzes the content of your slides and offers suggested options?
 
-- [x] Design ideas
+- [x] Design ideas/ Designer
 - [ ] Smartart
 - [ ] Browse for Themes
 - [ ] Add-Ins
@@ -42,23 +42,23 @@
 #### Q6. Which tab is best for adding various types of objects to slides?
 
 - [ ] Animations
-- [ ] view
+- [ ] View
 - [ ] File
 - [x] Insert
 
 #### Q7. Which SmartArt category can you use to make informational graphics out of bullet points?
 
-- [x] all of these answers
+- [x] All of these answers
 - [ ] Pyramid
 - [ ] List
 - [ ] Matrix
 
 #### Q8. What is NOT checked when you run the Accessibility Checker?
 
-- [ ] reading order
-- [ ] slide titles
-- [ ] missing alt text
-- [x] grammar
+- [ ] Reading order
+- [ ] Slide titles
+- [ ] Missing alt text
+- [x] Grammar
 
 [Source](https://support.microsoft.com/en-us/office/rules-for-the-accessibility-checker-651e08f2-0fc3-4e10-aaca-74b4a67101c1?ns=powerpnt&version=16&ui=en-us&rs=en-us&ad=us)
 
@@ -71,12 +71,12 @@
 
 `Table Tools -> Design Tab -> Table Styles`
 
-#### Q10. Which option changes a text box so that it automatically changes shape to fit longer text?
+#### Q10. Which option facilitates a text box to automatically changes shape to fit longer text?
 
 - [x] Resize shape to fit text
 - [ ] Do not autofit
-- [ ] none of these answers
 - [ ] Shrink text on overflow
+- [ ] None of these answers
 
 #### Q11. Which three shadow properties can be adjusted in PowerPoint?
 
@@ -93,7 +93,7 @@ E. Distance
 - [ ] B, C, D
 - [x] C, D, E
 
-#### Q12. You want your presentation to play continuously on screen, What option must you set?
+#### Q12. If you want your presentation to play continuously on screen, what option must you set?
 
 - [ ] Use Presenter view
 - [ ] Advance slides manually
@@ -109,7 +109,7 @@ E. Distance
 - [ ] There are no options for print output.
 - [ ] You can compress only one image at a time.
 
-#### Q14. You have a Word document you would like to import as an outline into a PowerPoint presentation. How should you format the text in your Word document that you want to be the slide content?
+#### Q14. You have a Word document you would like to import as an outline into a PowerPoint presentation. How should you format the text in the Word document that you want to be the content of the?
 
 - [x] Heading Style 2
 - [ ] Subtitle
@@ -129,21 +129,21 @@ If your Word document contains no Heading 1 or Heading 2 styles, PowerPoint will
 - [ ] by date
 - [ ] by urgency
 
-#### Q16. Which Arrow Options choice will hide the mouse cursor when presenting, except when the cursor is moved?
+#### Q16. Which Arrow Options choice will hide the mouse cursor while presenting, except when the cursor is moved?
 
 - [x] Automatic
 - [ ] Hidden
-- [ ] none of these answers
+- [ ] None of these answers
 - [ ] Visible
 
 `If hidden is selected the courser stays hidden no matter what.`
 
 #### Q17. Which chart type is best suited for displaying annual financial data for a 10-year period?
 
-- [ ] donut chart
-- [x] line or area chart
-- [ ] area chart
-- [ ] pie chart
+- [ ] Donut chart
+- [x] Line or area chart
+- [ ] Area chart
+- [ ] Pie chart
 
 #### Q18. If you want to create an organizational chart, which SmartArt category works best?
 
@@ -189,7 +189,7 @@ If your Word document contains no Heading 1 or Heading 2 styles, PowerPoint will
 - [ ] Use animation triggers.
 - [ ] Use video timings.
 
-#### Q24. When inserting pictures, how can you avoid distorting the pictureif it is resized later?
+#### Q24. When inserting pictures, how can you avoid distorting the picture if it is resized later?
 
 - [ ] Use best scale for slide show.
 - [x] Lock the aspect ratio.
@@ -498,7 +498,7 @@ If your Word document contains no Heading 1 or Heading 2 styles, PowerPoint will
 #### Q64. Which type of shape allows you to add text that can be moved around, formatted with styles and effects, or grouped with other objects?
 
 - [ ] screenshot
-- [x] text box.
+- [x] text box
 - [ ] icon
 - [ ] 3D model
 
@@ -512,7 +512,7 @@ If your Word document contains no Heading 1 or Heading 2 styles, PowerPoint will
 #### Q66. Which option can be used to import selected slides from a previously created presentation into a new presention without manually copying and pasting them?
 
 - [ ] Slide Zoom
-- [x] Reuse Slide
+- [x] Reuse Slides
 - [ ] Slides from Outline
 - [ ] Add Section
 
@@ -746,7 +746,7 @@ If your Word document contains no Heading 1 or Heading 2 styles, PowerPoint will
 #### Q96. You inserted audio into a presentation. Which two options must you enable for the audio to play throughout all slides and repeat until it is stopped?
 
 ```
-A. Loop untill Stopped
+A. Loop until Stopped
 B. Play Across Slides
 C. Rewind after Playing
 D. Start When Clicked On
@@ -795,10 +795,10 @@ D. Start When Clicked On
 
 ![Q101](images/Q101.png)
 
-- [ ] Picture Style
-- [x] Artistic Effect
+- [ ] Picture Styles
+- [x] Artistic Effects
 - [ ] Picture Layout
-- [ ] Picture Effect
+- [ ] Picture Effects
 
 #### Q102. To create a stacked image with the campfire icon on top of the yellow circle, select the campfire icon, then drag it to the center of the yellow circle, What is the next step?
 
@@ -817,3 +817,110 @@ D. Start When Clicked On
 - [ ] a section
 - [x] a slide
 - [ ] an existing file
+
+#### Q104. You are creating columns in a text box using the Format Shape menu. What properties of the column can you adjust under the Text Options tab?
+
+- [ ] space between lines of text and space between columns
+- [ ] number of columns and length of columns
+- [ ] only the number of columns
+- [x] number of columns and space between columns
+
+#### Q105. You would like several of the slides in your presentation to use the same font for the title text. The slides all use the same slide layout. What is the most efficient way to apply the desired font to those slides?
+
+- [ ] Change the font on each individual slide as it is added.
+- [ ] Use the Duplicate Selected Slides command.
+- [x] Change the font on the Slide Master for that layout.
+- [ ] Use the Reuse Slides command.
+
+#### Q106. Which tool provides the easiest way to to create and insert an organizational chart into a presentation
+
+- [x] smartArt
+- [ ] 3D Models
+- [ ] shapes
+- [ ] charts
+
+#### Q107. What can You enable to help align objects on a slide?
+
+- [ ] Cascade
+- [ ] Arrange all
+- [ ] Fit to window
+- [x] Gridlines
+
+#### Q108. Which Bullets and Numbering function should you use to start a numbered list at a value other than 1 ?
+
+- [ ] Custom Numer
+- [ ] AutoNumber
+- [ ] Align Number
+- [x] Start At
+
+#### Q109. While in Outline view, what does "promoting"" a paragraph do to its placement?
+
+- [ ] It copies the paragraph to the PowerPoint clipboard.
+- [ ] It moves the paragraph down one level in the outline.
+- [x] It moves the paragraph up one level in the outline.
+- [ ] It moves the paragraph to the top of the outline.
+
+#### Q110. You want to create the image on the right from the one on the left - i.e., place the blue star behind both of the others. How can you do this with a single command?
+
+![img](images/Q110.png)
+
+- [ ] Select the blue star and click Send Backward.
+- [x] Select the blue star and click Send to Back.
+- [ ] Select the gold star and click Bring to Front.
+- [ ] Select the red star and click Bring Forward.
+
+[Reference](https://support.microsoft.com/en-au/office/layer-objects-on-slides-81cccf31-9219-4c89-b7ba-9f25ad429c4a#:~:text=Move%20an%20object%20to%20the,object%20behind%20all%20other%20objects.)
+
+#### Q111. How would you ensure a uniform appearance and placement across your slides even though the content might be different?
+
+- [ ] Use styles.
+- [ ] Use embedded fonts.
+- [x] Use consistent layouts.
+- [ ] Use numbered lists.
+      <a href="https://www.linkedin.com/skill-assessments/Microsoft%20PowerPoint/quiz/?practiceModal=&practiceMode=true">reference</a>
+
+#### Q112. When you provide alt text for an image, what type of control are you including?
+
+- [ ] password protection
+- [ ] layout
+- [x] accessibility
+- [ ] presentation
+
+#### Q113. In Normal view, which pane is used to add text and reference information for the speaker?In Normal view, which pane is used to add text and reference information for the speaker?
+
+- [x] NotesNotes
+- [ ] CommentsComments
+- [ ] SlideSlide
+- [ ] ReadingReading
+
+#### Q114. You want to use a chart from an existing Excel file in your presentation. You need to ensure that the data is always up to date in PowerPoint, even when the workbook is updated in Excel. Which method should you use to do this and include only the chart?You want to use a chart from an existing Excel file in your presentation. You need to ensure that the data is always up to date in PowerPoint, even when the workbook is updated in Excel. Which method should you use to do this and include only the chart?
+
+- [x] Copy the chart in Excel and in the presentation, and select Paste Special using the Link Data option.Copy the chart in Excel and in the presentation, and select Paste Special using the Link Data option.
+- [ ] Copy the chart in Excel and in the presentation, Paste Special using an Embed Workbook option.Copy the chart in Excel and in the presentation, Paste Special using an Embed Workbook option.
+- [ ] Copy the chart in Excel and in the presentation, Paste Special as a Picture.Copy the chart in Excel and in the presentation, Paste Special as a Picture.
+- [ ] In the presentation, insert an object and select Create from File.In the presentation, insert an object and select Create from File.
+
+#### Q115. Which type of shape allows you to add text that can be moved around, formatted with styles and effects, or grouped with other objects?Which type of shape allows you to add text that can be moved around, formatted with styles and effects, or grouped with other objects?
+
+- [x] text box
+- [ ] iconicon
+- [ ] 3D model3D model
+- [ ] screenshot
+
+#### Q116. Which choice describes the result of importing this Word outline into a presentation?
+
+![img](images/Q116.png)
+
+- [ ] Two slides will be created from the outline.
+- [x] One slide will be created with seven bullet items.
+- [ ] Two sections will be created, one with three slides and one with two slides.
+- [ ] Seven slides will be created from the outline.
+
+#### Q117. How do you eliminate the blank columns on the char, as indicated by the arrow in this image?
+
+![img](images/Q117.png)
+
+- [x] In the Chart in Microsoft PowerPoint window, use the sizing handler in the lower-right corner of the range, dragging it up to cell D4.
+- [ ] In the Chart in Microsoft PowerPoint window, select the range A5:D5 and press Delete.
+- [ ] Click the chart and then, on the Shape format tab, click Edit Shape. Then crop the chart to show only A1:D4.
+- [ ] Click Change Chart Type.

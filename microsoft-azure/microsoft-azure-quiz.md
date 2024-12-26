@@ -545,3 +545,565 @@ As described in [Microsoft Docs: Hosting a Restful-API with CORS in AAS](https:/
 - [x] Front Door
 - [ ] Application Gateway
 - [ ] API Management
+
+#### Q71. You need to create an application in Azure Active Directory representing the Kineteco Web App so you can assign directory permissions to the app. To create the application identity, which command will you run?
+
+- [ ] appName="KinetecoWebApp"
+
+      az ad app permission grant -display-name $appName \
+          --homepage "http://localhost/$appName" \
+
+  --identifier-uris [http://localhost/$appName](http://localhost/$appName)
+
+- [x] appName="KinetecoWebApp"
+
+      az ad app create -display-name $appName \
+          --homepage "http://localhost/$appName" \
+          --identifier-uris [http://localhost/$appName](http://localhost/$appName)
+
+- [ ] appName="KinetecoWebApp"
+
+      az ad app credential create -display-name $appName \
+          --homepage "http://localhost/$appName" \
+          --identifier-uris [http://localhost/$appName](http://localhost/$appName)
+
+- [ ] appName="KinetecoWebApp"
+
+      az ad app permission add -display-name $appName \
+          --homepage "http://localhost/$appName" \
+          --identifier-uris [http://localhost/$appName](http://localhost/$appName)
+
+#### Q72. In the Azure Service Bus, what is the purpose of the dead letter queue?
+
+- [ ] It is used to ensure that the Azure Bus Service queue can deliver messages in a First-In-First-Out manner.
+- [ ] It can be used for load balancing queues.
+- [ ] It is a duplicate queue used as a backup queue.
+- [x] It is used to store messages which could not be delivered.
+
+[Ref](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-dead-letter-queues)
+
+#### Q73. You have a WCF application on-premises behind a firewall, and you need to expose it to an Azure web role. Which of the following services would be the best solution?
+
+- [ ] Azure Data Management Gateway
+- [ ] Service Bus Topics
+- [ ] Azure On-Premises Data Gateway
+- [x] WCF Relay
+
+[Ref](https://docs.microsoft.com/en-us/azure/service-bus-relay/relay-hybrid-connections-dotnet-get-started)
+
+#### Q74. When using Azure Service Bus, a single message sent to a topic can be received by multiple subscriptions. Is this true?
+
+- [x] Yes
+- [ ] Yes, if the message metadata allows it
+- [ ] No
+- [ ] No, the first subscription to process it gets it
+
+[Ref](https://azure.microsoft.com/en-us/documentation/articles/service-bus-fundamentals-hybrid-solutions/#topics)
+
+#### Q75. You're designing a solution that needs to be low cost and to expose a WCF application that lives on-premises to a Web API that lives in Azure. Which of the following will be added to your design?
+
+- [ ] A point-to-site VPN
+- [ ] A site-to-site VPN
+- [x] WCF Relay
+- [ ] Self-Hosted Integration Runtime
+
+[Ref](https://docs.microsoft.com/en-us/azure/azure-relay/service-bus-dotnet-hybrid-app-using-service-bus-relay)
+
+#### Q76. What are the core messaging entities in Azure Service Bus?
+
+- [ ] Queues, transactions, and messages
+- [x] Queues, topics, and subscriptions
+- [ ] Topics, subscriptions, and message sessions
+- [ ] Queues, message locks, and transactions
+
+[Ref](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview)
+
+#### Q77. This question requires that you evaluate the underlined text to determine if it is correct.
+
+An organization that hosts its infrastructure in a private cloud can close its data center.
+Instructions: Review the underlined text. If it makes the statement correct, select “No change is needed”. If
+the statement is incorrect, select the answer choice that makes the statement correct.
+
+- [ ] No change is needed.
+- [ ] in a hybrid cloud
+- [x] in the public cloud
+- [ ] on a Hyper-V host
+
+Explanation/Reference:
+Explanation:
+A private cloud is hosted in your datacenter. Therefore, you cannot close your datacenter if you are using a
+private cloud.
+A public cloud is hosted externally, for example, in Microsoft Azure. An organization that hosts its
+infrastructure in a public cloud can close its data center.
+Public cloud is the most common deployment model. In this case, you have no local hardware to manage or
+keep up-to-date – everything runs on your cloud provider's hardware.
+Microsoft Azure is an example of a public cloud provider.
+In a private cloud, you create a cloud environment in your own datacenter and provide self-service access to
+compute resources to users in your organization. This offers a simulation of a public cloud to your users, but
+you remain completely responsible for the purchase and maintenance of the hardware and software services
+you provide.
+
+[Ref](https://docs.microsoft.com/en-us/cli/azure/ad/app?view=azure-cli-latest)
+
+#### Q78.What are two characteristics of the public cloud? Each correct answer presents a complete solution.
+
+NOTE: Each correct selection is worth one point.
+
+- [ ] dedicated hardware
+- [ ] limited storage
+- [x] metered pricing
+- [x] self-service management
+- [ ] unsecured connections
+
+Explanation/Reference:
+Explanation:
+With the public cloud, you get pay-as-you-go pricing – you pay only for what you use, no CapEx costs.
+With the public cloud, you have self-service management. You are responsible for the deployment and
+configuration of the cloud resources such as virtual machines or web sites. The underlying hardware that
+hosts the cloud resources is managed by the cloud provider.
+Incorrect Answers:
+A: You don’t have dedicated hardware. The underlying hardware is shared so you could have multiple
+customers using cloud resources hosted on the same physical hardware.
+B: Connections to the public cloud are secure.
+C: Storage is not limited. You can have as much storage as you like.
+
+[Ref](https://docs.microsoft.com/en-gb/learn/modules/principles-cloud-computing/4-cloud-deployment-models)
+
+#### Q79. Your company hosts an accounting application named App1 that is used by all the customers of the
+
+company.
+App1 has low usage during the first three weeks of each month and very high usage during the last week of
+each month.
+Which benefit of Azure Cloud Services supports cost management for this type of usage pattern?
+
+- [ ] high availabilit
+- [ ] high latency
+- [x] elasticity
+- [ ] load balancing
+
+Explanation/Reference:
+Explanation:
+Elasticity in this case is the ability to provide additional compute resource when needed and reduce the
+compute resource when not needed to reduce costs. Autoscaling is an example of elasticity.
+Elastic computing is the ability to quickly expand or decrease computer processing, memory and storage
+resources to meet changing demands without worrying about capacity planning and engineering for peak
+usage. Typically controlled by system monitoring tools, elastic computing matches the amount of resources
+allocated to the amount of resources actually needed without disrupting operations. With cloud elasticity, a
+company avoids paying for unused capacity or idle resources and doesn’t have to worry about investing in
+the purchase or maintenance of additional resources and equipment.
+
+[Ref](https://azure.microsoft.com/en-gb/overview/what-is-elastic-computing/)
+
+#### Q80. You plan to migrate a web application to Azure. The web application is accessed by external users.
+
+You need to recommend a cloud deployment solution to minimize the amount of administrative effort used to
+manage the web application.
+What should you include in the recommendation?
+
+- [ ] Software as a Service (SaaS)
+- [x] Platform as a Service (PaaS)
+- [ ] Infrastructure as a Service (IaaS)
+- [ ] Database as a Service (DaaS)
+
+Explanation/Reference:
+Explanation:
+Azure App Service is a platform-as-a-service (PaaS) offering that lets you create web and mobile apps for
+any platform or device and connect to data anywhere, in the cloud or on-premises. App Service includes the
+web and mobile capabilities that were previously delivered separately as Azure Websites and Azure Mobile
+Services.
+
+[Ref](https://docs.microsoft.com/en-us/azure/security/fundamentals/paas-applications-using-app-services)
+
+#### Q81. You have an on-premises network that contains 100 servers.
+
+You need to recommend a solution that provides additional resources to your users. The solution must
+minimize capital and operational expenditure costs.
+What should you include in the recommendation?
+
+- [ ] a complete migration to the public cloud
+- [ ] an additional data center
+- [ ] a private cloud
+- [x] a hybrid cloud
+
+Explanation/Reference:
+Explanation:
+A hybrid cloud is a combination of a private cloud and a public cloud.
+Capital expenditure is the spending of money up-front for infrastructure such as new servers.
+With a hybrid cloud, you can continue to use the on-premises servers while adding new servers in the public
+cloud (Azure for example). Adding new servers in Azure minimizes the capital expenditure costs as you are
+not paying for new servers as you would if you deployed new server on-premises.
+Incorrect Answers:
+A: A complete migration of 100 servers to the public cloud would involve a lot of operational expenditure (the
+cost of migrating all the servers).
+B: An additional data center would involve a lot of capital expenditure (the cost of the new infrastructure).
+C: A private cloud is hosted on on-premises servers to this would involve a lot of capital expenditure (the cost
+of the new infrastructure to host the private cloud
+
+[Ref](https://docs.microsoft.com/en-gb/learn/modules/principles-cloud-computing/4-cloud-deployment-models)
+
+#### Q82. You plan to migrate several servers from an on-premises network to Azure.
+
+What is an advantage of using a public cloud service for the servers over an on-premises network
+
+- [ ] The public cloud is owned by the public, NOT a private corporation
+- [ ] The public cloud is a crowd-sourcing solution that provides corporations with the ability to enhance the cloud
+- [x] The public cloud is a shared entity whereby multiple corporations each use a portion of the resources in the cloud
+- [ ] All public cloud resources can be freely accessed by every member of the public
+
+Explanation/Reference:
+Explanation:
+The public cloud is a shared entity whereby multiple corporations each use a portion of the resources in the
+cloud. The hardware resources (servers, infrastructure etc.) are managed by the cloud provider. Multiple
+companies create resources such as virtual machines and virtual networks on the hardware resources.
+Incorrect Answers:
+A: The public cloud is not owned by the public. In the case of Microsoft Azure, the cloud is owned by
+Microsoft.
+B: The public cloud is a not crowd-sourcing solution. In the case of Microsoft Azure, the cloud is owned by Microsoft.
+C: It is not true that public cloud resources can be freely accessed by every member of the public. You pay for a cloud subscription and create accounts for your users to access your cloud resources. No one can
+access your cloud resources until you create user accounts and provide the appropriate access permissions.
+
+#### Q83. You have 1,000 virtual machines hosted on the Hyper-V hosts in a data center.
+
+You plan to migrate all the virtual machines to an Azure pay-as-you-go subscription.
+You need to identify which expenditure model to use for the planned Azure solution.
+Which expenditure model should you identify?
+
+- [x] operational
+- [ ] elastic
+- [ ] capital
+- [ ] scalable
+
+Explanation/Reference:
+Explanation:
+One of the major changes that you will face when you move from on-premises cloud to the public cloud is the
+switch from capital expenditure (buying hardware) to operating expenditure (paying for service as you use it).
+This switch also requires more careful management of your costs. The benefit of the cloud is that you can
+fundamentally and positively affect the cost of a service you use by merely shutting down or resizing it when it's not needed.
+
+[Ref](https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/appendix/azure-scaffold)
+
+#### Q84. Your company has an on-premises network that contains multiple servers.
+
+The company plans to reduce the following administrative responsibilities of network administrators:
+Backing up application data
+Replacing failed server hardware
+Managing physical server security
+Updating server operating systems
+Managing permissions to shared documents
+The company plans to migrate several servers to Azure virtual machines.
+You need to identify which administrative responsibilities will be eliminated after the planned migration.
+Which two responsibilities should you identify? Each correct answer presents a complete solution.
+NOTE: Each correct selection is worth one point.
+
+- [x] Replacing failed server hardware
+- [ ] Backing up application data
+- [x] Updating server operating systems
+- [ ] Managing permissions to shared documents
+
+Explanation/Reference:
+Explanation:
+Azure virtual machines run on Hyper-V physical servers. The physical servers are owned and managed by
+Microsoft. As an Azure customer, you have no access to the physical servers. Microsoft manage the
+replacement of failed server hardware and the security of the physical servers so you don’t need to.
+Incorrect Answers:
+B: Microsoft have no control over the applications you run on the virtual machines. Therefore, it is your
+responsibility to ensure that application data is backed up.
+D: Microsoft do not manage the operating systems you run on the virtual machines. Therefore, it is your
+responsibility to ensure that the operating systems are updated.
+E: Microsoft have no control over the shared folders you host on the virtual machines. Therefore, it is your responsibility to ensure that folder permissions are configured appropriately.
+
+#### Q85. A team of developers at your company plans to deploy, and then remove, 50 virtual machines each week. All the virtual machines are configured by using Azure Resource Manager templates.
+
+You need to recommend which Azure service will minimize the administrative effort required to deploy and
+remove the virtual machines.
+What should you recommend?
+
+- [ ] Azure Reserved Virtual Machine (VM) Instances
+- [x] Azure DevTest Labs
+- [ ] Azure virtual machine scale sets
+- [ ] Microsoft Managed Desktop
+
+Explanation/Reference:
+Explanation:
+DevTest Labs creates labs consisting of pre-configured bases or Azure Resource Manager templates.
+By using DevTest Labs, you can test the latest versions of your applications by doing the following tasks:
+Quickly provision Windows and Linux environments by using reusable templates and artifacts.
+Easily integrate your deployment pipeline with DevTest Labs to provision on-demand environments.
+Scale up your load testing by provisioning multiple test agents and create pre-provisioned environments for training and demos.
+
+[Ref](https://docs.microsoft.com/en-us/azure/lab-services/devtest-lab-overview)
+
+#### Q86. You use Azure Table storage to store customer information for an application. The data contains customer details and is partitioned by last name. You need to
+
+create a query that returns all customers with the last name Smith. Which code segment should you use?
+
+- [ ] TableQuery.GenerateFilterCondition("PartitionKey", Equals, "Smith")
+- [ ] TableQuery.GenerateFilterCondition("LastName", Equals, "Smith")
+- [x] TableQuery.GenerateFilterCondition("PartitionKey", QueryComparisons.Equal, "Smith")
+- [ ] TableQuery.GenerateFilterCondition("LastName", QueryComparisons.Equal, "Smith")
+
+Explanation:
+Retrieve all entities in a partition. The following code example specifies a filter for entities where 'Smith' is the partition key. This example prints the fields of each
+entity in the query results to the console.
+Construct the query operation for all customer entities where PartitionKey="Smith". TableQuery<CustomerEntity> query = new
+TableQuery<CustomerEntity>().Where(TableQuery.GenerateFilterCondition("PartitionKey",
+QueryComparisons.Equal, "Smith"));
+
+[Ref](https://docs.microsoft.com/en-us/azure/cosmos-db/table-storage-how-to-use-dotnet)
+
+#### Q87.You develop an app that allows users to upload photos and videos to Azure storage. The app uses a storage REST API call to upload the media to a blob storage
+
+account named Account1. You have blob storage containers named Container1 and Container2. Uploading of videos occurs on an irregular basis.
+You need to copy specific blobs from Container1 to Container2 in real time when specific requirements are met, excluding backup blob copies.
+What should you do?
+
+- [ ] Download the blob to a virtual machine and then upload the blob to Container2.
+- [x] Run the Azure PowerShell command Start-AzureStorageBlobCopy
+- [ ] Copy blobs to Container2 by using the Put Blob operation of the Blob Service REST API.
+- [ ] Use AzCopy with the Snapshot switch blobs to Container2.
+
+Explanation:
+The Start-AzureStorageBlobCopy cmdlet starts to copy a blob. Example 1: Copy a named blob
+C:\PS>Start-AzureStorageBlobCopy -SrcBlob "ContosoPlanning2015" -DestContainer "ContosoArchives"
+-SrcContainer "ContosoUploads"
+This command starts the copy operation of the blob named ContosoPlanning2015 from the container named ContosoUploads to the container named
+ContosoArchives.
+
+[Ref](https://docs.microsoft.com/en-us/powershell/module/azure.storage/start-azurestorageblobcopy?view=azurermps)
+
+#### Q88. You are a developer for a SaaS company that offers many web services. All web services for the company must meet the following requirements:
+
+Use API Management to access the services Use OpenID Connect for authentication Prevent anonymous usage A recent security audit found that several web services can be called without any authentication.
+Which API Management policy should you implement?
+
+- [ ] jsonp
+- [ ] authentication-certificate
+- [ ] check-header
+- [x] validate-jwt
+
+[Ref](https://docs.microsoft.com/en-us/azure/api-management/api-management-howto-protect-backend-with-aad)
+
+#### Q89.You are developing an Azure Cosmos DB solution by using the Azure Cosmos DB SQL API. The data includes millions of documents. Each document may
+
+contain hundreds of properties. The properties of the documents do not contain distinct values for partitioning. Azure Cosmos DB must scale individual containers in the database to meet the
+performance needs of the application by spreading the workload evenly across all partitions over time.
+You need to select a partition key.
+Which two partition keys can you use? Each correct answer presents a complete solution.
+NOTE: Each correct selection is worth one point.
+
+- [x] a concatenation of multiple property values with a random suffix appended
+- [ ] a single property value that does not appear frequently in the documents
+- [x] a hash suffix appended to a property value
+- [ ] a value containing the collection name
+- [ ] a single property value that appears frequently in the documents
+
+Explanation:
+You can form a partition key by concatenating multiple property values into a single artificial partitionKey property. These keys are referred to as synthetic keys.
+Another possible strategy to distribute the workload more evenly is to append a random number at the end of the partition key value. When you distribute items in
+this way, you can perform parallel write operations across partitions.
+Note: It's the best practice to have a partition key with many distinct values, such as hundreds or thousands. The goal is to distribute your data and workload
+evenly across the items associated with these partition key values. If such a property doesn’t exist in your data, you can construct a synthetic partition key.
+
+[Ref](https://docs.microsoft.com/en-us/azure/cosmos-db/synthetic-partition-keys)
+
+#### Q90.You are developing an ASP.NET Core Web API web service. The web service uses Azure Application Insights for all telemetry and dependency tracking. The web
+
+service reads and writes data to a database other than Microsoft SQL Server.
+You need to ensure that dependency tracking works for calls to the third-party database.
+Which two Dependency Telemetry properties should you store in the database? Each correct answer presents part of the solution.
+NOTE: Each correct selection is worth one point.
+
+- [x] Telemetry.Context.Operation.Id
+- [ ] Tetemetry.Context.Cloud.Rolelnstance
+- [x] Telemetry.Id
+- [ ] Telemetry.ContextSession.Id
+
+[Ref](https://docs.microsoft.com/en-us/azure/azure-monitor/app/custom-operations-tracking)
+
+#### Q91. You are preparing to deploy an ASP.NET Core website to an Azure Web App from a GitHub repository. The website includes static content generated by a script.
+
+You plan to use the Azure Web App continuous deployment feature.
+You need to run the static generation script before the website starts serving traffic.
+What are two possible ways to achieve this goal? Each correct answer presents a complete solution. NOTE: Each correct selection is worth one point
+
+- [x] Create a file named .deployment in the root of the repository that calls a script which generates the static content and deploys the website
+- [ ] Add a PreBuild target in the websites csproj project file that runs the static content generation script
+- [ ] Create a file named run.cmd in the folder /run that calls a script which generates the static content and deploys the website.
+- [ ] Add the path to the static content generation tool to WEBSITE_RUN_FROM_PACKAGE setting in the host.json file.
+
+Explanation:
+A: To customize your deployment, include a .deployment file in the repository root.
+You just need to add a file to the root of your repository with the name .deployment and the content: [config]
+command = YOUR COMMAND TO RUN FOR DEPLOYMENT
+this command can be just running a script (batch file) that has all that is required for your deployment, like copying files from the repository to the web root directory
+for example.
+D: In Azure, you can run your functions directly from a deployment package file in your function app. The other option is to deploy your files in the
+d:\home\site\wwwroot directory of your function app (see A above).
+To enable your function app to run from a package, you just add a WEBSITE_RUN_FROM_PACKAGE setting to your function app settings.
+Note: The host.json metadata file contains global configuration options that affect all functions for a function app.
+
+[Ref](https://github.com/projectkudu/kudu/wiki/Custom-Deployment-Script)
+[Ref](https://docs.microsoft.com/bs-latn-ba/azure/azure-functions/run-functions-from-deployment-package)
+
+#### Q92. You provide an Azure API Management managed web service lo clients. The back end web service implements HTTP Strict Transport Security (HSTS).
+
+Every request to the backend service must include a valid HTTP authorization header. You need to configure the Azure API Management instance with an
+authentication policy. Which two policies can you uses? Each correct answer presents a complete solution NOTE: Each correct selection is worth one point.
+
+- [x] Certificate Authentication
+- [ ] Basic Authentication
+- [x] OAuth Client Credential Grant
+- [ ] Digest Authentication
+
+#### Q93.A company is implementing a publish-subscribe (Pub/Sub) messaging component by using Azure Service Bus. You are developing the first subscription
+
+application.
+In the Azure portal you see that messages are being sent to the subscription for each topic. You create and initialize a subscription client object by supplying the
+correct details, but the subscription application is still not consuming the messages.
+You need to complete the source code of the subscription client What should you do
+
+- [ ] await subscriptionClient.CloseAsync();
+- [ ] await subscriptionClient.AddRuleAsync(new RuleDescription(RuleDescription.DefaultRuleName, new TrueFilter()));
+- [x] subscriptionClient.RegisterMessageHandler(ProcessMessagesAsync, messageHandlerOptions);
+- [ ] subscriptionClient = new SubscriptionClient(ServiceBusConnectionString, TopicName, SubscriptionName);
+
+Explanation:
+Using topic client, call RegisterMessageHandler which is used to receive messages continuously from the entity. It registers a message handler and begins a new
+thread to receive messages. This handler is waited on every time a new message is received by the receiver.
+subscriptionClient.RegisterMessageHandler(ReceiveMessagesAsync, messageHandlerOptions);
+
+[Ref](https://www.c-sharpcorner.com/article/azure-service-bus-topic-and-subscription-pub-sub/)
+
+#### Q94. You develop a gateway solution for a public facing news API. The news API back end is implemented as a RESTful service and uses an OpenAPI specification.
+
+You need to ensure that you can access the news API by using an Azure API Management service instance. Which Azure PowerShell command should you run?
+
+- [ ] Import-AzureRmApiManagementApi –Context $ApiMgmtContext –SpecificationFormat "Swagger" -SpecificationPath $SwaggerPath –Path $Path
+- [ ] New-AzureRmApiManagementBackend -Context $ApiMgmtContext -Url $Url -Protocol http
+- [ ] New-AzureRmApiManagement –ResourceGroupName $ResourceGroup –Name $Name – Location $Location –Organization $Org –AdminEmail $AdminEmail
+- [x] New-AzureRmApiManagementBackendProxy –Url $ApiUrl
+
+Explanation:
+New-AzureRmApiManagementBackendProxy creates a new Backend Proxy Object which can be piped when creating a new Backend entity.
+Example: Create a Backend Proxy In-Memory Object
+PS C:\>$secpassword = ConvertTo-SecureString "PlainTextPassword" -AsPlainText -Force
+PS C:\>$proxyCreds = New-Object System.Management.Automation.PSCredential ("foo", $secpassword) PS C:\>$credential = NewAzureRmApiManagementBackendProxy
+-ProxyCredential $proxyCred
+PS C:\>$apimContext = New-AzureRmApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
+PS C:\>$backend = New-AzureRmApiManagementBackend -Context $apimContext -BackendId 123 Protocol http -Title
+"first backend" -SkipCertificateChainValidation $true
+-Proxy $credential -Description "backend with proxy server"
+Creates a Backend Proxy Object and sets up Backend
+
+#### Q95. You are developing a mobile instant messaging app for a company. The mobile app must meet the following requirements:
+
+• Support offline data sync.
+• Update the latest messages during normal sync cycles. You need to implement Offline Data Sync.
+Which two actions should you perform? Each conn I answer presents part of the solution. NOTE: Each correct selection is worth one point.
+
+- [ ] Retrieve records from Offline Data Sync on every call to the PullAsync method.
+- [x] Retrieve records from Offline Data Sync using an Incremental Sync.
+- [ ] Push records to Offline Data Sync using an Incremental Sync.
+- [ ] . Return the updatedAt column from the Mobile Service Backend and implement sorting by using the column.
+- [x] Return the updatedAt column from the Mobile Service Backend and implement sorting by the message id.
+
+[Ref](https://docs.microsoft.com/en-us/azure/app-service-mobile/app-service-mobile-offline-data-sync)
+
+#### Q96.You develop a website. You plan to host the website in Azure. You expect the website to experience high traffic volumes after it is published. You must ensure tha the website remains available and responsive while minimizing cost. You need to deploy the website. What should you do?
+
+- [ ] Deploy the website to an App Service that uses the Shared service tie
+- [ ] Configure the App Service plan to automatically scale when the CPU load is high.
+- [x] Deploy the website to a virtual machin
+- [ ] . Configure the virtual machine to automatically scale when the CPU load is high.
+
+Explanation:
+Windows Azure Web Sites (WAWS) offers 3 modes: Standard, Free, and Shared.
+Standard mode carries an enterprise-grade SLA (Service Level Agreement) of 99.9% monthly, even for sites with just one instance.
+Standard mode runs on dedicated instances, making it different from the other ways to buy Windows Azure Web Sites.
+
+#### Q97. You develop a serverless application using several Azure Functions. These functions connect to data from within the code.
+
+You want to configure tracing for an Azure Function App project. You need to change configuration settings in the hostjson file. Which tool should you use?
+
+- [x] Azure porta
+- [ ] Azure PowerShell
+- [ ] Azure Functions Core Tools (Azure CLI)
+- [ ] Visual Studio
+
+Explanation:
+The function editor built into the Azure portal lets you update the function.json file and the code file for a function. The host.json file, which contains some runtimespecific configurations, is in the root folder of the function app
+
+[Ref](https://docs.microsoft.com/en-us/azure/azure-functions/functions-reference#fileupdate)
+
+#### Q98. You are developing an internal website for employees to view sensitive data. The website uses Azure Active Directory (AAD) for authentication. You need to
+
+implement multifactor authentication for the website.
+What should you do? Each correct answer presents part of the solution. NOTE; Each correct selection is worth one point
+
+- [x] In Azure AD, create a new conditional access policy.
+- [ ] In Azure AD, enable application proxy.
+- [ ] Configure the website to use Azure AD B2C.
+- [ ] In Azure AD conditional access, enable the baseline policy.
+- [x] Upgrade to Azure AD Premium.
+
+[Ref](https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-mfa-getstarted)
+
+#### Q99. You must implement Application Insights instrumentation capabilities utilizing the Azure Mobile Apps SDK to provide meaningful analysis of user interactions with a
+
+mobile app. You need to capture the data required to implement the Usage Analytics feature of Application Insights. Which three data values should you capture? Each correct
+answer presents part of the solution
+NOTE: Each correct selection is worth one point.
+
+- [x] Trace
+- [ ] Session Id
+- [ ] Exception
+- [x] User Id
+- [x] Events
+
+Explanation:
+Application Insights is a service for monitoring the performance and usage of your apps. This module allows you to send telemetry of various kinds (events, traces,
+etc.) to the Application Insights service where your data can be visualized in the Azure Portal. Application Insights manages the ID of a session for you.
+
+[Ref](https://github.com/microsoft/ApplicationInsights-Android)
+
+#### Q100. You develop Azure solutions.
+
+You must connect to a No-SQL globally-distributed database by using the .NET API. You need to create an object to configure and execute requests in the
+database. Which code segment should you use?
+
+- [ ] new Container(EndpointUri, PrimaryKey)
+- [ ] new Database(Endpoint, PrimaryKey);
+- [x] new CosmosClient(EndpointUri, PrimaryKey);
+
+Explanation:
+Example:
+// Create a new instance of the Cosmos Client
+this.cosmosClient = new CosmosClient(EndpointUri, PrimaryKey)
+//ADD THIS PART TO YOUR CODE
+await this.CreateDatabaseAsync();
+
+[Ref](https://docs.microsoft.com/en-us/azure/cosmos-db/sql-api-get-started)
+
+#### Q101. Your company plans to migrate all its data and resources to Azure. The company's migration plan states that only Platform as a Service (PaaS) solutions must be used in Azure. You need to deploy an Azure environment that meets the company's migration plan. What should you create?
+
+- [ ] Azure virtual machines, Azure SQL databases, and Azure Storage accounts.
+- [ ] Azure storage accounts and web server in Azure virtual machines.
+- [ ] an Azure App Service and Azure virtual machines that have Microsoft SQL Server installed.
+- [x] an Azure App Service and Azure SQL databases.
+      [Ref](https://azurecharts.com/overview/?f=paas)
+
+### Q102. What is the first stage in the Microsoft Cloud Adoption Framework for Azure?
+
+- [ ] Adopt the cloud.
+- [ ] Make a plan.
+- [x] Define your strategy.
+- [ ] Ready your organization.
+      [Ref](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/overview)
+
+### Q103. You need to identify the type of failure for which an Azure Availability Zone can be used to protect access to Azure services. What should you identify?
+
+- [ ] a physical server failure
+- [x] an Azure data center failure
+- [ ] an Azure region failure
+- [ ] a storage failure
+      [Ref](https://docs.microsoft.com/en-us/azure/virtual-machines/availability)

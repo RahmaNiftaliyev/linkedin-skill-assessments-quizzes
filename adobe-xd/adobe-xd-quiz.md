@@ -27,7 +27,7 @@
 - [ ] Add a new interaction.
 - [x] Add a new state.
 
-#### Q4. You want to share your project to a blog or social media. How would you accomplish this?
+#### Q4. You want to share your project on a blog or social media. How would you accomplish this?
 
 - [x] Link to the project from your Creative Cloud account.
 - [ ] Use the prototype link.
@@ -48,7 +48,7 @@
 - [ ] Press the Shift key when dragging the guide.
 - [ ] Drag the guide to its location on the artboard.
 
-#### Q7. Your developer notifies you that the left alignment of some the text in a slide in menu is off by 2 pixels. How did the developer catch this?
+#### Q7. Your developer notifies you that the left alignment of some of the text in a slide-in menu is off by 2 pixels. How did the developer catch this?
 
 - [x] The distance values are shown in the developer's share screen.
 - [ ] The developer rolled over them in the developer's share screen.
@@ -60,9 +60,9 @@
 - [ ] Copy the component in the Assets panel, select the component in the project, and paste.
 - [ ] Delete the component in the project and drag the new component from the Assets panel
 - [ ] Right-click the component you want to replace and select Edit Master in Source Document.
-- [ ] Drag the new component from the Assets panel on top of the existing component in the project.
+- [x] Drag the new component from the Assets panel on top of the existing component in the project.
 
-#### Q9. You created a button and converted it to a component in order to make the button interactive. When you open the Component (Master) area in the Property Inspector and click Default State, you notice the button already has one state applied to it. What state is applied?
+#### Q9. You created a button and converted it to a component to make the button interactive. When you open the Component (Master) area in the Property Inspector and click Default State, you notice the button already has one state applied to it. What state is applied?
 
 - [x] Hover
 - [ ] Drag
@@ -79,7 +79,7 @@
 #### Q11. Device preview requires a \_
 
 - [ ] mobile device with NFC
-- [ ] bluetooth connection
+- [ ] Bluetooth connection
 - [ ] USB connection
 - [x] wireless connection
 
@@ -87,7 +87,7 @@
 
 - [ ] Designed at 3X
 - [ ] Designed for Web
-- [ ] Designed at 1X
+- [x] Designed at 1X
 - [ ] Designed at 2X
 
 #### Q13. What does this wire attached to a component indicate?
@@ -117,7 +117,7 @@
 
 #### Q16. After completing a project, you deactivated a couple of Adobe fonts. Now you need to make changes to the XD file. How do you reenable the Adobe fonts in XD?
 
-- [ ] Open your Creative Cloud fonts and click Enable.
+- [x] Open your Creative Cloud fonts and click Enable.
 - [ ] Enable the fonts in your computer's fonts settings.
 - [ ] Adobe fonts are automatically reactivated through the Creative Cloud.
 - [ ] Relink the fonts to your Creative Cloud library.
@@ -136,7 +136,7 @@
 - [ ] the component.
 - [ ] only the text in the symbol.
 - [x] only the instance.
-- [ ] all copies of the component in XD document
+- [ ] all copies of the component in the XD document
 
 #### Q19. You are previewing your XD project on an iPhone. How would you browse an artboard on the phone?
 
@@ -158,3 +158,59 @@
 - [ ] Drag individual images into the grid.
 - [ ] Ensure that all images are in the same format.
 - [x] Import the images and rearrange them in the Repeat Grid.
+
+#### Q22. Adobe Experience Design (XD) is marketed as a \_\_\_ application.
+
+- [ ] web design
+- [ ] screen layout
+- [x] screen prototyping
+- [ ] mobile design
+
+#### Q23. What is the maximum number of interactions that can be applied to a selected element?
+
+- [ ] two
+- [ ] four
+- [x] three
+- [ ] one
+
+#### Q24. Four more artboards for your current XD project have been created in Photoshop. How would you add them to your XD project?
+
+- [x] Import the .psd into the document.
+- [ ] Place the .psd into an XD artboard.
+- [ ] Import one artboard at a time.
+- [ ] Open the .psd in XD.
+
+#### Q25. How can you apply a hover and a tap trigger interaction to one object in XD?
+
+- [ ] Create multiple duplicate artboards.
+- [ ] You cannot apply hover and tap interactions to one object.
+- [ ] Create multiple, layered shapes.
+- [x] Create component states.
+
+#### Q26. When a menu slides in over the artboard and the artboard blurs, what effect has been applied?
+
+- [x] background blur
+- [ ] Darken Blend mode
+- [ ] color overlay
+- [ ] object blur
+
+#### Q27. What does a folder icon in the Layers panel indicate?
+
+- [ ] a symbol
+- [ ] a component
+- [x] a group
+- [ ] a screen element
+
+#### Q28. When designing a mobile app interface in Adobe XD, what is the recommended artboard size for an iPhone 11 Pro?
+
+- [ ] 640x1136 pixels
+- [ ] 1080x1920 pixels
+- [ ] 750x1334 pixels
+- [x] 1125x2436 pixels
+
+#### Q29. What is the purpose of the "Asset Export" feature in Adobe XD?
+
+- [ ] It allows you to import assets from other software.
+- [ ] It lets you create new design elements.
+- [ ] It is used to share design prototypes.
+- [x] It enables you to export assets (such as icons and images) for use in web or app development.

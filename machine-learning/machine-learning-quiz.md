@@ -40,9 +40,9 @@
 #### Q6. You want to identify global weather patterns that may have been affected by climate change. To do so, you want to use machine learning algorithms to find patterns that would otherwise be imperceptible to a human meteorologist. What is the place to start?
 
 - [ ] Find labeled data of sunny days so that the machine will learn to identify bad weather.
-- [x] Use unsupervised learning have the machine look for anomalies in a massive weather database.
+- [ ] Use unsupervised learning have the machine look for anomalies in a massive weather database.
 - [ ] Create a training set of unusual patterns and ask the machine learning algorithms to classify them.
-- [ ] Create a training set of normal weather and have the machine look for similar patterns.
+- [x] Create a training set of normal weather and have the machine look for similar patterns.
 
 #### Q7. You work in a data science team that wants to improve the accuracy of its K-nearest neighbor result by running on top of a naive Bayes result. What is this an example of?
 
@@ -118,7 +118,7 @@
 - [ ] Machine learning servers can host larger databases.
 - [ ] The algorithms can run on unstructured data.
 
-#### Q17. You work for an insurance company. Which machine learning project would add the most value for the company!
+#### Q17. You work for an insurance company. Which machine learning project would add the most value for the company?
 
 - [ ] Create an artificial neural network that would host the company directory.
 - [x] Use machine learning to better predict risk.
@@ -207,10 +207,10 @@ Note: there are centres of clusters (C0, C1, C2).
 
 #### Q28. Self-organizing maps are specialized neural network for which type of machine learning?
 
-- [x] semi-supervised learning
+- [ ] semi-supervised learning
 - [ ] supervised learning
 - [ ] reinforcement learning
-- [ ] unsupervised learning
+- [x] unsupervised learning
 
 #### Q29. Which statement about K-means clustering is true?
 
@@ -285,7 +285,7 @@ Note: there are centres of clusters (C0, C1, C2).
 - [ ] unsupervised learning
 - [ ] algorithms
 
-**Explanation**: This one is pretty straight forward and a fundamental concept.
+**Explanation**: This one is pretty straightforward and a fundamental concept.
 [Source:](https://towardsdatascience.com/machine-learning-for-beginners-d247a9420dab)
 
 #### Q39. Why is it important for machine learning algorithms to have access to high-quality data?
@@ -323,7 +323,7 @@ Note: there are centres of clusters (C0, C1, C2).
 
 - [x] The system went from supervised learning to reinforcement learning.
 - [ ] The system evolved from supervised learning to unsupervised learning.
-- [ ] The system evolved from unsupervised learnin9 to supervised learning.
+- [ ] The system evolved from unsupervised learning to supervised learning.
 - [ ] The system evolved from reinforcement learning to unsupervised learning.
 
 #### Q44. The security company you work for is thinking about adding machine learning algorithms to their computer network threat detection appliance. What is one advantage of using machine learning?
@@ -369,7 +369,7 @@ Note: there are centres of clusters (C0, C1, C2).
 
 - [ ] regression analysis
 - [ ] unsupervised learning
-- [ ] high -variance modeling
+- [ ] high-variance modeling
 - [x] ensemble modeling
 
 #### Q50. Your data science team wants to use machine learning to better filter out spam messages. The team has gathered a database of 100,000 messages that have been identified as spam or not spam. If you are using supervised machine learning, what would you call this data set?
@@ -407,7 +407,7 @@ Note: there are centres of clusters (C0, C1, C2).
 - [ ] unsupervised machine learning
 - [x] reinforcement learning
 
-#### Q55. The model will be trained with data in one single batch is known as ?
+#### Q55. The model will be trained with data in one single batch is known as?
 
 - [ ] Batch learning
 - [ ] Offline learning
@@ -467,7 +467,7 @@ Note: there are centres of clusters (C0, C1, C2).
 - [x] There is not a lot of variance but there is a high bias.
 - [ ] Your model has low bias but high variance.
 
-`Underfitted data models usually have high bias and low variance. Overfitted data models have low bias and high variance.`
+**Explanation**: Underfitted data models usually have high bias and low variance. Overfitted data models have low bias and high variance.
 
 #### Q63. Asian user complains that your company's facial recognition model does not properly identify their facial expressions. What should you do?
 
@@ -476,9 +476,9 @@ Note: there are centres of clusters (C0, C1, C2).
 - [ ] Retrain your model with smaller batch sizes.
 - [x] Include Asian faces in your training data and retrain your model.
 
-`The answer is self-explanatory: if Asian users are the only group of people making the complaint, then the training data should have more Asian faces.`
+**Explanation**: The answer is self-explanatory: if Asian users are the only group of people making the complaint, then the training data should have more Asian faces.
 
-#### Q64. You work for a website that helps match people up for lunch dates. The website boasts that it uses more than 500 predictors to find customers the perfect date, but many costumers complain that they get very few matches. What is a likely problem with your model?
+#### Q64. You work for a website that helps match people up for lunch dates. The website boasts that it uses more than 500 predictors to find customers the perfect date, but many customers complain that they get very few matches. What is a likely problem with your model?
 
 - [ ] Your training set is too large.
 - [ ] You are underfitting the model to the data.
@@ -525,7 +525,7 @@ Note: there are centres of clusters (C0, C1, C2).
 - [ ] Help avoiding the vanishing/exploding gradient problem
 - [ ] Their ability to activate each neurons individually.
 
-#### Q70. Which loss function would fit best in a categorical (discrete) supervised learning ?
+#### Q70. Which loss function would fit best in a categorical (discrete) supervised learning?
 
 - [ ] kullback-leibler (KL) loss
 - [x] Binary Crossentropy
@@ -560,7 +560,7 @@ Note: there are centres of clusters (C0, C1, C2).
 #### Q73. You need to quickly label thousands of images to train a model. What should you do?
 
 - [ ] Set up a cluster of machines to label the images
-- [ ] Create a subset of the images and label then yourself
+- [ ] Create a subset of the images and label them yourself
 - [x] Use naive Bayes to automatically generate labels.
 - [ ] Hire people to manually label the images
 
@@ -573,7 +573,7 @@ Note: there are centres of clusters (C0, C1, C2).
 - [ ] high bias, high variance
 - [x] low bias, low variance
 
-  `// since the data is accurately classified and is neither overfitting or underfitting the dataset`
+  `// since the data is accurately classified and is neither overfitting nor underfitting the dataset`
 
 #### Q75. You need to select a machine learning process to run a distributed neural network on a mobile application. Which would you choose?
 
@@ -653,7 +653,7 @@ Note: there are centres of clusters (C0, C1, C2).
 - [ ] unsupervised classification
 - [ ] decision tree analysis
 
-`//You could use a naïve Bayes algorithm, to differentiate three classes of dog breeds — terrier, hound, and sport dogs. Each class has three predictors — hair length, height, and weight. The algorithm does something called class predictor probability.`
+**Explanation**: You could use a naïve Bayes algorithm, to differentiate three classes of dog breeds — terrier, hound, and sport dogs. Each class has three predictors — hair length, height, and weight. The algorithm does something called class predictor probability.
 
 [Reference](https://www.linkedin.com/pulse/machine-learning-algorithms-doug-rose/)
 
@@ -666,17 +666,17 @@ Note: there are centres of clusters (C0, C1, C2).
 
 #### Q86. Your data science team is often criticized for creating reports that are boring or too obvious. What could you do to help improve the team?
 
-- [x] Suggest that the team is probably underfitting the model to the data.
+- [ ] Suggest that the team is probably underfitting the model to the data.
 - [ ] Suggest that unsupervised learning will lead to more interesting results.
 - [ ] Make sure that they are picking the correct machine learning algorithms.
-- [ ] Encourage the team to ask more interesting questions.
+- [x] Encourage the team to ask more interesting questions.
 
 #### Q87. What is the difference between unstructured and structured data?
 
 - [ ] Unstructured data is always text.
 - [ ] Unstructured data is much easier to store.
 - [x] Structured data has clearly defined data types.
-- [ ] Sturctured data is much more popular.
+- [ ] Structured data is much more popular.
 
 #### Q88. You work for a startup that is trying to develop a software tool that will scan the internet for pictures of people using specific tools. The chief executive is very interested in using machine learning algorithms. What would you recommend as the best place to start?
 
@@ -717,7 +717,7 @@ Note: there are centres of clusters (C0, C1, C2).
 
 - [ ] Bias is when your predicted values are scattered.
 - [x] Bias is the gap between your predicted value and the outcome.
-- [ ] Bias is when your data is wrong for differnet reasons.
+- [ ] Bias is when your data is wrong for different reasons.
 - [ ] Bias is when your values are always off by the same percentage.
 
 #### Q94. Which project might be best suited for supervised machine learning?
@@ -758,7 +758,7 @@ During training, k-means partitions observations into k clusters. During inferen
 - [x] Decrease variance
 - [ ] Decrease bias
 
-`//Averaging models leads to higher stability and a lower variance than individual models. Mathematically, remember that $Var(\bar{X})=\frac{Var(X)}{N}`
+**Explanation**: Averaging models leads to higher stability and a lower variance than individual models. Mathematically, remember that $\text{Var}(\bar{X})=\frac{\text{Var}(X)}{N}$
 
 #### Q99. To optimize your objective function, you are performing full batch gradient descent using the entire training set (not stochastic gradient descent). Is it required to shuffle your training set?
 
@@ -767,7 +767,7 @@ During training, k-means partitions observations into k clusters. During inferen
 - [ ] No, it is not necessary because the dataset can already be considered shuffled from the data collection process.
 - [x] No, because each update passes through the entire dataset anyway and the order doesn't matter.
 
-`//At every iteration, full batch gradient descent uses the entire training set to compute a gradient. The order in which data is processed doesn't impact the gradient value.`
+**Explanation**: At every iteration, full batch gradient descent uses the entire training set to compute a gradient. The order in which data is processed doesn't impact the gradient value.
 
 At every iteration, full batch gradient descent uses the entire training set to compute a gradient. The order in which data is processed doesn't impact the gradient value.
 
@@ -780,7 +780,7 @@ Which of these statements do you agree with?
 - [ ] You should not correct the incorrectly labeled data in the test set, because the test set should reflect the data distribution of the real world.
 - [ ] If you want to correct incorrectly labeled data, you should do it on all three sets (train/dev/test) in order to maintain similar distributions.
 
-`//It is important that your dev and test set have the closest possible distribution to "real" data.`
+**Explanation**: It is important that your dev and test set have the closest possible distribution to "real" data.
 
 #### Q101. You're working on a binary classification task, to classify if an image contains a cat ("1") or doesn't contain a cat ("0"). What loss would you choose to minimize in order to train a model?
 
@@ -789,67 +789,203 @@ Which of these statements do you agree with?
 - [ ] L = || y - y^ ||22
 - [ ] L = || y - y^ ||22 + constant
 
-`//You are trying to minimize the binary cross entropy loss over the training set..`
+**Explanation**: You are trying to minimize the binary cross entropy loss over the training set..
 
-### Q102. You want to create a machine learning algorithm that finds the top 100 people who have shared photographs of themselves on social media. What is the best machine learning method to use?
+#### Q102. You want to create a machine learning algorithm that finds the top 100 people who have shared photographs of themselves on social media. What is the best machine learning method to use?
 
 - [ ] reinforcement learning
 - [x] binary classification
 - [ ] K-nearest neighbor
 - [ ] unsupervised learning
 
-### Q103. The famous data scientist Andrew Ng has been quoted as saying, "Applied machine learning is basically feature engineering." What is feature engineering?
+#### Q103. The famous data scientist Andrew Ng has been quoted as saying, "Applied machine learning is basically feature engineering." What is feature engineering?
 
 - [ ] scraping new features from web data
 - [x] creating new variables by combining and modifying the original variables
 - [ ] designing innovative new user features to add to software
 - [ ] using deep learning to find features in the data
 
-### Q104. In the context of calculus, what is df/dx?
+#### Q104. In the context of calculus, what is df/dx?
 
 - [ ] the prediction function
 - [x] the derivative of f of x
 - [ ] the derivative of x
 - [ ] equivalent to f divided by x
 
-### Q105. What is a well-designed/well-fitted model?
+#### Q105. What is a well-designed/well-fitted model?
 
 - [ ] one that has been trained and tested with the same data
 - [x] one that has a high degree of accuracy and is able to accurately predict results
 - [ ] one that has been trained with labeled training data
 - [ ] one that has been trained with an exhaustive set of all conditions and permutations in the training data
 
-### Q106. **\_**-based collaborative filtering occurs when a person is recommended an item similar to an item they have purchased.
+#### Q106. **\_**-based collaborative filtering occurs when a person is recommended an item similar to an item they have purchased.
 
 - [ ] History
 - [x] Item
 - [ ] Similarity
 - [ ] Purchase
 
-### Q107. Fill in the blanks: Two multivariate imputer techniques are the **\_** imputer and the **\_** imputer.
+#### Q107. Fill in the blanks: Two multivariate imputer techniques are the **\_** imputer and the **\_** imputer.
 
 - [ ] supervised, unsupervised
 - [x] iterative, KNN
 - [ ] similarity, regressive
 - [ ] normalized, scaled
 
-### Q108. You are working on a regression model using the Keras library. What method on the Model class do you use to train the model?
+#### Q108. You are working on a regression model using the Keras library. What method on the Model class do you use to train the model?
 
 - [ ] predict
 - [ ] compile
 - [x] fit
 - [ ] get_weights
 
-### Q109. What is the goal of regularization in the K nearest neighbors algorithm?
+#### Q109. What is the goal of regularization in the K nearest neighbors algorithm?
 
 - [ ] normalizing the data points so they can be compared with each other
 - [ ] using a straight line model to make predictions based on training data
 - [ ] finding the slope of the line that represents the model
 - [x] making the decision boundaries more regular
 
-### Q110. If there is no trend between two variables x and y, we say that there is a **\_** connection between x and y.
+#### Q110. If there is no trend between two variables x and y, we say that there is a **\_** connection between x and y.
 
 - [ ] linear
 - [ ] exponential
 - [ ] non-random
 - [x] random
+
+#### Q111. If you are thinking about using machine learning algorithms, the best thing you can do today is to ensure you have quality **\_**.
+
+- [x] data
+- [ ] processors
+- [ ] networking
+- [ ] statistical techniques
+
+**Explanation**: "Ensuring you have good data quality prior to running machine learning algorithms is a crucial step within the overall data science and machine learning workflow." [Source](https://towardsdatascience.com/data-quality-considerations-for-machine-learning-models-dcbe9cab34cb)
+
+#### Q112. Your organization's chief diversity officer is concerned that your engineering department lacks racial and gender diversity. You are asked to create a supervised machine learning system to help sort through hundreds of thousands of new employment applications. The human resources department insists on using internal hiring data. What are some of the dangers that you might run into?
+
+- [ ] There will be too much data for your artificial neural network to process efficiently.
+- [ ] Machine learning systems cannot define diversity, so there is no way to use one to improve hiring.
+- [ ] Machine learning systems cannot be used with this type of data.
+- [x] If the system uses internal data, then it may amplify any existing bias in hiring.
+
+**Explanation**: "If an AI is trained on a biased data set, it will naturally make biased decisions which can give calamitous results." [Source](https://www.linkedin.com/pulse/reducing-bias-ai-diversity-inclusion-shashwat-siddhant/)
+
+#### Q113. In 2013, Google´s DeepMind project created a machine learning algorithm that could play an old-style Atari video game, Pong. The algorithm taught the machine how to play by creating a series of rewards. Each time the machine successfully returned the ball, the machine got a reward; each time the opponent missed the ball, the machine got a reward. How would you describe this type of machine learning algorithm?
+
+- [ ] big data machine learning.
+- [ ] Good Old-Fashioned Artificial Intelligence (GOFAI).
+- [x] reinforcement learning.
+- [ ] supervised learning.
+
+**Explanation**: Reinforcement learning is the branch of machine learning where the algorithm interacts with the environment and gets rewards or penalizations [Source](https://www.deepmind.com/publications/playing-atari-with-deep-reinforcement-learning)
+
+#### Q114. An organization that owns dozens of shopping malls want to create a machine learning product that will use facial recognition to identify customers. What is one of the main challenges with developing such a product?
+
+- [ ] The images in the video would not be high-quality enough to identify individuals.
+- [ ] It would be difficult to decide between supervised and unsupervised learning.
+- [x] It might be unethical for the business to identify people without their consent.
+- [ ] Most machine learning algorithms are not designed for video.
+
+**Explanation**: there are many ethical questions about consent and privacy in machine learning algorithms [Source](https://www.nature.com/articles/d41586-020-03187-3)
+
+#### Q115. What is the difference between unstructured and structured data ?
+
+- [ ] Unstructured data is much easier to store.
+- [x] Structured data has clearly defined data types.
+- [ ] Unstructured data is always text.
+- [ ] Structured data is much more popular.
+
+#### Q116. You work for a startup that is trying to develop a software tool that will scan the internet for pictures of people using specific products. The chief executive is very interested in using machine learning algorithms. what would you recommend as the best place to start ?
+
+- [ ] Create a data lake with an unsupervised machine learning alogrithm.
+- [ ] Using an unsupervised machine learning algorithm to cluster together all the photographs
+- [x] Use supervised machine learning to classify photographs based on a predetermined training set.
+- [ ] Use a combination of unsupervised and supervised machine learning to create machine-defined data clusters.
+
+#### Q117. What is the definition of reinforcement learning?
+
+- [x] The machine iterates through different models to continuously improve the outcome.
+- [ ] The developer reinforces what they already know.
+- [ ] The machine reinforces supervised learning.
+- [ ] It is about reinforcing unknown data.
+
+**Explanation:** Reinforcement learning is fundamentally an iterative process. [Source](https://developer.ibm.com/learningpaths/get-started-automated-ai-for-decision-making-api/what-is-automated-ai-for-decision-making/)
+
+#### Q118. Least square regression solves a maximum likelihood estimation problem under a linear model
+
+- [x] True
+- [ ] False
+
+**Explanation:** Least squares regression is a method used to find the best-fitting linear relationship between a dependent variable and one or more independent variables. It minimizes the sum of the squared differences between the observed and predicted values, which is equivalent to maximizing the likelihood of the observed data under a Gaussian noise assumption.
+
+#### Q118. You are part of data science team that is working for a national fast-food chain. You create a simple report that shows trend: Customers who visit the store more often and buy smaller meals spend more than customers who visit less frequently and buy larger meals. What is the most likely diagram that your team created?
+
+- [x] multiclass classification diagram
+- [ ] linear regression and scatter plots
+- [ ] pivot table
+- [ ] K-means cluster diagram
+
+#### Q120. The total types of the layer in radial basis function in neural networks is **\_\_**
+
+- [ ] 1
+- [ ] 2
+- [x] 3
+- [ ] 4
+
+**Explanation:** Radial Basis Functions are a special class of feed-forward neural networks consisting of three layers: an input layer, a hidden layer, and an output layer.
+
+#### Q121. What is a top-down parser?
+
+- [x] Begins by hypothesizing a sentence (the symbol S) and successively predicting lower level constituents until individual preterminal symbols are written
+- [ ] Begins by hypothesizing a sentence (the symbol S) and successively predicting upper level constituents until individual preterminal symbols are written
+- [ ] Begins by hypothesizing lower level constituents and successively predicting a sentence (the symbol S)
+- [ ] Begins by hypothesizing upper level constituents and successively predicting a sentence (the symbol S)
+
+**Explanation:** A top-down parser begins by hypothesizing a sentence (the symbol S) and successively predicting lower level constituents until individual preterminal symbols are written.
+
+#### Q122. Which search method will expand the node that is closest to the goal?
+
+- [ ] Best-first search
+- [x] Greedy best-first search
+- [ ] A\* search
+- [ ] None of the mentioned
+
+**Explanation:** Greedy best-first search is an informed search algorithm where the evaluation function is strictly equal to the heuristic function, disregarding the edge weights in a weighted graph. [Source](https://www.codecademy.com/resources/docs/ai/search-algorithms/greedy-best-first-search)
+
+#### Q123. Which is used to improve the performance of heuristic search?
+
+- [ ] Quality of nodes
+- [x] Quality of heuristic function
+- [ ] Simple form of nodes
+- [ ] None of the mentioned
+
+**Explanation:** Good heuristic can be constructed by relaxing the problem, So the performance of heuristic search can be improved.``
+
+#### Q124. What is a sentence parser typically used for?
+
+- [ ] It is used to parse sentences to check if they are utf-8 compliant.
+- [x] It is used to parse sentences to derive their most likely syntax tree structures.
+- [ ] It is used to parse sentences to assign POS tags to all tokens.
+- [ ] It is used to check if sentences can be parsed into meaningful tokens.
+
+**Explanation:** Sentence parsers analyze a sentence and automatically build a syntax tree.
+
+#### Q125. Which of the following techniques can not be used for normalization in text mining?
+
+- [ ] Stemming
+- [ ] Lemmatization
+- [x] Stop Word Removal
+- [ ] None of the above
+
+**Explanation:** Lemmatization and stemming are the techniques of keyword normalization.
+
+#### Q126. How do you handle missing or corrupted data in a dataset?
+
+- [ ] Drop missing rows or columns
+- [ ] Replace missing values with mean/median/mode
+- [ ] Assign a unique category to missing values
+- [x] All of the above
+
+**Explanation:** All of the above techniques are different ways of imputing the missing values.

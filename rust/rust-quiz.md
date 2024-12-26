@@ -145,7 +145,7 @@ fn main() {
 }
 ```
 
-- [ ]
+- [ ] &shy;
 
 ```rust
 for c in text.chars() {
@@ -157,7 +157,7 @@ for c in text.chars() {
 }
 ```
 
-- [x]
+- [x] &shy;
 
 ```rust
 for c in text.chars() {
@@ -166,7 +166,7 @@ for c in text.chars() {
 }
 ```
 
-- [ ]
+- [ ] &shy;
 
 ```rust
 for c in text.chars() {
@@ -175,7 +175,7 @@ for c in text.chars() {
 }
 ```
 
-- [ ]
+- [ ] &shy;
 
 ```rust
 for c in text.chars() {
@@ -488,3 +488,296 @@ enum Option_i32 {
 - [ ] when a metatrait is needed to use another trait
 
 [Reference](https://doc.rust-lang.org/rust-by-example/trait/supertraits.html)
+
+#### Q43. Which types are legal for x to be in this snippet?
+
+```rust
+if x {
+    println!("ok");
+}
+```
+
+- [ ] every type that implements the std::cmp::Truth trait
+- [x] only the primitive bool type
+- [ ] both bool and u8 (which is how bool is implemented under the hood)
+- [ ] bool and std::sync::atomic::AtomicBool
+
+[Reference](https://doc.rust-lang.org/book/ch03-05-control-flow.html#if-expressions)
+
+#### Q44. How do you access the married data in this struct?
+
+```rust
+struct person = Person {
+    height: u64,
+    weight: u64,
+    married: bool
+}
+```
+
+- [ ] person.getMarried()
+- [ ] person[married]
+- [ ] person.value(married)
+- [x] person.married
+
+[Reference](https://doc.rust-lang.org/book/ch05-01-defining-structs.html#accessing-fields-of-a-struct)
+
+#### Q45. To mark a function as visible to other crates, what do you need to do to its definition?
+
+- [ ] Add the public keyword.
+- [x] Add the pub keywork.
+- [ ] Begin the function's name with a capital letter.
+- [ ] Remove the private keyword.
+
+[Reference](https://doc.rust-lang.org/reference/visibility-and-privacy.html)
+
+#### Q46. Which choice is a compound data type?
+
+- [ ] char
+- [x] tuple
+- [ ] bool
+- [ ] i32
+
+[Reference](https://doc.rust-lang.org/book/ch03-02-data-types.html#compound-types)
+
+#### Q47. How could you make this function compile?
+
+```rust
+fn main() {
+    let x = 5;
+    println!("The value of x is: {}", x);
+    x = 6;
+    println!("The value of x is: {}", x);
+}
+```
+
+- [ ] Use x only once in a println!() statement.
+- [ ] Place curly brackets around let x = 5.
+- [ ] Add const to let x = 6.
+- [x] Add mut to let x = 5.
+
+[Reference](https://doc.rust-lang.org/book/ch03-01-variables-and-mutability.html)
+
+#### Q48. Using .unwrap() will \_.
+
+- [ ] let you choose the expected panic error message
+- [x] call panic! if there is an error or absence of value
+- [ ] unwrap the value inside an unsafe wrapper
+- [ ] return the error inside Ok()
+
+[Reference](https://doc.rust-lang.org/std/result/enum.Result.html#method.unwrap)
+
+#### Q49. When should the panic! macro be called instead of using std::result::Result?
+
+- [ ] when there is a way to encode the information in types used
+- [ ] when your code is expected to end in a good state
+- [x] when the situation is considered unrecoverable
+- [ ] when valid values are passed on the code
+
+[Reference](https://doc.rust-lang.org/book/ch09-00-error-handling.html)
+
+#### Q50. Which statement about arrays is true?
+
+- [x] [<T>; size of array] can initialize arrays.
+- [ ] Indexing, such as array.0, accesses elements in arrays.
+- [ ] A data structure for collections can contain different types of values.
+- [ ] Arrays are useful when you want to allocate data on the heap and then on the stack.
+
+[Reference](https://doc.rust-lang.org/stable/rust-by-example/primitives/array.html)
+
+#### Q51. How would you select the value 2.0 from this tuple?
+
+```rust
+let pt = Point2D(-1.0, 2.0)
+```
+
+- [ ] pt[1]
+- [ ] pt(1)
+- [ ] pt.iter().nth(1)
+- [x] pt.1
+
+[Reference](https://doc.rust-lang.org/rust-by-example/primitives/tuples.html)
+
+#### Q52. When writing tests, which macro should you use to assert equality between two values?
+
+- [x] assert_eq!()
+- [ ] assert_equal!()
+- [ ] is_equals!()
+- [ ] assert!()
+
+[Reference](https://doc.rust-lang.org/std/macro.assert_eq.html)
+
+#### Q53. Which code statement in Rust is used to define a BTreeMap object?
+
+- [ ] let btm=BTreeMap::new()
+- [x] let mut btm=BTreeMap::new()
+- [ ] BTreeMap btm = BTreeMap.new()
+- [ ] BTreeMap btm = std::collections::BTreeMap::new()
+
+[Reference](https://iq.opengenus.org/questions-on-rust/)
+
+#### Q54 .Rust is known to be memory safe. Which feature is the main reason for the memory safety of Rust?
+
+- [x] ownership
+- [ ] borrowing
+- [ ] lifetimes
+- [ ] reference
+
+[Reference](https://iq.opengenus.org/questions-on-rust/)
+
+#### Q55 . To support Dynamic Sized variables, what should we use in place of "f32"?
+
+- [ ] Not supportedin Rust
+- [ ] use array
+- [x] ?sized
+- [ ] list all data-types
+
+[Reference](https://iq.opengenus.org/questions-on-rust/)
+
+#### Q56 . What is "Drop" in Rust used for?
+
+- [ ] run code as multi-threaded
+- [x] run code when variable is out of scope
+- [ ] run code and drop it if error comes
+- [ ] option 4
+
+[Reference](https://iq.opengenus.org/questions-on-rust/)
+
+#### Q57 . In Rust, how is a macro from the above Rust code snippet used?
+
+- [ ] foo(x)
+- [ ] #foo
+- [x] foo!()
+- [ ] foo
+
+[Reference](https://iq.opengenus.org/questions-on-rust/)
+
+#### Q58 . Which library does Rust use for memory allocation?
+
+- [ ] tcmalloc
+- [ ] mimalloc
+- [ ] ptmalloc
+- [x] jemalloc
+
+[Reference](https://iq.opengenus.org/questions-on-rust/)
+
+#### Q59 . Who designed Rust from scratch in 2006?
+
+- [x] Graydon Hoare
+- [ ] Yukihiro Matsumoto
+- [ ] Guido Van Rossum
+- [ ] David flanagan
+
+[Reference](https://iq.opengenus.org/questions-on-rust/)
+
+#### Q60. Which types are _not_ allowed within an enum variant's body?
+
+- [ ] zero-sized types
+- [ ] structs
+- [x] trait objects
+- [ ] floating-point numbers
+
+#### Q61. Which example correctly uses std::collections::HashMap's Entry API to populate counts?
+
+```rust
+use std::collections::HashMap;
+fn main() {
+    let mut counts = HashMap::new();
+    let text = "LinkedIn Learning";
+    for c in text.chars() {
+        // Complete this block
+    }
+    println!("{:?}", counts);
+}
+```
+
+- [ ] &shy;
+
+```rust
+for c in text.chars() {
+    if let Some(count) = &mut counts.get(&c) {
+        counts.insert(c, *count + 1);
+    } else {
+        counts.insert(c, 1);
+    };
+}
+```
+
+- [x] &shy;
+
+```rust
+for c in text.chars() {
+    let count = counts.entry(c).or_insert(0);
+    *count += 1;
+}
+```
+
+- [ ] &shy;
+
+```rust
+for c in text.chars() {
+    let count = counts.entry(c);
+    *count += 1;
+}
+```
+
+- [ ] &shy;
+
+```rust
+for c in text.chars() {
+    counts.entry(c).or_insert(0).map(|x| x + 1);
+}
+```
+
+#### Q62. To convert a `Result` to an `Option`, which method should you use?
+
+- [ ] `.as_option()`
+- [x] `.ok()`
+- [ ] `.to_option()`
+- [ ] `.into()`
+
+#### Q63. Which statement about this code is true?
+
+```rust
+fn main() {
+    let c = 'z';
+    let heart_eyed_cat = '😻';
+}
+```
+
+- [x] Both are character literals.
+- [ ] `heart_eyed_cat` is an invalid expression.
+- [ ] `c` is a string literal and `heart_eyed_cat` is a character literal.
+- [ ] Both are string literals.
+
+#### Q64. What is an alternative way of writing `slice` that produces the same result?
+
+```rust
+...
+let s = String::form("hello");
+let slice = &s[0..2];
+```
+
+- [ ] let slice = &s[len + 2];
+- [ ] let slice = &s[len - 2];
+- [ ] let slice = &s.copy(0..2);
+- [x] let slice = &s[..2];
+
+#### Q65. How would you select the value 2.0 from this tuple?
+
+```rust
+let pt = Point2D(-1.0, 2.0)
+```
+
+- [ ] pt[1]
+- [ ] pt(1)
+- [ ] pt.iter().nth(1)
+- [x] pt.1
+
+#### Q66. What is the purpose of the move keyword in Rust?
+
+- [x] To indicate that a value should be moved instead of copied.
+- [ ] To indicate that a value should be copied instead of moved.
+- [ ] To indicate that a value should be borrowed instead of owned.
+- [ ] To indicate that a value should be owned instead of borrowed.
+
+[reference](https://doc.rust-lang.org/std/keyword.move.html#:~:text=Keyword%20move&text=move%20converts%20any%20variables%20captured,to%20variables%20captured%20by%20value.&text=move%20is%20often%20used%20when%20threads%20are%20involved.&text=move%20is%20also%20valid%20before%20an%20async%20block.)

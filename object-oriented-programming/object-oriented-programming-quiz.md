@@ -128,10 +128,12 @@
 
 #### Q19. Which statement is true?
 
-- [x] A default parameter's constructor is not equivalent to the default constructor
+- [ ] A default parameter's constructor is not equivalent to the default constructor
 - [ ] A default constructor is inherited from a parent class
-- [ ] A default constructor can be called explicitly
+- [x] A default constructor can be called explicitly
 - [ ] A default constructor cannot be defined by the coder
+
+[reference](<https://en.wikipedia.org/wiki/Constructor_(object-oriented_programming)#:~:text=The%20constructors%20can%20be%20called,also%20called%20the%20shorthand%20method.&text=Example%20e%20%3D%20Example(0%2C,50)%3B%20%2F%2F%20Implicit%20call.>) It is even mentioned in Wikipedia: "The constructors can be called explicitly or implicitly. The method of calling the constructor implicitly is also called the shorthand method."
 
 #### Q20. Which of the following is NOT an advantage of using getters and setters?
 
@@ -146,6 +148,9 @@
 - [ ] Association is the process where model elements cooperate to provide higher-level behavior.
 - [ ] Association is whole/part relationship where one object is composed of one or more other objects, each of which is considered a part of the whole.
 - [ ] Association is where all objects have their own life cycle, but there is ownerhip, and child objects can not belong to another parent object.
+
+[Reference](https://www.infoworld.com/article/3029325/exploring-association-aggregation-and-composition-in-oop.html#:~:text=Association%20in%20object%20oriented%20programming&text=An%20association%20is%20a%20“using,and%20there%20is%20no%20owner.)  
+Association is a semantically weak relationship (a semantic dependency) between otherwise unrelated objects. An association is a “using” relationship between two or more objects in which the objects have their own lifetime and there is no owner.
 
 #### Q22. How are user stories different from use cases?
 
@@ -178,6 +183,8 @@
 - [ ] a procedure-oriented language
 - [ ] if classes are supported, polymorphism will be supported
 
+[reference](https://www.tutorialspoint.com/what-is-the-difference-between-object-oriented-programming-and-object-based-programming#:~:text=Object%20Based%20Languages,-Object%20based%20languages&text=They%20does%20not%20support%20inheritance,not%20supports%20built%2Din%20objects.)
+
 #### Q25. Two classes combine private data members and provide public member functions to access and manipulate those data members. Where is abstraction used?
 
 - [ ] Abstraction is using a private access specifier for the data members.
@@ -209,9 +216,9 @@
 #### Q29. What is a method?
 
 - [ ] a set of instructions designed to perform a frequently used operation within a program and return no values
-- [x] the exact same thing as a function and subroutine
+- [ ] the exact same thing as a function and subroutine
 - [ ] a set of variables that can change over time
-- [ ] a procedure associated with data and behaviour
+- [x] They are functions attached to specific classes (or instances) in object-oriented programming.
 
 #### Q30. A mobile phone is made up of components such as a motherboard, camera, and sensors. The motherboard represents all the functions of a phone, the display shows the display only, and the phone is represented as a whole. Which of the following has the highest level of abstraction?
 
@@ -261,11 +268,11 @@
 - [x] method overloading, because it allows the creation of several methods with the same name, wich differ by the type of input via parameter
 - [ ] method overriding, because it display the same method name, different parameters, and same return type
 
-#### Q36. What is the purpose of static constructor?
+#### Q36. What is the usage of static constructor?
 
-- [x] to initialize all the members with static value
+- [ ] to initialize all the members with static value
 - [ ] to delete the static members when not required
-- [ ] to initialize the static members of class
+- [x] to initialize the static members of class
 - [ ] to clear all the static members' initialized values
 
 #### Q37. What are CRC Cards?
@@ -310,10 +317,7 @@
 - [ ] to protect attributes from unwanted changes
 - [ ] to delegate coding responsibility more efficiently
 - [ ] to conserve memory
-- [x] to avoid writing duplicate code
-- [ ] to separate class behavior from the more general
-
-**NOTE:** I don't have 4th variant in my test, it changed to new 5th variant. Is it also true?
+- [x] to separate class behavior from the more general to more specific
 
 #### Q43. In addition to attributes and behaviours, what quality must a class possess?
 
@@ -387,12 +391,12 @@
 
 #### Q53. What is the function of a user diagram?
 
-- [ ] It connects actors to use cases.
-- [x] It links actors to roles played in all use cases.
+- [x] It connects actors to use cases.
+- [ ] It links actors to roles played in all use cases.
 - [ ] It lists all actors for each use case.
 - [ ] It minimizes the number of actors required.
 
-#### Q54. How do object behavior and attributes differ?
+#### Q54. How do object behaviors and attributes differ?
 
 - [ ] Behavior describe dynamic properties; attributes are static.
 - [x] Attributes describe a state; behaviors describe a change.
@@ -616,10 +620,10 @@ public class Honda extends Car{}
 
 #### Q80. Static polymorphism uses method \_ ?
 
-- [ ] overloading
+- [x] overloading
 - [ ] inheritance
 - [ ] abstraction
-- [x] overriding
+- [ ] overriding
 
 #### Q81. What does a concrete class not have?
 
@@ -644,10 +648,10 @@ public class Honda extends Car{}
 
 #### Q84. What is the difference between an interface and an abstract class?
 
-- [ ] Interfaces can contain code or data. Abstract classes do not contain code or data. A class can inherit from more than one abstract class but can only implement one interface
-- [ ] Interfaces can contain code or data. Abstract classes do not contain code or data. A class can inherit from only one abstract class but can implement an unlimited number of interface
-- [x] Abstract classes can contain code or data. Interface do not contain code or data. A class can inherit from only one abstract class but can implement an unlimited number of interfaces
-- [ ] Abstract classes can contain code or data. Interface do not contain code or data. A class can inherit from more than one abstract class but can only implement one interface
+- [ ] Interfaces can contain code or data. Abstract classes do not contain code or data. A class can inherit from more than one abstract class but can implement only one interface.
+- [ ] Interfaces can contain code or data. Abstract classes do not contain code or data. A class can inherit from only one abstract class but can implement an unlimited number of interfaces.
+- [x] Abstract classes can contain code or data. Interfaces do not contain code or data. A class can inherit from only one abstract class but can implement an unlimited number of interfaces.
+- [ ] Abstract classes can contain code or data. Interfaces do not contain code or data. A class can inherit from more than one abstract class but can implement only one interface.
 
 #### Q85. What parameters are required to be passed to a class constructor?
 
@@ -676,8 +680,8 @@ public class Honda extends Car{}
 
 - [ ] which programming language will be used.
 - [ ] the programmer responsible for implementation.
-- [ ] interacting classes.
-- [x] attributes.
+- [x] interacting classes.
+- [ ] attributes.
 
 #### Q89. What is the best name for the function that corrects this assessment?
 
@@ -704,8 +708,8 @@ public class Honda extends Car{}
 
 - [ ] only 10 levels of inheritance
 - [ ] as many levels of inheritance as required within 10 minutes
-- [ ] as many levels of inheritance as required
-- [x] only the amount of levels memory permits, divided by processor speed
+- [x] as many levels of inheritance as required
+- [ ] only the amount of levels memory permits, divided by processor speed
 
 #### Q93. What is a virtual Method?
 
@@ -723,7 +727,7 @@ public class Honda extends Car{}
 
 [Reference](https://www.interviewbit.com/blog/principles-of-oops/)
 
-#### Q95. How do object behaviour and attributes differ?
+#### Q95. How do object behaviours and attributes differ?
 
 - [ ] Behaviour describe dynamic properties; attributes are static.
 - [x] Attributes describe a state; behaviours describe a change.
@@ -750,7 +754,7 @@ public class Honda extends Car{}
 
 - [ ] `class employee{ }; class stream{ }; class topper{ };`
 - [ ] `class employee{int rating;}; class stream:public employee{ };`
-- [ ] `class employee{int rating;}; class stream{int total;}; class topper: employee, stream{ };`
+- [x] `class employee{int rating;}; class stream{int total;}; class topper: employee, stream{ };`
 - [ ] `class employeef{int rating};}: class stream{ }: class topper: public employee{ }:`
 
 #### Q99. What is multilevel inheritance?
@@ -762,9 +766,191 @@ public class Honda extends Car{}
 
 [Reference](https://www.w3schools.com/cpp/cpp_inheritance_multilevel.asp)
 
-#### Q100. Can you have two classes with the same name in the same proiect?
+#### Q100. Can you have two classes with the same name in the same project?
 
 - [ ] No, you cannot.
 - [ ] Yes, as long as their constructors are different.
 - [ ] Yes, as long as their methods are different.
 - [x] Yes, as long as they are in different namespaces.
+
+#### Q101. Objects are passed by **\_**
+
+- [ ] value or reference, depending on the programming language used
+- [ ] value
+- [ ] value or reference, depending on program
+- [x] reference
+
+#### Q102. If a language just implements pass-by-value parameters to functions, can the objects passed as parameters be set to new instances inside the function and their new value will return to the caller?
+
+- [ ] Yes, but only if it is a reference and not a primitive class.
+- [ ] Yes, since the value is a reference even though it is passed by value, it can be done.
+- [ ] No, you will get a compilation error.
+- [x] No, a local copy will be initialized and will be lost as soon as it is out of scope.
+
+#### Q103. What is encapsulation?
+
+- [ ] defining classes by focusing on what is important for a purpose
+- [x] defining data and relevant methods together in the same class
+- [ ] making all methods private
+- [ ] using words to define classes
+
+#### Q104. What is a method?
+
+- [x] a function associated with data and behavior
+- [ ] the exact same thing as a function and subroutine
+- [ ] a set of variables that can change over time
+- [ ] a set of instructions designed to perform a frequently used operation within a program and return no values
+
+#### Q105.What is the most accurate example of the Liskov substitution principle?
+
+- [ ] A
+      public class Car{
+      }
+      public class FlyingCars extends Car{
+      public void fly(){}
+      }
+      public class Tesla FlyingCar{}
+      public class Honda Car{}
+
+- [ ] B
+      public class Car{
+      public void fly(){}
+      }
+      public class Tesla extends Car{}
+      public class Honda extends Car{}
+
+- [ ] C
+      public class Car{
+      public void fly(){}
+      }
+      public class Tesla Car{}
+      public class Honda Car{}
+
+- [x] D
+      public class Car{
+      }
+      public class FlyingCars extends Car{
+      public void fly(){}
+      }
+      public class Tesla extends FlyingCar{}
+      public class Honda extends Car{}
+      [reference link](https://stackoverflow.com/a/44913313/1573267)
+
+#### Q106 what describes an agrregation
+
+- [ ] A class of resources
+- [ ] A group of methods
+- [x] A collection of objects
+- [ ] A list of children
+
+#### 107. Which choice is a benefit of using dependency injection?
+
+- [x] loose coupling
+- [ ] code reusability
+- [ ] lazy initialization
+- [ ] data abstraction
+
+#### Q108. What cannot be used for polymorphism?
+
+- [ ] overloading constructors
+- [ ] overloading member functions
+- [x] static member functions
+- [ ] overloading predefined operator
+
+#### Q109. An instance of which type of class cannot be created?
+
+- [ ] Protected class
+- [ ] Base class
+- [ ] Anonymous class
+- [x] Abstract class
+
+#### Q110. From the SOLID principles of object-oriented programming, which statement best describes the Liskov substitution principle?
+
+- [ ] A class should have only a single responsibility—that is, only changes to one part of the software's specification should be able to affect the specification of the class.
+- [ ] Software entities should be open for extension, but closed for modification.
+- [ ] Many client-specific interfaces are better than one general-purpose interface.
+- [x] objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program.
+
+#### Q111. What are the five Creational Design patterns by the Gang of Four ?
+
+- [ ] Observer, State, Strategy, Template Method, and Visitor.
+- [ ] Composite, Visitor, State, Prototype, and Singleton.
+- [ ] Composite, Builder, Factory Method, Prototype, and Singleton.
+- [x] Abstract Factory, Builder, Factory Method, Prototype, and Singleton.
+
+#### Q112. What is the difference between an interface and an abstract class?
+
+- [ ] Interfaces can contain code or data. Abstract classes do not contain code or data. A class can inherit from more than one abstract class but can implement only one interface.
+- [ ] Interfaces can contain code or data. Abstract classes do not contain code or data. A class can inherit from only one abstract class but can implement an unlimited number of interfaces.
+- [x] Abstract classes can contain code or data. Interfaces do not contain code or data. A class can inherit from only one abstract class but can implement an unlimited number of interfaces.
+- [ ] Abstract classes can contain code or data. Interfaces do not contain code or data. A class can inherit from more than one abstract class but can implement only one interface.
+
+#### Q113. Which relationship best illustrates an abstract-concrete class relationship?
+
+- [ ] cat : kitten
+- [ ] color : red
+- [x] planet : moon
+- [ ] truck : window
+
+#### Q114. Which choice is a benefit of using dependency injection?
+
+- [x] loose coupling
+- [ ] code reusability
+- [ ] lazy initialization
+- [ ] data abstraction
+
+#### Q115. **\_** describes an aggregation
+
+- [ ] A class of resources
+- [ ] A group of methods
+- [x] A collection of objects
+- [ ] A list of children
+
+#### Q116. Which type of function can be used for polymorphism?
+
+- [x] virtual function
+- [ ] inline function
+- [ ] undefined function
+- [ ] private function
+
+#### Q117. Which choice is a benefit of using dependency injection?
+
+- [x] loose coupling
+- [ ] code reusability
+- [ ] lazy initialization
+- [ ] data abstraction
+
+#### Q118. Are you required to return an object if it was passed by reference to a function, and why or why not?
+
+- [ ] Yes, the caller function needs to reflect the changes.
+- [ ] No, you should use a global variable instead.
+- [x] No, changes will be automatically reflected in the calling function.
+- [ ] Yes, the object must be the same in the caller function.
+
+#### Q119. From the SOLID principles of object-oriented programming, which statement best describes the Liskov substitution principle?
+
+- [ ] A class should have only a single responsibility—that is, only changes to one part of the software's specification should be able to affect the specification of the class.
+- [ ] Software entities should be open for extension, but closed for modification.
+- [ ] Many client-specific interfaces are better than one general-purpose interface.
+- [x] objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program.
+
+#### Q120. In addition to responsibilities, what should be listed on Class-responsability-collaboration (CRC) cards?
+
+- [ ] which programming language will be used.
+- [ ] the programmer responsible for implementation.
+- [x] interacting classes.
+- [ ] attributes.
+
+#### Q121. What is the best name for the function that corrects this assessment?
+
+- [ ] makeResult()
+- [ ] questionScore()
+- [x] calculateScore()
+- [ ] getAnswers()
+
+#### Q122. Who invented OOP?
+
+- [ ] Andrea Ferro
+- [ ] Adele Goldberg
+- [x] Alan Kay
+- [ ] Dennis Ritchie

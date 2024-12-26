@@ -27,6 +27,8 @@ c = b(1, ceil(end/2));
 - [ ] errors
 - [ ] the value of variables
 
+[Reference](http://www.ece.northwestern.edu/local-apps/matlabhelp/techdoc/ref/profile.html)
+
 #### Q4. Which code block contains the correct syntax for a `while` loop?
 
 - [ ] A
@@ -413,15 +415,12 @@ a = my_func(a);
 
 #### Q25. Which statement could create this cell array?
 
-```
-c =
-    {["hello world"]}    {1×1 cell}    {["goodbye"]}    {1×3 double}
-```
+`c = {["hello world"]}    {1×1 cell}    {["goodbye"]}    {1×3 double}`
 
-- [ ] c = {"hello world" {"hello"} "goodbye" [1 2 ]};
-- [ ] c = {"hello world" {"hello"} "goodbye" {[1 2 3]}};
-- [x] c = {"hello world" {"hello"} "goodbye" [1 2 3]};
-- [ ] c = {"hello world" {"hello" "hello"} "goodbye" {[1 2 3]}};
+- [ ] c = `{"hello world" {"hello"} "goodbye" [1 2 ]};`
+- [ ] c = `{"hello world" {"hello"} "goodbye" {[1 2 3]}};`
+- [x] c = `{"hello world" {"hello"} "goodbye" [1 2 3]};`
+- [ ] c = `{"hello world" {"hello" "hello"} "goodbye" {[1 2 3]}};`
 
 #### Q26. Which choice adds `b` to each row of `a`?
 
@@ -624,7 +623,7 @@ end
 
 ![MatLab Q39](images/matlab_Q39.jpg)
 
-- [ ]
+- [ ] &shy;
 
 ```
 figure
@@ -634,7 +633,7 @@ surf(r)
 colorbar
 ```
 
-- [x]
+- [x] &shy;
 
 ```
 figure
@@ -1057,7 +1056,34 @@ for i_loop = 1:6
 end
 ```
 
-- [x] nothing will print
+- [ ] :
+
+```
+111111
+```
+
+- [ ] :
+
+```
+1 1 1 1 1 1
+```
+
+- [ ] :
+
+```
+1
+1
+1
+1
+1
+1
+```
+
+- [x] :
+
+```
+nothing will print
+```
 
 #### Q74. You are debugging a function and have set a breaipoint on the line before the error occurs. You look at the variable values and suspect the cause of the error is that a is 9 but should be 10. The next statement after the breakpoint will use a. Wigh action would help you test if a=10 solves the problem?
 
@@ -1083,13 +1109,13 @@ b = ['stand' 'alone'];
 c = {rand(20,10) rand(23,2) rand(14,5)}
 ```
 
-- [ ] A
+- [ ] :
 
 ```
   b = cellfun(@(m) mean(m(:)), C
 ```
 
-- [ ] B
+- [ ] :
 
 ```
 b = zeros(1, size(C,1);
@@ -1098,13 +1124,13 @@ b = zeros(1, size(C,1);
     end
 ```
 
-- [ ] C
+- [ ] :
 
 ```
 b = cellfun(@mean, C)
 ```
 
-- [ ] D
+- [ ] :
 
 ```
 b = zeros(1, size(C,2);
@@ -1112,3 +1138,57 @@ b = zeros(1, size(C,2);
         b(1_C) = mean(C(i_C));
     end
 ```
+
+#### Q77. Which choice uses the proper syntax for an `if else` statement?
+
+- [ ] :
+
+```
+if (a > 1):
+    b = 2;
+else:
+    b = 3;
+```
+
+- [ ] :
+
+```
+if (a > 1){
+    b = 2;
+} else{
+    b = 3;
+}
+```
+
+- [x] :
+
+```
+if (a > 1)
+    b = 2;
+else
+    b = 3;
+end
+```
+
+- [ ] :
+
+```
+if (a > 1)
+    b = 2;
+else
+    b = 3;
+```
+
+[Reference](https://www.mathworks.com/help/matlab/ref/if.html)
+
+#### Q78. What does b contain?
+
+```
+a = [9 8 8 19 6 1 9 6 6 19];
+b = unique(a);
+```
+
+- [x] `b = [1 6 8 9 19]`
+- [ ] `b = [1 6 8 9]`
+- [ ] `b = [1 6 6 6 8 8 9 9 19 19]`
+- [ ] `b = [1 6 6 8 8 9]`

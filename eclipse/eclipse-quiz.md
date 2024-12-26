@@ -10,9 +10,9 @@
 #### Q2. What happens when you execute the Run -> Skip all Breakpoints command?
 
 - [ ] All breakpoints are deleted
-- [ ] none of these answers
 - [x] All breakpoints will not be fired when debugging and will not cause application execution to suspend
 - [ ] All breakpoints and bookmarks are disabled
+- [ ] None of the above
 
 #### Q3. What is not a key part of Eclipse projects and technologies?
 
@@ -30,6 +30,8 @@
 
 #### Q5. In this image, what does the circled button do?
 
+![image Q5](https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/main/eclipse/images/Eclipse-Q5.jpg)
+
 - [ ] It expands the comparison between the two files to include whitespace.
 - [ ] It allows you to delete the line of code to which it is connected.
 - [x] It allows changes from one version of a file to be applied to another version of the file.
@@ -44,10 +46,10 @@
 
 #### Q7. How can you create a new Git branch in Eclipse?
 
-- [x] all of these answers
 - [ ] Right-click your project in the Package Explorer and select Team -> Switch To -> New Branch
 - [ ] Click File -> New -> Git -> Branch
 - [ ] Click Source -> Team -> Switch To -> New Branch
+- [x] All of the above
 
 #### Q8. Why might you use the Open Type button?
 
@@ -64,6 +66,8 @@
 - [ ] the test class name
 
 #### Q10. In this image, what does the circled icon in the Problems view do?
+
+![image Q10](https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/main/eclipse/images/Eclipse-Q10.jpg)
 
 - [ ] It sends the currently selected problem to another view.
 - [ ] It indents the currently selected problem.
@@ -135,17 +139,17 @@
 
 #### Q20. What does the Problems view show?
 
-- [x] all of the answers
 - [ ] warnings and errors
 - [ ] code that does not match your formatting settings
 - [ ] threads containing errors
+- [x] All of the above
 
 #### Q21. When switching workspaces, what is preserved?
 
 - [x] all preferences
-- [ ] none of these answers
 - [ ] the current perspective
 - [ ] preferences for a language (e.g., Java)
+- [ ] None of the above
 
 #### Q22. How can you set files to save automatically when launching an application?
 
@@ -157,9 +161,9 @@
 #### Q23. Which is _not_ a valid way to create a test class?
 
 - [ ] In the **Package Explorer**, right-click a class and select **New > JUnit Test Case**.
-- [x] none of these answers
 - [ ] Create a JUnit Test Case class through the **File** menu.
 - [ ] Create the class manually while in any perspective.
+- [x] None of the above
 
 #### Q24. What happens when you double-click a Revision Time in the History view?
 
@@ -180,9 +184,9 @@
 #### Q26. When viewing an XML file in Eclipse, how can you view the file in a visual hierarchy (as opposed to code alone)?
 
 - [ ] You cannot do this in Eclipse.
-- [ ] Select the Editor tab for the XML file and then click the Design tab at the bottom of the editor window.
+- [x] Select the Editor tab for the XML file and then click the Design tab at the bottom of the editor window.
 - [ ] Double-click the open tab in the Editor.
-- [ ] In the Package Explorer, right-click the file and select Open With > Desgign Editor.
+- [ ] In the Package Explorer, right-click the file and select Open With > Design Editor.
 
 #### Q27. How can you view all the commits for a single file?
 
@@ -193,26 +197,26 @@
 
 #### Q28. In the image below, what does the circled button do?
 
-![image Q28](https://github.com/Beziu/linkedin-skill-assessments-quizzes/blob/master/eclipse/images/Eclipse-Q28.jpg)
+![image Q28](https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/main/eclipse/images/Eclipse-Q28.jpg)
 
-- [ ] It links the Editor and Navigator, causing the Editor to switch to the file selected in the Package Explorer and vice versa.
+- [x] It links the Editor and Navigator, causing the Editor to switch to the file selected in the Package Explorer and vice versa.
 - [ ] It expands Libraries when you are in the Java perspective.
 - [ ] It minimizes the left view
 - [ ] It collapses open folders in the Package Explorer view.
 
 #### Q29. Why might you create multiple debug configurations for the same project?
 
-- [ ] all of these answers
 - [ ] to debug using a different JRE
 - [ ] to customize environment variables
 - [ ] to customize arguments
+- [x] All of the above
 
 #### Q30. You are searching for code using the Search dialog, and no results appear. What is a likely cause?
 
-- [ ] all of these answers
 - [ ] The scope of the search is too narrow.
 - [ ] The type of search is not appropriate for the language of the code.
 - [ ] There is a typo in the search parameters.
+- [x] All of the above
 
 #### Q31. If you check out a branch in Eclipse and still see the old code, what is one possible problem?
 
@@ -223,31 +227,31 @@
 
 #### Q32. What is required to create a Git commit?
 
-- [x] all of these answers
 - [ ] a local repository
 - [ ] staged changes
 - [ ] a commit message
+- [x] All of the above
 
 #### Q33. What can you do in the Eclipse Split Editor?
 
 - [ ] view the Design and Source tabs of one XML file at the same time
 - [ ] drag code from one Editor pane into another
 - [ ] split the editor either horizontally or vertically
-- [ ] all of these answers
+- [x] all of these answers
 
 #### Q34. Why might you run the Project > Clean command?
 
-- [ ] to remedy an issue where the source code seemsaccurate, but Git is indicating a merge conflict
+- [ ] to remedy an issue where the source code seems accurate, but Git is indicating a merge conflict
 - [ ] to remedy syntax errors within the source code, causing the project not to build
 - [ ] to discard any existing build state before building the project, which can remedy issues where the source code seems accurate yet fails to build
-- [ ] to recompile only the source code files that have changed since the last build, which can shorten the build time for long-running builds
+- [x] to recompile only the source code files that have changed since the last build, which can shorten the build time for long-running builds
 
 #### Q35. How can you terminate debugging in the Debug view?
 
 - [ ] Right-click an item in the stack trace and select Terminate/Disconnect All.
-- [ ] all of these answers
 - [ ] Right-click your application and select Terminate.
 - [ ] Right-click a thread and select Terminate and Remove.
+- [x] All of the above
 
 #### Q36. How do you connect to and debug a remote Java application/server?
 
@@ -280,9 +284,9 @@
 #### Q40. Which of these is/are listed when searching via the Quick Access search bar?
 
 - [ ] files in the current workspace
-- [x] all of these answers
 - [ ] XML attribute values
 - [ ] Java members
+- [x] All of the above
 
 #### Q41. After opening a code file, you notice some of the syntax coloring is missing. What is the most likely problem?
 
@@ -304,3 +308,12 @@
 - [x] Click Run > Run Configurations > Arguments.
 - [ ] Right-click the project and select Arguments.
 - [ ] Click Run > Debug Configurations > Arguments.
+
+#### Q44. In this image, what does the circled button do?
+
+![image Q44](https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/main/eclipse/images/Eclipse-Q44.png)
+
+- [ ] It toggles collapsing and expanding all methods in a file.
+- [x] It toggles block selection mode in the editor.
+- [ ] It toggles showing whitespace in the code.
+- [ ] It toggles word wrap in the file.

@@ -103,7 +103,7 @@
 - [ ] digital signature
 - [x] symmetric encryption
 
-#### Q14. What is the difference between DRP and BCP
+#### Q14. What is the difference between DRP and BCP?
 
 - [x] DRP works to keep a business up and running despite a disaster. BCP works to restore the original business capabilities.
 - [ ] BCP works to keep a business up and running despite a disaster. DRP works to restore the original business capabilities.
@@ -148,9 +148,11 @@
 #### Q20. You have configured audit settings in your organization's cloud services in the event of a security incident. What type of security control is an audit trail?
 
 - [ ] preventive control
-- [ ] detective control
+- [x] detective control
 - [ ] directive control
-- [x] corrective control
+- [ ] corrective control
+
+**Explanation**: An audit trail is typically considered a detective security control in the context of the CISSP.
 
 #### Q21. What is the name for a short-term interruption in electrical power supply?
 
@@ -200,7 +202,7 @@
 
 #### Q27. Two competing online retailers process credit card transactions for customers in countries on every continent. One organization is based in the United States. The other is based in the Netherlands. With which regulation must both countries comply while ensuring the security of these transactions?
 
-- [ ] Federal Information Security Managment Act (FISMA)
+- [ ] Federal Information Security Management Act (FISMA)
 - [x] Payment Card Industry Data Security Standard (PCI-DSS)
 - [ ] General Data Protection Regulation (GDPR)
 - [ ] International Organization for Standardization and International Electrotechnical Commission (ISO/IEC 27018)
@@ -213,12 +215,12 @@
 
 - [ ] Common event format
 - [ ] common weakness enumeration
-- [x] common vulnerabilties and exposures
+- [x] common vulnerabilities and exposures
 - [ ] common vulnerability scoring system
 
 **Explanation**: The Common Vulnerabilities and Exposures (`CVE`) system provides a reference-method for publicly known information-security vulnerabilities and exposures.
 
-#### Q29. Which type of application can intercept sensative information such as passwoprds on a network segment?
+#### Q29. Which type of application can intercept sensitive information such as passwords on a network segment?
 
 - [ ] log server
 - [ ] network scanner
@@ -234,7 +236,7 @@
 - [ ] aggregation
 - [x] inference
 - [ ] SQL injection
-- [ ] cross-origin resouce sharing
+- [ ] cross-origin resource sharing
 
 **Explanation**: An `Inference Attack` is a data mining technique performed by analyzing data in order to illegitimately gain knowledge about a subject or database. A subject's sensitive information can be considered as leaked if an adversary can infer its real value with a high confidence. **Source**: ([Wikipedia](https://en.wikipedia.org/wiki/Inference_attack)).
 
@@ -376,22 +378,28 @@ autopsy is for forensic analysis
 
 - [ ] It identifies regulatory compliance requirements.
 - [ ] It prioritizes IT budget expenditures.
-- [x] It quantifies the potential cost of a data breach.
-- [ ] It establishes the value of data to the organization.
+- [ ] It quantifies the potential cost of a data breach.
+- [x] It establishes the value of data to the organization.
+
+**Explanation**: The primary purpose of classifying data in the context of Data Loss Prevention (DLP) is to help organizations identify, label, and protect sensitive information from unauthorized disclosure or leakage. DLP is a set of technologies and processes designed to prevent the unauthorized access, use, and transmission of sensitive data.
 
 #### Q49. You are responsible for managing security of your organization's public cloud infrastructure. You need to implement security to protect the data and applications running in a variety of IaaS and PaaS services, including a new Kubernetes cluster. What type of solution is best suited to this requirement?
 
-- [ ] Cloud Workload Protection Platforms (CWPP)
+- [x] Cloud Workload Protection Platforms (CWPP)
 - [ ] Cloud Security Posture Management (CSPM)
-- [x] Cloud Access Security Brokers (CASBs)
+- [ ] Cloud Access Security Brokers (CASBs)
 - [ ] Intrusion Detection and Prevention System (IDPS)
+
+[Explanation](https://www.gartner.com/reviews/market/cloud-workload-protection-platforms)
 
 #### Q50. Sharing account credentials violates the **\_** aspect of access control.
 
 - [ ] identification
-- [x] authorization
+- [ ] authorization
 - [ ] accounting
-- [ ] authentication
+- [x] authentication
+
+**Explanation**: Sharing account credentials violates the authentication aspect of access control. Authentication is the process of verifying the identity of a user, system, or application, and sharing credentials undermines this process by allowing multiple individuals to use the same set of login credentials, potentially compromising the security of the system.
 
 #### Q51. You have recovered a server that was compromised in a malware attack to its previous state. What is the final step in the incident response process?
 
@@ -702,10 +710,12 @@ What are the primary goals of the digital signature in this scenario? (Choose th
 
 #### Q91. Which option describes a core principle of DevSecOps?
 
-- [x] Testing and release should be 100% automated
+- [ ] Testing and release should be 100% automated
 - [ ] Role separation is the key to software security
 - [ ] Final responsibility for security rests with the architect of the application
-- [ ] Everyone in the process is responsible for security
+- [x] Everyone in the process is responsible for security
+
+**Explanation**: DevSecOps emphasizes the integration of security practices throughout the entire software development lifecycle, and it promotes a cultural shift where everyone involved in the development and operations processes takes responsibility for security. This includes developers, operations teams, and other stakeholders working collaboratively to integrate security into every stage of the development process.
 
 #### Q92. You need to implement a solution to protect internet-facing applications from common attacks like XSSm CSRF, and SQL injection. Which option is best suited to the task?
 
@@ -772,11 +782,11 @@ What is the next step you should take to best fulfill your responsibilities and 
 - [x] Take a snapshot of the compromised virtual server for your investigation.
 - [ ] Restart the server. Remediate the issue after business hours.
 
-#### Q101. Site-to-site VPN provides access from one network address space (192.168.0.0/24) to another network address space _ site-to-site VPN provides access from one network address space (192.168.0.0/24) to another network address space _.
+#### Q101. Site-to-site VPN provides access from one network address space (192.168.0.0/24) to another network address space \_.
 
-- [x] 192.168.0.1/24
+- [ ] 192.168.0.1/24
 - [ ] 192.168.0.3/24
-- [ ] 10.10.0.0/24
+- [x] 10.10.0.0/24
 - [ ] 192.168.0.2/24
 
 #### Q102. You are researching probable threats to your company’s internet-facing web applications. Which organization should you reference as an authoritative source for information on web-based attack vectors?
@@ -790,12 +800,12 @@ What is the next step you should take to best fulfill your responsibilities and 
 
 #### Q103. Which action is most likely to simplify security staff training, improve integration between security components, and reduce risk to the business? (Choose the best answer.)
 
-- [ ] adopting a "best-in-suite" approach to security
-- [x] adopting a "trust but verify" approach to security
+- [x] adopting a "best-in-suite" approach to security
+- [ ] adopting a "trust but verify" approach to security
 - [ ] adopting a "best-of-breed" approach to security
 - [ ] adopting a "defense-in-depth" approach to security
 
-[Explanation:](https://www.law.com/njlawjournal/2021/12/03/zero-trust-security-moving-from-trust-but-verify-to-never-trust-always-verify/?slreturn=20220417191235)
+**Explanation**: A "best-in-suite" approach involves selecting a comprehensive security solution from a single vendor that integrates various security components. This approach can simplify training because security staff only need to become familiar with one integrated suite rather than multiple standalone products. It can also improve integration between components since they are designed to work seamlessly together. Additionally, a unified suite can offer a more cohesive and consistent security strategy, potentially reducing the complexity of managing diverse security tools. An example could be using Okta to provide SSO for all of your organization's logins.
 
 #### Q104. **\_** attacks can execute the code injected by attackers as part of user inputs.
 
@@ -836,10 +846,10 @@ What is the next step you should take to best fulfill your responsibilities and 
 
 #### Q109. A website is asking for a password and also sending an authentication code to your phone. What factors are used in this multi-factor authentication scenario?
 
-- [x] what you have and what you do
+- [ ] what you have and what you do
 - [ ] what you know and what you are
-- [ ] what you have and what you know
-- [x] what you do and what you know
+- [x] what you have and what you know
+- [ ] what you do and what you know
 
 [Explanation:](https://www.investopedia.com/terms/t/twofactor-authentication-2fa.asp)
 
@@ -858,6 +868,8 @@ What is the next step you should take to best fulfill your responsibilities and 
 - [ ] Antivirus
 - [x] Design powerful malicious software
 - [x] Asymmetric backdoor
+
+**Explanation**: Cryptovirology involves the application of cryptographic techniques to create powerful and destructive malware, with ransomware being a notable example. In ransomware attacks, cryptography is often employed to encrypt a victim's files, rendering them inaccessible until a ransom is paid to the attacker for the decryption key.
 
 #### Q112. What does a metamorphic virus do?
 
@@ -1019,4 +1031,319 @@ What is the next step you should take to best fulfill your responsibilities and 
 - [ ] authenticator apps
 - [x] SMS message
 
+**Explanation**: SMS messages for MFA are generally considered less secure compared to other methods. This is because SMS messages can be vulnerable to interception (e.g., SIM swapping attacks), and the underlying telecommunication infrastructure may not provide sufficient protection against various attack vectors. Other MFA methods such as biometric authentication, OAUTH tokens, and authenticator apps are often considered more secure alternatives.
+
 [Reference](https://www.zdnet.com/article/fbi-warns-about-attacks-that-bypass-multi-factor-authentication-mfa/) `"(...)All in all, MFA is still very effective at preventing most mass and automated attacks; however, users should be aware that there are ways to bypass some MFA solutions, such as those relying on SMS-based verification."`
+
+#### Q133. Which of the following is NOT a common authentication factor used in cybersecurity?
+
+- [ ] Something you know
+- [ ] Something you have
+- [ ] Something you are
+- [x] Something you want
+
+#### Q134. Which of the following best describes a "Honeytoken" in cybersecurity?
+
+- [x] A deceptive network host that appears legitimate to attackers.
+- [ ] A user-friendly interface for managing network traffic.
+- [ ] An encryption key used in secure communication.
+- [ ] A hardware device for two-factor authentication.
+
+#### Q135. What is the primary purpose of a "Bastion Host" in a network security architecture?
+
+- [x] To host publicly accessible services while protecting the internal network.
+- [ ] To intercept and analyze all network traffic for security purposes.
+- [ ] To act as a backup server in case the main server fails.
+- [ ] To facilitate secure communication between two remote networks.
+
+#### Q136. In network analysis, what does the term "Port Mirroring" refer to?
+
+- [x] A process of copying network packets to a specific destination for analysis.
+- [ ] A method of encrypting data during transmission to secure it.
+- [ ] A mechanism for load balancing network traffic.
+- [ ] A firewall rule that allows traffic through specific network ports.
+
+#### Q137. Which of the following is NOT a common method of concealing malicious software on a network?
+
+- [ ] Polymorphic malware
+- [ ] Rootkit
+- [x] Packet Sniffing
+- [ ] Stealthy tunneling protocols
+
+#### Q138. In the context of cybersecurity, what does the acronym "IDS" stand for?
+
+- [ ] Internet Domain System
+- [x] Intrusion Detection System
+- [ ] Internet Data Security
+- [ ] Integrated Defense Strategy
+
+#### Q139. What does a "Man-in-the-Middle (MitM)" attack involve?
+
+- [x] Intercepting communication between two parties without their knowledge.
+- [ ] Cracking encrypted passwords.
+- [ ] Disrupting network services with a Distributed Denial of Service (DDoS) attack.
+- [ ] Installing malicious software on a network server.
+
+#### Q140. Which of the following is an essential element of a Public Key Infrastructure (PKI)?
+
+- [ ] A firewall for network security.
+- [x] A trusted Certificate Authority (CA).
+- [ ] A virtual private network (VPN).
+- [ ] A network router.
+
+#### Q141. What type of encryption is typically used to secure wireless network traffic in a WPA3 network?
+
+- [ ] WEP (Wired Equivalent Privacy)
+- [x] AES (Advanced Encryption Standard)
+- [ ] SSL (Secure Sockets Layer)
+- [ ] DES (Data Encryption Standard)
+
+#### Q142. Which network security protocol is used to provide secure, encrypted communication over the Internet, often used for securing websites?
+
+- [ ] SSH (Secure Shell)
+- [ ] SNMP (Simple Network Management Protocol)
+- [x] HTTPS (Hypertext Transfer Protocol Secure)
+- [ ] ICMP (Internet Control Message Protocol)
+
+#### Q143. What does the term "Zero-Day Vulnerability" refer to in cybersecurity?
+
+- [ ] A vulnerability that has been known and patched for zero days.
+- [x] A vulnerability that is not yet known to the software vendor or the public.
+- [ ] A vulnerability that affects zero network devices.
+- [ ] A vulnerability that cannot be exploited.
+
+#### Q144. The most notorious military-grade advanced persistent threat was deployed in 2010, and targeted centrifuges in Iran. What was this APT call?
+
+- [ ] duqu
+- [ ] agent BTZ
+- [x] stuxnet
+- [ ] flame
+
+#### Q145. Where would you record risks that have been identified and their details, such as their ID and name, classification of information, and the risk owner?
+
+- [ ] in the risk assessment documentation
+- [x] in the risk register
+- [ ] in the business impact ledger
+- [ ] in the Orange Book
+
+#### Q146. Which of the following terms is used to describe a collection of unrelated patches?
+
+- [x] Hotfix
+- [ ] Update
+- [ ] Security Fix
+- [ ] Service Pack
+
+#### Q147. How often should security teams conduct a review of the privileged access that a user has to sensitive systems?
+
+- [x] On a periodic basis
+- [x] When a User leaves the organisation
+- [x] When a User changes roles
+- [ ] On a daily basis
+
+#### Q148. You have recovered a server that was compromised in a malware attack to its previous state. What is the final step in the incident response process?
+
+- [ ] Eradication / Remediation
+- [ ] Certification
+- [ ] Reporting
+- [x] Lessons Learned
+
+#### Q149. Which encryption type uses a public and private key pair for encrypting and decrypting data?
+
+- [x] asymmetric
+- [ ] symmetric
+- [ ] hashing
+- [ ] all of these answers
+
+#### Q150. You have just identified and mitigated an active malware attack on a user's computer, in which command and control was established. What is the next step in the process?
+
+- [ ] Reporting
+- [ ] Recovery
+- [x] Eradiction / Remediation
+- [ ] Lessons Learned
+
+#### Q151. What is the purpose of a Firewall in network security?
+
+- [ ] To encrypt data transmission
+- [ ] To identify and remove malware
+- [x] To control incoming and outgoing network traffic
+- [ ] To provide secure access to a network
+
+#### Q152. Which type of cyber attack aims to deceive individuals into revealing sensitive information like passwords or credit card numbers?
+
+- [ ] Ransomware
+- [ ] DDoS Attack
+- [x] Phishing Attack
+- [ ] SQL Injection
+
+#### Q153. What does the term "Social Engineering" refer to in cybersecurity?
+
+- [ ] Advanced encryption techniques
+- [ ] Hacking social media accounts
+- [x] Manipulating individuals to divulge confidential information
+- [ ] Securing social media networks
+
+#### Q154. Which encryption algorithm is commonly used to secure data transmission on the internet?
+
+- [ ] ROT13
+- [x] AES
+- [ ] Caesar Cipher
+- [ ] RSA
+
+#### Q155. In cybersecurity, what does the acronym "VPN" stand for?
+
+- [x] Virtual Private Network
+- [ ] Very Private Network
+- [ ] Virtual Personal Network
+- [ ] Virtual Public Network
+
+#### Q156. Which of the following is an example of a strong password?
+
+- [ ] Password123
+- [ ] 123456
+- [ ] JohnSmith
+- [x] P@ssw0rd!
+
+#### Q157. What does the term "Zero Trust" mean in the context of cybersecurity?
+
+- [ ] Trusting all network traffic
+- [x] Verifying all network traffic, regardless of location
+- [ ] Trusting only internal network traffic
+- [ ] Verifying network traffic only from trusted sources
+
+#### Q158. What is the purpose of a Security Information and Event Management (SIEM) system?
+
+- [ ] To block all incoming network traffic
+- [ ] To encrypt sensitive data
+- [ ] To manage user passwords
+- [x] To collect, analyze, and respond to security events
+
+#### Q159. Which cybersecurity practice involves deliberately probing a network or system to find vulnerabilities?
+
+- [ ] Firewall Configuration
+- [ ] Encryption
+- [x] Penetration Testing
+- [ ] Patch Management
+
+#### Q160. What is the primary goal of a Red Team in cybersecurity?
+
+- [ ] To develop software applications
+- [ ] To monitor network traffic
+- [x] To simulate cyber attacks to find vulnerabilities
+- [ ] To implement security policies
+
+#### Q161. Which type of malware encrypts a victim's files and demands a ransom for decryption?
+
+- [ ] Spyware
+- [ ] Worm
+- [ ] Trojan
+- [x] Ransomware
+
+#### Q162. What does the term "Patch Management" refer to in cybersecurity?
+
+- [ ] Securing physical access to servers
+- [x] Managing software updates and fixes
+- [ ] Encrypting sensitive data
+- [ ] Implementing network firewalls
+
+#### Q163. What is the primary purpose of a Data Loss Prevention (DLP) solution?
+
+- [ ] To prevent physical theft of devices
+- [ ] To encrypt all network traffic
+- [ ] To monitor user activities
+- [x] To prevent unauthorized disclosure of sensitive data
+
+#### Q164. Which cybersecurity framework provides a set of best practices for securing information systems?
+
+- [ ] ISO 9001
+- [ ] COBIT
+- [ ] Six Sigma
+- [x] NIST Cybersecurity Framework
+
+#### Q165. What is the purpose of a Secure Sockets Layer (SSL) certificate?
+
+- [ ] To block incoming network traffic
+- [x] To encrypt data transmitted between a web server and a browser
+- [ ] To authenticate users on a network
+- [ ] To monitor user activities
+
+#### Q166. Which type of attack involves overwhelming a system or network with a flood of traffic to make it unavailable?
+
+- [ ] Phishing
+- [ ] Ransomware
+- [ ] Man-in-the-Middle
+- [x] Distributed Denial of Service (DDoS)
+
+#### Q167. What does the term "Two-Factor Authentication" mean in cybersecurity?
+
+- [ ] Using two different web browsers
+- [x] Using two different authentication methods for added security
+- [ ] Logging in twice to a system
+- [ ] Using two different antivirus programs
+
+#### Q168. What is the purpose of a Security Token in authentication?
+
+- [ ] To generate one-time passwords
+- [ ] To block incoming network traffic
+- [x] To provide an additional layer of authentication
+- [ ] To encrypt sensitive data
+
+#### Q169. What is the role of a Security Operations Center (SOC) in cybersecurity?
+
+- [ ] To develop software applications
+- [ ] To manage user passwords
+- [x] To monitor and respond to security incidents
+- [ ] To encrypt sensitive data
+
+#### Q170. Which type of attack involves tricking a user into executing a malicious code by disguising it as a legitimate file or application?
+
+- [ ] DDoS Attack
+- [ ] SQL Injection
+- [ ] Ransomware
+- [x] Malware
+
+#### Q171. Which of the following is NOT a common authentication factor used in multi-factor authentication (MFA)?
+
+- [ ] Something you are
+- [ ] Something you do
+- [ ] Something you have
+- [x] Something you say
+
+#### Q172. What type of cyberattack aims to make a service unavailable by overwhelming it with traffic?
+
+- [x] DDoS (Distributed Denial of Service)
+- [ ] Phishing
+- [ ] Ransomware
+- [ ] Malware
+
+#### Q173. What is the purpose of a VPN (Virtual Private Network) in cybersecurity?
+
+- [ ] To improve internet speed
+- [x] To anonymize internet activity and encrypt data transmission
+- [ ] To monitor network traffic for malicious activity
+- [ ] To block malware and viruses
+
+**Explanation**
+
+- A VPN (Virtual Private Network) creates a secure, encrypted connection over a less secure network, such as the internet. It hides the user's IP address, encrypts data being transmitted, and makes it harder for hackers or third parties to intercept communications. The primary purpose of a VPN is to protect user privacy and secure data from unauthorized access.
+
+#### Q174. What is the primary function of a firewall in a network?
+
+- [ ] Encrypt data before transmission
+- [x] Monitor and control incoming and outgoing network traffic
+- [ ] Provide physical security for servers
+- [ ] Manage user access to applications
+
+**Explanation**
+
+- A firewall is a network security device that monitors and filters incoming and outgoing network traffic based on security rules. Its main purpose is to establish a barrier between an internal trusted network and untrusted external networks, such as the internet. While it can sometimes be involved in managing access or enhancing security protocols, its core function is to filter traffic.
+
+#### Q175. Which of the following is a common method attackers use to gain unauthorized access to systems?
+
+- [ ] Phishing
+- [x] Encryption
+- [ ] Data anonymization
+- [ ] Two-factor authentication
+
+**Explanation**
+
+- Phishing is a type of cyber attack where attackers trick individuals into providing sensitive information such as usernames, passwords, or financial details by pretending to be legitimate entities. The attacker often uses fake emails, websites, or text messages. The other options (encryption, data anonymization, and two-factor authentication) are security measures that help protect systems.

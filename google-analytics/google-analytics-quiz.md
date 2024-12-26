@@ -551,7 +551,7 @@
 - [ ] Destination
 - [ ] Duration
 - [ ] Pages/Screens per Session
-- [ ] Event
+- [x] Event
 
 #### Q78. What is an interaction that causes data to be sent to Analytics?
 
@@ -597,9 +597,9 @@
 - [ ] on metrics only
 - [x] temporary
 
-#### Q84. What is a risk of using the Copare to Previous Period option?
+#### Q84. What is a risk of using the Compare to Previous Period option?
 
-- [ ] it is not possible to cmpare previous periods with sampled data pulled ad hoc
+- [ ] it is not possible to compare previous periods with sampled data pulled ad hoc
 - [ ] The same amount of days selected for the Date Range will be used for the coparison
 - [x] If the review period is Wednesday to Thursday, the previous period may include weekends, which may skew the comparison
 - [ ] Both sets of data may appear on the same graph, which will skew your ability to analyze impact
@@ -610,3 +610,17 @@
 - [x] Acquisition > Google Ads > Search queries
 - [ ] Acquisition > Google Ads > Keywords
 - [ ] Acquisition > Campaign > Organic Keywords
+
+#### Q86. What does the Site Search Report Display
+
+- [ ] How users search Google
+- [ ] in-page analytics
+- [ ] what pages are missing from your site
+- [x] how users search on your site
+
+#### Q87. What does analytics set and read for each unique domain being tracked?
+
+- [ ] HTML
+- [x] cookies
+- [ ] pixels
+- [ ] sessions

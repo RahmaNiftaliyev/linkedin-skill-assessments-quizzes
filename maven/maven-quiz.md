@@ -49,19 +49,12 @@
 - [x] src/main/java
 - [ ] src/main/resources
 
-#### Q8. Which command is used to run the clean lifecyle followed by verify, install, and package with Maven?
+#### Q8. Which command is used to run the clean lifecycle followed by verify, install, and package with Maven?
 
-- [ ] `mvn clean istall package`
-- [x] `mvn package`
-- [ ] `mvn clean install`
-- [ ] Option 4
-
-```shell script
-mvn clean
-mvn package
-mvn verify
-mvn install
-```
+- [ ] `mvn clean install package`
+- [ ] `mvn package`
+- [x] `mvn clean verify install package`
+- [ ] `mvn install package`
 
 #### Q9. Which goal would you use with the Dependency plugin to determine which included dependencies are not used, as well as those you are using that you have not defined?
 
@@ -196,7 +189,7 @@ mvn install
 - [ ] The dependency is needed at compile time and at runtime, but does NOT need to be packaged for distribution.
 - [ ] The dependency is required for compilation.
 
-#### Q28. If you want to utilitze a locally developed JAR file in another project and that JAR file has not been deployed to either the Maven central repository or your own locally sourced mirror repository, what Maven goal do you need to execute on the locally developed JAR project?
+#### Q28. If you want to utilize a locally developed JAR file in another project and that JAR file has not been deployed to either the Maven central repository or your own locally sourced mirror repository, what Maven goal do you need to execute on the locally developed JAR project?
 
 - [ ] package
 - [x] install
@@ -220,7 +213,7 @@ mvn install
 
 - [ ] It does nothing since no archetype has been specified
 - [ ] It generates a new Maven archetype
-- [x] It generates a new Maven projet using the default Maven archetype
+- [x] It generates a new Maven project using the default Maven archetype
 - [ ] It cleans and installs the sample-maven-project project
 
 #### Q31. When defining a dependency that is included with the runtime container, what scope do you use in the pom.xml?
@@ -319,7 +312,7 @@ mvn install
 
 - [ ] The Checkstyle Plugin does not work on child modules.
 - [ ] Each Checkstyle report is in the target/site folder of the respective module.
-- [ ] All links in Checkstyle reports must be specified in the plugin definition.
+- [x] All links in Checkstyle reports must be specified in the plugin definition.
 - [ ] Checkstyle reports for child modules have to be behind a firewall.
 
 #### Q43. Which build plugin allows you to create a "fat" JAR file that contains all of the dependencies in the final JAR file?
@@ -339,7 +332,7 @@ mvn install
 #### Q45. How many times is compiler:compile called when executing mvn clean compile test package?
 
 - [ ] one
-- [ ] two
+- [x] two
 - [ ] none
 - [ ] three
 
@@ -352,14 +345,14 @@ mvn install
 
 #### Q47. What are the phases of the clean lifecycle?
 
-- [x] pre-clean,clean and post-clean
+- [x] pre-clean, clean and post-clean
 - [ ] Compile, clean and install
 - [ ] clean and install
 - [ ] validate, clean and deploy
 
 #### Q48. A compile-time dependency of a dependency for your project is often called **a\_** dependency.
 
-- [ ] Transitive
+- [x] Transitive
 - [ ] runtime
 - [ ] provided
 - [ ] test
@@ -396,9 +389,9 @@ mvn install
 #### Q52. What is the main purpose of the install phase?
 
 - [ ] to compile the source code of the project
-- [x] to install all of the remote dependencies
+- [ ] to install all of the remote dependencies
 - [ ] to deploy the final project artifacts into a remote Maven repository
-- [ ] to copy the final project artifacts into the local Maven repository
+- [x] to copy the final project artifacts into the local Maven repository
 
 [maven docs](https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html#a-build-lifecycle-is-made-up-of-phases)
 
@@ -430,9 +423,9 @@ mvn install
 - [ ] ${set-app-home}
 - [ ] ${/path/to/application}
 
-#### Q55. What is the default value of the warSourceDirectory configuration property of the Maven WAR Plugin?
+#### Q55. What is the default value of the warSourceDirectory configuration property of the Maven WAR Plugin? (2 possible solutions)
 
-- [ ] /src/main/webapp
+- [x] /src/main/webapp
 - [ ] /src/main/war
 - [x] /src/main/WEB-INF
 - [ ] /src/web
@@ -451,45 +444,45 @@ mvn install
 - [ ] source code style
 - [x] builds
 
-#### Q58. Below is the definition of a mirror in settings.xml. What does the element <mirrorOf>\*</mirrorOf> tell Maven to do?
+#### Q58. Below is the definition of a mirror in settings.xml. What does the element `<mirrorOf>\*</mirrorOf>` tell Maven to do?
 
-'''
-<mirro>
-<id>internal-repo</id>
-<url>http://repo.mycompany.com/proxy</url>
-<mirrorOf>\*</mirroOf>
+```
+<mirror>
+    <id>internal-repo</id>
+    <url>http://repo.mycompany.com/proxy</url>
+    <mirrorOf>\*</mirrorOf>
 </mirror>
-'''
+```
 
-- [ ] Use a sigle repository by having it mirror all repository requests
+- [ ] Use a single repository by having it mirror all repository requests.
 - [x] Mirror all repositories except for http://repomycompany.com/proxy.
-- [ ] Mirro any repositories with \* in the name.
+- [ ] Mirror any repositories with `\*` in the name.
 - [ ] Use a mirror repository for every repository defined in the POM file.
 
-### Q59. How do you generate a site for a project with Maven?
+#### Q59. How do you generate a site for a project with Maven?
 
 - [x] Use the mvn site command.
 - [ ] Use the mvn install command.
 - [ ] This is not possible.
 - [ ] Use the mvn package command.
 
-### Q60. What is the default location of the local Maven repository?
+#### Q60. What is the default location of the local Maven repository?
 
 - [x] USER_HOME/.m2/repository
 - [ ] USER_HOME/.m2/local
 - [ ] USER_HOME/maven/repository
 - [ ] /repo
 
-### Q61. A phase is a step in \_.
+#### Q61. A phase is a step in \_.
 
-- [ ] the complie goal
+- [ ] the compile goal
 - [ ] the development process
 - [x] the build lifecycle
 - [ ] the POM file
 
 [maven docs](https://maven.apache.org/what-is-maven.html#:~:text=Maven's%20primary%20goal%20is%20to,Providing%20a%20uniform%20build%20system)
 
-### Q62. What is the Maven central repository?
+#### Q62. What is the Maven central repository?
 
 - [ ] a local repository created by Maven in your local file system
 - [ ] a repository in the middle of your Maven project
@@ -498,7 +491,7 @@ mvn install
 
 [!reference](https://www.javatpoint.com/maven-repository)
 
-### Q63. What are the artifacts that Apache Maven uses to perform its build operations?
+#### Q63. What are the artifacts that Apache Maven uses to perform its build operations?
 
 - [ ] ant files
 - [ ] properties
@@ -507,7 +500,7 @@ mvn install
 
 [!reference](https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html)
 
-### Q64. Which plugin is used to copy, filter, include, and exclude non-Java files into your final project?
+#### Q64. Which plugin is used to copy, filter, include, and exclude non-Java files into your final project?
 
 - [ ] Build
 - [ ] Files
@@ -516,7 +509,7 @@ mvn install
 
 [!reference](https://maven.apache.org/plugins/maven-resources-plugin/examples/include-exclude.html)
 
-### Q65. What is a module in a Maven project?
+#### Q65. What is a module in a Maven project?
 
 - [ ] a dependency
 - [x] a subproject, or child project
@@ -525,7 +518,7 @@ mvn install
 
 [!reference](https://docs.jboss.org/tools/latest/en/maven_reference/html/creating_a_maven_application.html)
 
-### Q66. What does the mvn --version command do?
+#### Q66. What does the mvn --version command do?
 
 - [ ] It updates Maven to the latest version.
 - [x] It prints out your installed version of Maven.
@@ -534,7 +527,7 @@ mvn install
 
 [!reference](https://jenkov.com/tutorials/maven/maven-commands.html)
 
-### Q67. When building a Maven project, where are Maven dependencies stored?
+#### Q67. When building a Maven project, where are Maven dependencies stored?
 
 - [ ] in the target directory
 - [x] in your local repository
@@ -543,7 +536,7 @@ mvn install
 
 [!reference](https://www.baeldung.com/maven-local-repository)
 
-### Q68. Why is it best practice not to release SNAPSHOT versions of Maven artifacts to production?
+#### Q68. Why is it best practice not to release SNAPSHOT versions of Maven artifacts to production?
 
 - [ ] A release marked with SNAPSHOT indicates that not all of the tests have passed.
 - [x] A SNAPSHOT can be hard to reproduce, making it difficult to determine the cause of an issue.
@@ -552,18 +545,64 @@ mvn install
 
 [!reference](https://maven.apache.org/guides/getting-started/index.html#What_is_a_SNAPSHOT_version)
 
-### Q69. Why do you use Maven Wrapper on a project shared with a large team of developers?
+#### Q69. Why do you use Maven Wrapper on a project shared with a large team of developers?
 
 - [ ] all of these answers
 - [x] All developers will be using the same Maven version, providing stability.
 - [ ] The dependencies for the project will be downloaded only once for all developers, saving bandwidth.
-- [ ] Maven Wrapper checks dependencies for vulnerabilites, increasing security.
+- [ ] Maven Wrapper checks dependencies for vulnerabilities, increasing security.
 
-### Q70. This POM file contains an XML validation error. What is the cause of the error?
+#### Q70. This POM file contains an XML validation error. What is the cause of the error?
 
 ![q70](q70.png?raw=png)
 
 - [ ] JUnit is not a valid dependency of a Maven project.
-- [x] the <dependency> elements should be inside <dependencies> elements.
-- [ ] The <dependency> element is not a valid in a POM file.
-- [ ] The <dependency> elements should be at the bottom of the POM file.
+- [x] The `<dependency>` elements should be inside `<dependencies>` elements.
+- [ ] The `<dependency>` element is not a valid in a POM file.
+- [ ] The `<dependency>` elements should be at the bottom of the POM file.
+
+#### Q71. Below is the configuration for a server on settings.xml. What does this configuration do?
+
+![q71](q71.png?raw=png)
+
+- [ ] It disables put requests to headers.
+- [ ] It sets the headers for all GET requests.
+- [ ] all of these answers
+- [x] It turns off the default behavior for headers and respecifies the Accept-Encoding header for the server with ID openssl.
+
+#### Q72. Below is the build element of a parent POM file. Why might the resources not get copied when executing the plugin on a child project?
+
+<img width="535" alt="5d697fe5498e21bcd2763c2a-1567198471328" src="https://user-images.githubusercontent.com/97866339/224229468-989d52e7-c3d3-4ff2-9514-a38e71d56b7d.png">
+
+- [ ] Plugins defined in the pluginManagement element can never be executed.
+- [ ] Plugins defined in the parent POM are not available in the child POM.
+- [ ] The Build Helper Maven Plugin works only on parent projects.
+- [x] The plugin may not have been defined in the child POM.
+
+[maven docs](https://maven.apache.org/guides/mini/guide-http-settings.html#taking-control-of-your-http-headers)
+
+#### Q73. This image shows a POM file with a profile. When will this profile be activated?
+
+![img](q73.png)
+
+- [ ] always
+- [x] when the system property debug is not set to true, or is not defined
+- [ ] when the system property debug is set to !true
+- [ ] never
+
+#### Q74. What command can you use to run the goal of the compiler plugin?
+
+- [x] mvn compiler:compile
+- [ ] mvn compiler
+- [x] mvn test-compile
+- [ ] mvn compiler:test
+      [!reference](https://maven.apache.org/guides/mini/guide-multiple-modules.html)
+
+#### Q75. In order to leverage a single execution of an Apache Maven goal on a multimodule project, from which directory should you execute the goal?
+
+- [x] the directory with the parent POM
+- [ ] the workspace directory
+- [ ] the development directory
+- [ ] the module directory
+
+[!reference](https://maven.apache.org/guides/mini/guide-multiple-modules.html)

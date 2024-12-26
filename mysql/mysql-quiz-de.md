@@ -379,7 +379,7 @@
 
 #### F42. Sie arbeiten mit den Tabellen, wie in diesem Diagramm gezeigt. Sie müssen sicherstellen, dass jeder zur Tabelle „Einkäufe“ hinzugefügte Datensatz aus einer Kunden-ID besteht, die bereits in der Tabelle „Kunden“ vorhanden ist, und einer Fahrzeug-ID, die bereits in der Tabelle „Autos“ vorhanden ist. Sie entscheiden sich, einen Trigger für die Validierung zu verwenden. Welches verwendest du?
 
-![mysql Q43](images/mysql_q43.jpg?raw=true)
+![mysql Q43](images/mysql_q85.jpg?raw=true)
 
 - [ ] `AFTER INSERT`
 - [x] `BEFORE INSERT`
@@ -1118,3 +1118,10 @@ Tabellenname: Superhelden
 - [ ] Namen der Studenten, die in allen Kursen eine A-Note erhalten haben
 - [x] Namen von Studenten, die in mindestens einem der von Sriram unterrichteten Kurse eine A-Note erhalten haben
 - [ ] Nichts des oben Genannten
+
+#### Q116. Angenommen, Sie haben eine Tabelle sales mit einer Spalte product_id. Welche SQL-Abfrage gibt korrekt die Gesamtzahl der einzigartigen verkauften Produkte zurück?
+
+- [ ] `SELECT COUNT(product_id) FROM sales;`
+- [x] `SELECT COUNT(DISTINCT product_id) FROM sales;`
+- [ ] `SELECT SUM(DISTINCT product_id) FROM sales;`
+- [ ] `SELECT product_id FROM sales;`
